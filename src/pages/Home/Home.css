@@ -1,20 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
+
 
 /* ------------HEADER---------------- */
 
-header{
-    background-color: black;
+
+header {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(8px);           
+    -webkit-backdrop-filter: blur(8px);    */
     height: 10vh;
     width: 100vw;
+    background-color: black;
+    z-index: 1000;
 }
+
 
 /* ------------NAVBAR------------------  */
 
-nav{
+
+nav {
     height: 100%;
     width: 100%;
     display: flex;
@@ -24,30 +36,34 @@ nav{
     position: relative;
 }
 
+
 /* -----------LOGO-CONTAINER----------- */
 
-.logo-container{
+
+.logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 15px;
 }
 
-.logo-container img{
+.logo-container img {
     height: 13vh;
     width: auto;
 }
 
+
 /* ---------TEXT-CONTAINER----------- */
 
-.text-container{
+
+.text-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
 
-.text-container a{
+.text-container a {
     font-size: 18px;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -55,20 +71,22 @@ nav{
     transition: all .35s ease-in-out;
 }
 
-.text-container a:hover{
+.text-container a:hover {
     opacity: 100%;
 }
 
+
 /* -------CONTATO-CONTAINER-------------- */
 
-.contato-container{
+
+.contato-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
 }
 
-.contato-container button{
+.contato-container button {
     height: 5vh;
     width: 4vw;
     border-radius: 20px;
@@ -77,79 +95,153 @@ nav{
     transition: all .45s ease-in-out;
 }
 
-.contato-container button:hover{
+.contato-container button:hover {
     opacity: 60%;
+    cursor: pointer;
 }
 
-.contato-container i{
+.contato-container i {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
     color: white;
+    background-color: transparent;
     transition: all .35s ease-in-out;
 }
 
-.contato-container i:hover{
+.contato-container i:hover {
     cursor: pointer;
     color: white;
 }
 
+
 /* --------MENU TOGGLE (HAMBURGER)---------- */
+
+
 .menu-toggle {
     display: none;
     font-size: 2rem;
     cursor: pointer;
 }
 
+
 /* ------------MAIN------------ */
 
-main{
+
+main {
     background-color: black;
-    height: 90vh;
+    height: 150vh;
     width: 100vw;
+}
+
+
+/* ----------INTRODUCAO-CONTAINER---------- */
+
+.introducao-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 15vh;
+}
+
+
+/* ------TITLE-INTRODUCAO-CONTAINER-------  */
+
+.title-introducao-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.title-introducao-container h1{
+    font-size: 80px;
+    width: 60%;
+    text-align: center;
+}
+
+
+/* ------TEXT-INTRODUCAO-CONTAINER-------   */
+
+.text-introducao-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.text-introducao-container p{
+    font-size: 18px;
+    width: 40%;
+    margin-top: 20px;
+    text-align: center;
 }
 
 /* ----------------RESPONSIVO---------------- */
 
 @media screen and (max-width: 768px){
-    .text-container{
-        position: absolute;
-        top: 10vh;
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        background-color: rgb(18, 18, 18);
-        display: flex;
-        flex-direction: column;
-        padding: 10px 0;
-        box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-        height: 0; /* começar fechado */
-        overflow: hidden;
-        opacity: 0; /* invisível */
-        transition: all 0.5s ease; /* animação suave */
+  .text-container{
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(18, 18, 18);
+    display: none; /* escondido por padrão */
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .text-container a{
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .text-container.open{
+    display: flex; /* abre o menu */
+  }
+
+  .menu-toggle{
+    display: block;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .contato-container{
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 430px) {
+
+    .introducao-container {
+        margin-top: 10vh;
     }
 
-    /* links */
-    .text-container a{
-        color: white;
-        font-size: 20px;
-        margin: 10px 0;
+    /* ------TITLE-INTRODUCAO-CONTAINER-------  */
+
+
+    .title-introducao-container h1{
+        font-size: 40px;
+        width: 80%;        text-align: center;
     }
 
-    /* quando abrir o menu */
-    .text-container.open{
-        height: 90vh; /* altura máxima do menu */
-        opacity: 1; /* visível */
-    }
+    /* ------TEXT-INTRODUCAO-CONTAINER-------   */
 
-    .menu-toggle{
-        display: block;
-        color: white;
-        padding: 10px;
-    }
 
-    .contato-container{
-        display: none;
+    .text-introducao-container p{
+        font-size: 18px;
+        width: 60%;
+        margin-top: 20px;
+        text-align: center;
     }
+    
 }
