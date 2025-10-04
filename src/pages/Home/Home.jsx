@@ -1,6 +1,12 @@
 import { useState } from 'react';
 import './Home.css'
-import logo from '../assets/logo.png'
+// import logo from '../../assets/logo.png';
+// import logo_branca from '../../assets/logo_branca.png';
+import logo_branca_sem_fundo from '../../assets/logo_branca_sem_fundo.png';
+import 'aos/dist/aos.css'; // CSS do AOS
+import AOS from 'aos';
+
+AOS.init(); // inicializa o AOS sem duração global
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,18 +16,20 @@ function Home() {
       <header>
         <nav>
           <div className="logo-container">
-            <img src={logo} alt="Cine10 Logo" className="logo" />
+            <img src={logo_branca_sem_fundo} alt="Cine10 Logo" className="logo" />
           </div>
 
           <div className={`text-container ${menuOpen ? 'open' : ''}`}>
-            <a href="">Sobre</a>
             <a href="">Clássicos</a>
             <a href="">Filmes</a>
             <a href="">Séries</a>
           </div>
 
+
           <div className='contato-container'>
-            <i className="bi bi-chat-left-text"></i>
+            <button>
+              <i className="bi bi-chat-left-text"></i>
+            </button>
           </div>
 
           <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>

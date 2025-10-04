@@ -7,7 +7,7 @@
 /* ------------HEADER---------------- */
 
 header{
-    background-color: white;
+    background-color: black;
     height: 10vh;
     width: 100vw;
 }
@@ -17,10 +17,9 @@ header{
 nav{
     height: 100%;
     width: 100%;
-    background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     position: relative;
 }
@@ -31,10 +30,11 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 .logo-container img{
-    height: 15vh;
+    height: 13vh;
     width: auto;
 }
 
@@ -50,12 +50,13 @@ nav{
 .text-container a{
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    opacity: 50%;
     transition: all .35s ease-in-out;
 }
 
 .text-container a:hover{
-    opacity: 70%;
+    opacity: 100%;
 }
 
 /* -------CONTATO-CONTAINER-------------- */
@@ -64,6 +65,20 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+}
+
+.contato-container button{
+    height: 5vh;
+    width: 4vw;
+    border-radius: 20px;
+    background-color: black;
+    border: 1px solid white;
+    transition: all .45s ease-in-out;
+}
+
+.contato-container button:hover{
+    opacity: 60%;
 }
 
 .contato-container i{
@@ -72,17 +87,12 @@ nav{
     justify-content: center;
     font-size: 18px;
     color: white;
-    background-color: black;
-    height: 5vh;
-    width: 3vw;
-    border-radius: 10px;
     transition: all .35s ease-in-out;
 }
 
 .contato-container i:hover{
-    background-color: white;
-    color: black;
     cursor: pointer;
+    color: white;
 }
 
 /* --------MENU TOGGLE (HAMBURGER)---------- */
@@ -109,23 +119,34 @@ main{
         left: 0;
         width: 100%;
         flex-direction: column;
-        background-color: white;
-        display: none;
+        background-color: rgb(18, 18, 18);
+        display: flex;
+        flex-direction: column;
         padding: 10px 0;
         box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        height: 0; /* começar fechado */
+        overflow: hidden;
+        opacity: 0; /* invisível */
+        transition: all 0.5s ease; /* animação suave */
     }
 
-    .text-container.open{
-        display: flex;
-    }
-
+    /* links */
     .text-container a{
+        color: white;
+        font-size: 20px;
         margin: 10px 0;
+    }
+
+    /* quando abrir o menu */
+    .text-container.open{
+        height: 90vh; /* altura máxima do menu */
+        opacity: 1; /* visível */
     }
 
     .menu-toggle{
         display: block;
-        color: black;
+        color: white;
+        padding: 10px;
     }
 
     .contato-container{
