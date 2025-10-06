@@ -114,7 +114,7 @@ nav {
 
 
 main {
-  margin-top: 40vh;
+  margin-top: 20vh;
   background-color: black;
   height: 170vh;
   width: 100vw;
@@ -156,17 +156,63 @@ main {
 
 .text-introducao-container p {
   font-size: 20px;
-  width: 60%;
+  width: 50%;
   text-align: center;
   margin-top: 30px;
   line-height: 1.5;
+  opacity: 60%;
 }
 
 
-/* --------------CLASSICOS-H1---------------- */
+/* -----------BTN-INTRODUCAO-CONTAINER--------- */
+
+.btn-introducao-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 3vh;
+}
+
+.btn-introducao-container #btn-sobre {
+  height: 6vh;
+  width: 13vw;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: all 0.45s ease-in-out;
+}
+
+.btn-introducao-container #btn-sobre:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+  background-color: transparent;
+  color: white;
+}
+
+.btn-introducao-container #btn-login {
+  height: 6vh;
+  width: 13vw;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 15px;
+  transition: all 0.45s ease-in-out;
+}
+
+.btn-introducao-container #btn-login:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+  background-color: white;
+  color: black;
+}
 
 
-#classicos-h1 {
+/* --------------TOP-10-H1---------------- */
+
+
+#top-10-h1 {
   color: white;
   font-size: 18px;
   text-align: start;
@@ -175,7 +221,7 @@ main {
   opacity: 100%;
 }
 
-#classicos-i {
+#top-10-i {
   margin-left: 1vh;
 }
 
@@ -184,7 +230,7 @@ main {
 
 
 .container-top-10-principal {
-  margin-top: 2vh;
+  margin-top: 0vh;
   /* margin-left: 5vh; */
   display: flex;
   align-items: start;
@@ -300,19 +346,22 @@ main {
 
 .carrossel-top-10 {
   display: flex;
-  overflow-x: auto; /* ativa scroll horizontal */
+  overflow-x: auto;
+  /* ativa scroll horizontal */
   /* padding: 20px 5vh; */
   scroll-behavior: smooth;
 }
 
 .carrossel-top-10::-webkit-scrollbar {
-  display: none; /* esconde a barra de rolagem */
+  display: none;
+  /* esconde a barra de rolagem */
 }
 
 /* Ajuste dos cards */
 .container-top-10 {
   margin-top: 2vh;
-  flex: 0 0 20vw; /* largura fixa de 300px, não encolhe */
+  flex: 0 0 20vw;
+  /* largura fixa de 300px, não encolhe */
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -383,6 +432,14 @@ main {
     animation-delay: 0.3s;
   }
 
+  .text-container.open a:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .text-container.open a:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
   @keyframes fadeInLinks {
     to {
       opacity: 1;
@@ -415,6 +472,25 @@ main {
     margin-top: 20px;
   }
 
+  #top-10-h1 {
+    font-size: 16px;
+    margin-left: 2vh;
+  }
+
+  /* --------------BTN-INTRODUCAO-CONTAINER----------------  */
+
+  .btn-introducao-container #btn-sobre {
+    height: 5vh;
+    width: 27vw;
+    font-size: 14px;
+  }
+
+  .btn-introducao-container #btn-login {
+    height: 5vh;
+    width: 27vw;
+    font-size: 14px;
+  }
+
   /* -------------------CARROSEL------------------ */
 
   .container-top-10 {
@@ -424,7 +500,7 @@ main {
 
   /* -------------IMG-ASSISTIR---------------- */
 
-  .img-assistir img{
+  .img-assistir img {
     height: 4vh;
     width: auto;
   }

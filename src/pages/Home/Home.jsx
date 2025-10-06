@@ -60,7 +60,14 @@ function Home() {
           </div>
 
           <div className="text-introducao-container" data-aos="fade-up" data-aos-duration="1500">
-            <p>As listas mais completas, as críticas mais confiáveis, e os clássicos que você não pode perder.</p>
+            <p>As listas mais completas, as críticas mais confiáveis e os clássicos que todo amante do cinema precisa conhecer.</p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1500">
+            <div className='btn-introducao-container'>
+              <button id="btn-sobre">Leia sobre nós</button>
+              <button id="btn-login">Cadastro</button>
+            </div>
           </div>
 
         </section>
@@ -69,7 +76,7 @@ function Home() {
         {/* --------------------CONTAINERS-CLASSICOS---------------------- */}
 
 
-        <h1 id='classicos-h1' data-aos="fade-up" data-aos-duration="1000">Os 10 maiores clássicos</h1>
+        <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="1000">Os 10 maiores clássicos</h1>
 
         <section className="container-top-10-principal">
 
