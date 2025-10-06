@@ -7,7 +7,9 @@ import logo_branca_sem_fundo from '../../assets/logo_branca_sem_fundo.png';
 import cidadaokane from '../../assets/cidadao-kane.jpg';
 import oldflix from '../../assets/oldflix-removebg-preview.png';
 import primevideo from '../../assets/prime-video-logo-preta.jpg';
-import googleplay from '../../assets/google-play-bg.png';
+import casablanca from '../../assets/casablanca.webp';
+import hbomax from '../../assets/hbomax.jpg';
+import appletv from '../../assets/appletv.webp';
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -85,7 +87,9 @@ function Home() {
             {/* CARD 1 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1200">
               <div className='container-top-10-imagem'>
-                <img src={cidadaokane} alt="Cidadão Kane" />
+                <a href="https://www.youtube.com/watch?v=8dxh3lwdOFw" target='_blank'>
+                  <img src={cidadaokane} alt="Cidadão Kane" />
+                </a>
               </div>
               <div className='container-top-10-texto'>
                 <h1>1 - Cidadão Kane (1941)</h1>
@@ -104,17 +108,22 @@ function Home() {
             {/* CARD 2 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1400">
               <div className='container-top-10-imagem'>
-                <img src={cidadaokane} alt="Clássico 2" />
+                <a href="https://www.youtube.com/watch?v=MF7JH_54d8c" target='_blank'>
+                  <img src={casablanca} alt="Clássico 2" />
+                </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>2 - Clássico 2</h1>
+                <h1>2 - Casablanca (1942)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://oldflix.com.br/" target='_blank'>
-                    <img src={oldflix} alt="Oldflix" />
-                  </a>
                   <a href="https://www.primevideo.com/" target='_blank'>
                     <img src={primevideo} alt="Prime Video" />
+                  </a>
+                  <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
+                    <img src={hbomax} alt="Prime Video" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/casablanca/umc.cmc.6i7o1550iyqet6xexqniqyp4k?at=1000l3V2&ct=microsoft_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A582668909" target='_blank'>
+                    <img src={appletv} alt="Prime Video" />
                   </a>
                 </div>
               </div>
