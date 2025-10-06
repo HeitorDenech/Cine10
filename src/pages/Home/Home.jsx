@@ -4,12 +4,25 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 
 import logo_branca_sem_fundo from '../../assets/logo_branca_sem_fundo.png';
-import cidadaokane from '../../assets/cidadao-kane.jpg';
+
+// ----------PLATAFORMAS---------------
+
 import oldflix from '../../assets/oldflix-removebg-preview.png';
 import primevideo from '../../assets/prime-video-logo-preta.jpg';
-import casablanca from '../../assets/casablanca.webp';
 import hbomax from '../../assets/hbomax.jpg';
 import appletv from '../../assets/appletv.webp';
+import netflix from '../../assets/netflix.webp';
+import globoplay from '../../assets/globoplay.jpg'
+
+// ----------CLASSICOS---------------
+
+import cidadaokane from '../../assets/cidadao-kane.jpg';
+import casablanca from '../../assets/casablanca.webp';
+import poderosochefao from '../../assets/poderosochefao.webp';
+import ventolevou from '../../assets/ventolevou.jpg'
+import psicose from '../../assets/psicose.jpg'
+import odisseianoespaco from '../../assets/odisseianoespaco.webp'
+import cantandonachuva from '../../assets/cantandonachuva.webp'
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -116,7 +129,7 @@ function Home() {
                 <h1>2 - Casablanca (1942)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://www.primevideo.com/" target='_blank'>
+                  <a href="https://www.primevideo.com/-/pt/detail/Casablanca/0RVLUAB5A9Y0HQGESYBUOGU5SD?utm_source=chatgpt.com/" target='_blank'>
                     <img src={primevideo} alt="Prime Video" />
                   </a>
                   <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
@@ -132,17 +145,22 @@ function Home() {
             {/* CARD 3 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1600">
               <div className='container-top-10-imagem'>
-                <img src={cidadaokane} alt="Clássico 3" />
+                <a href="https://www.youtube.com/watch?v=SaHZHU-44XA" target='_blank'>
+                  <img src={poderosochefao} alt="Clássico 3" />
+                </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>3 - Clássico 3</h1>
+                <h1>3 - O poderoso chefão (1972)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://oldflix.com.br/" target='_blank'>
-                    <img src={oldflix} alt="Oldflix" />
+                    <img src={netflix} alt="Oldflix" />
                   </a>
-                  <a href="https://www.primevideo.com/" target='_blank'>
+                  <a href="https://www.primevideo.com/-/pt/detail/O-Poderoso-Chef%C3%A3o/0L45IM106OK0SH586P7WW9F96I?utm_source=chatgpt.com" target='_blank'>
                     <img src={primevideo} alt="Prime Video" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/o-poderoso-chefao/umc.cmc.3ew9fykdnpfaq9t2jq5da011c" target='_blank'>
+                    <img src={appletv} alt="Apple TV" />
                   </a>
                 </div>
               </div>
@@ -151,17 +169,19 @@ function Home() {
             {/* CARD 4 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <img src={cidadaokane} alt="Clássico 4" />
+                <a href="https://www.youtube.com/watch?v=KxYVSblvWQk" target='_blank'>
+                  <img src={ventolevou} alt="Clássico 4" />
+                </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>4 - Clássico 4</h1>
+                <h1>4 - ... E o vento levou</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://oldflix.com.br/" target='_blank'>
-                    <img src={oldflix} alt="Oldflix" />
-                  </a>
-                  <a href="https://www.primevideo.com/" target='_blank'>
+                  <a href="https://www.primevideo.com/-/pt/detail/E-o-Vento-Levou/0NHEKJ1RE0VB21OE2XXWIBR00N?utm_source=chatgpt.com" target='_blank'>
                     <img src={primevideo} alt="Prime Video" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/e-o-vento-levou/umc.cmc.yrquc45v8733x85h5klgxbeh" target='_blank'>
+                    <img src={appletv} alt="Oldflix" />
                   </a>
                 </div>
               </div>
@@ -170,17 +190,22 @@ function Home() {
             {/* CARD 5 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <img src={cidadaokane} alt="Clássico 4" />
+                <a href="https://www.youtube.com/watch?v=BwVKSGu8wEA" target='_blank'>
+                  <img src={psicose} alt="Clássico 4" />
+                </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>5 - Clássico 4</h1>
+                <h1>5 - Psicose (1960)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://oldflix.com.br/" target='_blank'>
                     <img src={oldflix} alt="Oldflix" />
                   </a>
-                  <a href="https://www.primevideo.com/" target='_blank'>
-                    <img src={primevideo} alt="Prime Video" />
+                  <a href="https://globoplay.globo.com/psicose/t/6TsJTJjf16/?utm_source=chatgpt.com" target='_blank'>
+                    <img src={globoplay} alt="Globo Play" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/psicose/umc.cmc.4v3c9578iqv2wvizz23izdkx3" target='_blank'>
+                    <img src={appletv} alt="Apple TV" />
                   </a>
                 </div>
               </div>
@@ -189,17 +214,19 @@ function Home() {
             {/* CARD 6 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <img src={cidadaokane} alt="Clássico 4" />
+                <a href="" target='_blank'>
+                  <img src={odisseianoespaco} alt="Clássico 4" />
+                </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>6 - Clássico 4</h1>
+                <h1>6 - 2001: Uma odisseia no espaço (1968) </h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://oldflix.com.br/" target='_blank'>
-                    <img src={oldflix} alt="Oldflix" />
+                    <img src={hbomax} alt="Oldflix" />
                   </a>
                   <a href="https://www.primevideo.com/" target='_blank'>
-                    <img src={primevideo} alt="Prime Video" />
+                    <img src={appletv} alt="Prime Video" />
                   </a>
                 </div>
               </div>
@@ -208,18 +235,15 @@ function Home() {
             {/* CARD 7 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <img src={cidadaokane} alt="Clássico 4" />
+                <a href="" target='_blank'>
+                  <img src={cantandonachuva} alt="Clássico 4" />
+                </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>7 - Clássico 4</h1>
+                <h1>7 - Cantando na chuva (1952)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://oldflix.com.br/" target='_blank'>
-                    <img src={oldflix} alt="Oldflix" />
-                  </a>
-                  <a href="https://www.primevideo.com/" target='_blank'>
-                    <img src={primevideo} alt="Prime Video" />
-                  </a>
+                    <p>Plataforma não encontrada</p>
                 </div>
               </div>
             </div>
@@ -227,10 +251,12 @@ function Home() {
             {/* CARD 8 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <img src={cidadaokane} alt="Clássico 4" />
+                <a href="" target='_blank'>
+                  <img src={cantandonachuva} alt="Clássico 4" />
+                </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>8 - Clássico 4</h1>
+                <h1>8 - A lista de Schindler (1993)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://oldflix.com.br/" target='_blank'>
@@ -246,10 +272,12 @@ function Home() {
             {/* CARD 9 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <img src={cidadaokane} alt="Clássico 4" />
+                <a href="" target='_blank'>
+                  <img src={cantandonachuva} alt="Clássico 4" />
+                </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>9 - Clássico 4</h1>
+                <h1>9 - Pulp Fiction (1994) 4</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://oldflix.com.br/" target='_blank'>
@@ -265,10 +293,12 @@ function Home() {
             {/* CARD 10 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <img src={cidadaokane} alt="Clássico 4" />
+                <a href="" target='_blank'>
+                  <img src={cantandonachuva} alt="Clássico 4" />
+                </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>10 - Clássico 4</h1>
+                <h1>10 - Star Wars: Episódio IV - Uma Nova Esperança (1977)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://oldflix.com.br/" target='_blank'>
