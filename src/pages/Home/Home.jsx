@@ -13,6 +13,7 @@ import hbomax from '../../assets/hbomax.jpg';
 import appletv from '../../assets/appletv.webp';
 import netflix from '../../assets/netflix.webp';
 import globoplay from '../../assets/globoplay.jpg'
+import disney from '../../assets/disney.webp'
 
 // ----------CLASSICOS---------------
 
@@ -23,6 +24,10 @@ import ventolevou from '../../assets/ventolevou.jpg'
 import psicose from '../../assets/psicose.jpg'
 import odisseianoespaco from '../../assets/odisseianoespaco.webp'
 import cantandonachuva from '../../assets/cantandonachuva.webp'
+import listadechindler from '../../assets/listadeschindler.webp'
+import pulpfiction from '../../assets/pulpfiction.jpg'
+import startwarsiv from '../../assets/starwarsiv.jpg'
+
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -214,7 +219,7 @@ function Home() {
             {/* CARD 6 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <a href="" target='_blank'>
+                <a href="https://www.youtube.com/watch?v=7E9CD3Hucws" target='_blank'>
                   <img src={odisseianoespaco} alt="Clássico 4" />
                 </a>
               </div>
@@ -222,10 +227,10 @@ function Home() {
                 <h1>6 - 2001: Uma odisseia no espaço (1968) </h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://oldflix.com.br/" target='_blank'>
+                  <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
                     <img src={hbomax} alt="Oldflix" />
                   </a>
-                  <a href="https://www.primevideo.com/" target='_blank'>
+                  <a href="https://tv.apple.com/br/movie/2001-uma-odisseia-no-espaco/umc.cmc.1au04fbnh3q5i2p6sy0ik4rkz" target='_blank'>
                     <img src={appletv} alt="Prime Video" />
                   </a>
                 </div>
@@ -235,7 +240,7 @@ function Home() {
             {/* CARD 7 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <a href="" target='_blank'>
+                <a href="https://www.youtube.com/watch?v=s7z_NgOTQu8" target='_blank'>
                   <img src={cantandonachuva} alt="Clássico 4" />
                 </a>
               </div>
@@ -243,7 +248,12 @@ function Home() {
                 <h1>7 - Cantando na chuva (1952)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                    <p>Plataforma não encontrada</p>
+                  <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
+                    <img src={hbomax} alt="Oldflix" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/cantando-na-chuva/umc.cmc.4y40uv6tngxx1wfrh78p8yzft" target='_blank'>
+                    <img src={appletv} alt="Prime Video" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -251,8 +261,8 @@ function Home() {
             {/* CARD 8 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <a href="" target='_blank'>
-                  <img src={cantandonachuva} alt="Clássico 4" />
+                <a href="https://www.youtube.com/watch?v=GAf0nGq_FXQ" target='_blank'>
+                  <img src={listadechindler} alt="Clássico 4" />
                 </a>
               </div>
               <div className='container-top-10-texto'>
@@ -260,10 +270,10 @@ function Home() {
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://oldflix.com.br/" target='_blank'>
-                    <img src={oldflix} alt="Oldflix" />
+                    <img src={netflix} alt="Oldflix" />
                   </a>
-                  <a href="https://www.primevideo.com/" target='_blank'>
-                    <img src={primevideo} alt="Prime Video" />
+                  <a href="https://tv.apple.com/us/movie/schindlers-list/umc.cmc.53hzoo3z0ufjb6wsxgspp2jlf" target='_blank'>
+                    <img src={appletv} alt="Prime Video" />
                   </a>
                 </div>
               </div>
@@ -272,8 +282,8 @@ function Home() {
             {/* CARD 9 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <a href="" target='_blank'>
-                  <img src={cantandonachuva} alt="Clássico 4" />
+                <a href="https://www.youtube.com/watch?v=s7EdQ4FqbhY" target='_blank'>
+                  <img src={pulpfiction} alt="Clássico 4" />
                 </a>
               </div>
               <div className='container-top-10-texto'>
@@ -281,10 +291,10 @@ function Home() {
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://oldflix.com.br/" target='_blank'>
-                    <img src={oldflix} alt="Oldflix" />
+                    <img src={netflix} alt="Oldflix" />
                   </a>
-                  <a href="https://www.primevideo.com/" target='_blank'>
-                    <img src={primevideo} alt="Prime Video" />
+                  <a href="https://tv.apple.com/br/movie/pulp-fiction-tempo-de-violencia/umc.cmc.1hfvw2p79f9qdeydow8nmrn7t" target='_blank'>
+                    <img src={appletv} alt="Prime Video" />
                   </a>
                 </div>
               </div>
@@ -293,19 +303,19 @@ function Home() {
             {/* CARD 10 */}
             <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
               <div className='container-top-10-imagem'>
-                <a href="" target='_blank'>
-                  <img src={cantandonachuva} alt="Clássico 4" />
+                <a href="https://www.youtube.com/watch?v=vZ734NWnAHA" target='_blank'>
+                  <img src={startwarsiv} alt="Clássico 4" />
                 </a>
               </div>
               <div className='container-top-10-texto'>
                 <h1>10 - Star Wars: Episódio IV - Uma Nova Esperança (1977)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://oldflix.com.br/" target='_blank'>
-                    <img src={oldflix} alt="Oldflix" />
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-9a280e53-fcc0-4e17-a02c-b1f40913eb0b?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Oldflix" />
                   </a>
-                  <a href="https://www.primevideo.com/" target='_blank'>
-                    <img src={primevideo} alt="Prime Video" />
+                  <a href="https://tv.apple.com/pt/movie/star-wars-uma-nova-esperanca/umc.cmc.2o65qvudvwq1l1rqjlbyfszwn" target='_blank'>
+                    <img src={appletv} alt="Prime Video" />
                   </a>
                 </div>
               </div>
