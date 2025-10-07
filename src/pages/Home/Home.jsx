@@ -91,9 +91,11 @@ function Home() {
         </section>
 
         {/* --------------------CONTAINER DOS CLÁSSICOS---------------------- */}
-        <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="1000">Os 10 maiores clássicos</h1>
+        <div id="classicos">
+          <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="1000">Os 10 maiores clássicos</h1>
+        </div>
 
-        <section className="container-top-10-principal" id="classicos">
+        <section className="container-top-10-principal">
           {/* Botão seta esquerda */}
           <button className="seta seta-esquerda" onClick={() => rolar('esquerda')}>
             ❮

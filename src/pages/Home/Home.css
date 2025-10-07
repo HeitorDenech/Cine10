@@ -8,6 +8,7 @@
 
 body,
 html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
   /* bloqueia scroll horizontal no body e html */
 }
@@ -470,7 +471,7 @@ main {
 
   .seta{
     top: 48%;
-    padding: 11rem 2rem;
+    padding: 6rem 1rem;
   }
 }
 
@@ -506,6 +507,7 @@ main {
 
   .seta{
     top: 50%;
+    padding: 4rem 1rem;
   }
   
 }
@@ -541,7 +543,7 @@ main {
 
   .seta{
     top: 52%;
-    padding: 8rem 1.5rem;
+    padding: 4rem 1rem;
   }
 
   .container-top-10{
@@ -582,11 +584,11 @@ main {
 
   .seta{
     top: 60%;
-    padding: 5rem 1rem;
+    padding: 4rem 1rem;
   }
 
   .container-top-10{
-    flex: 0 0 23vw;
+    flex: 0 0 22vw;
   }
   
 }
@@ -622,7 +624,7 @@ main {
 
   .seta{
     top: 56%;
-    padding: 6rem 1rem;
+    padding: 4rem 1rem;
   }
 
   .container-top-10{
@@ -635,7 +637,7 @@ main {
 
   .seta{
     top: 54%;
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
   }
 
   .container-top-10{
@@ -646,6 +648,7 @@ main {
 @media screen and (min-width:800px) and (max-width: 1000px){
   .seta{
     top: 52%;
+    padding: 3rem 1rem;
   }
 
   .container-top-10{
