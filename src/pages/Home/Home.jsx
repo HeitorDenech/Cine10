@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './Home.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
@@ -6,75 +6,74 @@ import AOS from 'aos';
 import logo_branca_sem_fundo from '../../assets/logo_branca_sem_fundo.png';
 
 // ----------PLATAFORMAS---------------
-
 import oldflix from '../../assets/oldflix-removebg-preview.png';
 import primevideo from '../../assets/prime-video-logo-preta.jpg';
 import hbomax from '../../assets/hbomax.jpg';
 import appletv from '../../assets/appletv.webp';
 import netflix from '../../assets/netflix.webp';
-import globoplay from '../../assets/globoplay.jpg'
-import disney from '../../assets/disney.webp'
+import globoplay from '../../assets/globoplay.jpg';
+import disney from '../../assets/disney.webp';
 
 // ----------CLASSICOS---------------
-
 import cidadaokane from '../../assets/cidadao-kane.jpg';
 import casablanca from '../../assets/casablanca.webp';
 import poderosochefao from '../../assets/poderosochefao.webp';
-import ventolevou from '../../assets/ventolevou.jpg'
-import psicose from '../../assets/psicose.jpg'
-import odisseianoespaco from '../../assets/odisseianoespaco.webp'
-import cantandonachuva from '../../assets/cantandonachuva.webp'
-import listadechindler from '../../assets/listadeschindler.webp'
-import pulpfiction from '../../assets/pulpfiction.jpg'
-import startwarsiv from '../../assets/starwarsiv.jpg'
-
+import ventolevou from '../../assets/ventolevou.jpg';
+import psicose from '../../assets/psicose.jpg';
+import odisseianoespaco from '../../assets/odisseianoespaco.webp';
+import cantandonachuva from '../../assets/cantandonachuva.webp';
+import listadechindler from '../../assets/listadeschindler.webp';
+import pulpfiction from '../../assets/pulpfiction.jpg';
+import startwarsiv from '../../assets/starwarsiv.jpg';
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const carrosselRef = useRef(null);
 
   useEffect(() => {
-    AOS.init({
-      once: true, // anima só uma vez
-    });
+    AOS.init({ once: true });
   }, []);
+
+  const rolar = (direcao) => {
+    const largura = carrosselRef.current.clientWidth;
+    if (direcao === 'esquerda') {
+      carrosselRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
+    } else {
+      carrosselRef.current.scrollBy({ left: largura, behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
       <header>
         <nav>
-          {/* Logo */}
           <div className="logo-container">
-            {/* <img src={logo_branca_sem_fundo} alt="Cine10 Logo" className="logo" /> */}
             <h1>Cine10</h1>
           </div>
 
-          {/* Links da navbar */}
           <div className={`text-container ${menuOpen ? 'open' : ''}`}>
-            <a href="#">Clássicos</a>
+            <a href="#classicos">Clássicos</a>
             <a href="#">Bilheterias</a>
             <a href="#">Oscars</a>
             <a href="#">Melhores avaliados</a>
             <a href="#">Séries</a>
           </div>
 
-          {/* Botão de contato */}
           <div className="contato-container">
             <button>
               <i className="bi bi-chat-left-text"></i>
             </button>
           </div>
 
-          {/* Ícone de menu mobile */}
           <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
             <i className="bi bi-list"></i>
           </div>
+
         </nav>
       </header>
 
       <main>
-
         <section className="introducao-container">
-
           <div className="title-introducao-container" data-aos="fade-up" data-aos-duration="1000">
             <h1>Explore, aproveite e inspire-se.</h1>
           </div>
@@ -89,21 +88,21 @@ function Home() {
               <button id="btn-login">Cadastro</button>
             </div>
           </div>
-
         </section>
 
-
-        {/* --------------------CONTAINERS-CLASSICOS---------------------- */}
-
-
+        {/* --------------------CONTAINER DOS CLÁSSICOS---------------------- */}
         <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="1000">Os 10 maiores clássicos</h1>
 
-        <section className="container-top-10-principal">
+        <section className="container-top-10-principal" id="classicos">
+          {/* Botão seta esquerda */}
+          <button className="seta seta-esquerda" onClick={() => rolar('esquerda')}>
+            ❮
+          </button>
 
-          <div className="carrossel-top-10">
+          <div className="carrossel-top-10" ref={carrosselRef}>
 
             {/* CARD 1 */}
-            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1200">
+            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1400">
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=8dxh3lwdOFw" target='_blank'>
                   <img src={cidadaokane} alt="Cidadão Kane" />
@@ -158,7 +157,7 @@ function Home() {
                 <h1>3 - O poderoso chefão (1972)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://oldflix.com.br/" target='_blank'>
+                  <a href="https://www.netflix.com/search?q=o%20poderoso%20chef%C3%A3o&jbv=60011152" target='_blank'>
                     <img src={netflix} alt="Oldflix" />
                   </a>
                   <a href="https://www.primevideo.com/-/pt/detail/O-Poderoso-Chef%C3%A3o/0L45IM106OK0SH586P7WW9F96I?utm_source=chatgpt.com" target='_blank'>
@@ -269,9 +268,6 @@ function Home() {
                 <h1>8 - A lista de Schindler (1993)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://oldflix.com.br/" target='_blank'>
-                    <img src={netflix} alt="Oldflix" />
-                  </a>
                   <a href="https://tv.apple.com/us/movie/schindlers-list/umc.cmc.53hzoo3z0ufjb6wsxgspp2jlf" target='_blank'>
                     <img src={appletv} alt="Prime Video" />
                   </a>
@@ -290,9 +286,6 @@ function Home() {
                 <h1>9 - Pulp Fiction (1994) 4</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://oldflix.com.br/" target='_blank'>
-                    <img src={netflix} alt="Oldflix" />
-                  </a>
                   <a href="https://tv.apple.com/br/movie/pulp-fiction-tempo-de-violencia/umc.cmc.1hfvw2p79f9qdeydow8nmrn7t" target='_blank'>
                     <img src={appletv} alt="Prime Video" />
                   </a>
@@ -320,9 +313,12 @@ function Home() {
                 </div>
               </div>
             </div>
-
           </div>
 
+          {/* Botão seta direita */}
+          <button className="seta seta-direita" onClick={() => rolar('direita')}>
+            ❯
+          </button>
         </section>
 
 
