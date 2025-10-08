@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: black;
   max-width: 100vw;
+  background-color: black;
 }
 
 body,
@@ -38,6 +38,7 @@ nav {
   position: relative;
   z-index: 1001;
   gap: 50px;
+  background-color: black;
 }
 
 /* -----------LOGO-CONTAINER----------- */
@@ -123,7 +124,7 @@ nav {
 main {
   margin-top: 5vh;
   background-color: black;
-  height: 170vh;
+  height: 200vh;
   width: 100vw;
   position: relative;
   z-index: 1;
@@ -255,8 +256,8 @@ main {
 
 
 .container-top-10 {
-  width: 25%;
-  height: 70%;
+  /* width: 25%; */
+  /* height: 70%; */
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -265,11 +266,11 @@ main {
 }
 
 
-/* ------CONTAINER-top-10-IMAGEM--------- */
+/* ------CONTAINER-TOP-10-IMAGEM--------- */
 
 
 .container-top-10-imagem {
-  height: 35vh;
+  height: 40vh;
   width: auto;
   border-radius: 20px;
 }
@@ -281,6 +282,7 @@ main {
   transform: scale(1);
   transition: all 0.45s ease-in-out;
   border: 1px solid rgb(69, 68, 68);
+  z-index: 5;
 }
 
 .container-top-10-imagem img:hover {
@@ -362,6 +364,7 @@ main {
   /* scroll horizontal natural */
   scroll-behavior: smooth;
   padding: 20px 2vh;
+  /* background-color: blue; */
 }
 
 .carrossel-top-10::-webkit-scrollbar {
@@ -380,12 +383,73 @@ main {
 }
 
 
+/* -----------------BILHETERIAS----------------- */
+
+#top-10-h1-bilheterias{
+  color: white;
+  font-size: 18px;
+  text-align: start;
+  margin-top: -20vh;
+  margin-left: 5vh;
+  opacity: 100%;
+  /* background-color: red; */
+}
+
+#bilheterias {
+  position: relative;
+  z-index: 2;
+  /* background-color: red; */
+  height: auto;
+}
+
+#bilheterias .container-top-10-principal {
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+#bilheterias img {
+  display: block;
+  z-index: 3;
+  position: relative;
+}
+
+.seta-bilheterias{
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  /* box-shadow: 1px 1px 3px rgba(251, 251, 251, 0.4); */
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 4rem 0.8rem;
+  transition: all .55s ease-in-out;
+  z-index: 10;
+}
+
+.seta-bilheterias:hover {
+  background-color: rgba(107, 107, 107, 0.5);
+}
+
+.seta-esquerda-bilheterias {
+  /* left: 10px; */
+  border-radius: 0px 20px 20px 0px;
+}
+
+.seta-direita-bilheterias {
+  right: 10px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+
 /* -------------------------------- SETAS ------------------------------ */
 
 
 .seta {
   position: absolute;
-  top: 60%;
+  /* top: 60%; */
   transform: translateY(-50%);
   background-color: transparent;
   /* box-shadow: 1px 1px 3px rgba(251, 251, 251, 0.4); */
@@ -417,11 +481,11 @@ main {
 
 @media screen and (min-width: 1900px) and (max-width: 2560px) {
 
-  .logo-container h1{
+  .logo-container h1 {
     font-size: 30px;
   }
 
-  .contato-container i{
+  .contato-container i {
     font-size: 23px;
   }
 
@@ -430,12 +494,12 @@ main {
     width: 60%;
   }
 
-  .text-introducao-container p{
+  .text-introducao-container p {
     font-size: 30px;
     width: 40%;
   }
 
-  #top-10-h1{
+  #top-10-h1 {
     font-size: 26px;
   }
 
@@ -455,12 +519,12 @@ main {
     font-size: 22px;
   }
 
-  .container-top-10-texto h1{
+  .container-top-10-texto h1 {
     font-size: 26px;
     height: 7vh;
   }
 
-  .container-top-10-texto p{
+  .container-top-10-texto p {
     font-size: 22px;
   }
 
@@ -469,7 +533,7 @@ main {
     width: auto;
   }
 
-  .seta{
+  .seta {
     top: 48%;
     padding: 6rem 1rem;
   }
@@ -496,20 +560,20 @@ main {
     font-size: 22px;
   }
 
-  .container-top-10-texto h1{
+  .container-top-10-texto h1 {
     font-size: 22px;
     height: 7vh;
   }
 
-  .container-top-10-texto p{
+  .container-top-10-texto p {
     font-size: 17px;
   }
 
-  .seta{
+  .seta {
     top: 50%;
     padding: 4rem 1rem;
   }
-  
+
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1439px) {
@@ -532,24 +596,24 @@ main {
     font-size: 20px;
   }
 
-  .container-top-10-texto h1{
+  .container-top-10-texto h1 {
     font-size: 20px;
     height: 7vh;
   }
 
-  .container-top-10-texto p{
+  .container-top-10-texto p {
     font-size: 15px;
   }
 
-  .seta{
+  .seta {
     top: 52%;
     padding: 4rem 1rem;
   }
 
-  .container-top-10{
+  .container-top-10 {
     flex: 0 0 22vw;
   }
-  
+
 }
 
 
@@ -573,24 +637,29 @@ main {
     font-size: 18px;
   }
 
-  .container-top-10-texto h1{
+  .container-top-10-texto h1 {
     font-size: 17px;
     height: 7vh;
   }
 
-  .container-top-10-texto p{
+  .container-top-10-texto p {
     font-size: 14px;
   }
 
-  .seta{
-    top: 60%;
+  .seta {
+    top: 50%;
     padding: 4rem 1rem;
   }
 
-  .container-top-10{
-    flex: 0 0 22vw;
+  .seta-bilheterias{
+    top: 50%;
+    padding: 4rem 1rem;
   }
-  
+
+  .container-top-10 {
+    flex: 0 0 20vw;
+  }
+
 }
 
 @media screen and (min-width: 1150px) and (max-width: 1249px) {
@@ -613,45 +682,45 @@ main {
     font-size: 16px;
   }
 
-  .container-top-10-texto h1{
+  .container-top-10-texto h1 {
     font-size: 16px;
     height: 7vh;
   }
 
-  .container-top-10-texto p{
+  .container-top-10-texto p {
     font-size: 14px;
   }
 
-  .seta{
+  .seta {
     top: 56%;
     padding: 4rem 1rem;
   }
 
-  .container-top-10{
+  .container-top-10 {
     flex: 0 0 24vw;
   }
-  
+
 }
 
-@media screen and (min-width:1001px) and (max-width: 1149px){
+@media screen and (min-width:1001px) and (max-width: 1149px) {
 
-  .seta{
+  .seta {
     top: 54%;
     padding: 3rem 1rem;
   }
 
-  .container-top-10{
+  .container-top-10 {
     flex: 0 0 28vw;
   }
 }
 
-@media screen and (min-width:800px) and (max-width: 1000px){
-  .seta{
+@media screen and (min-width:800px) and (max-width: 1000px) {
+  .seta {
     top: 52%;
     padding: 3rem 1rem;
   }
 
-  .container-top-10{
+  .container-top-10 {
     flex: 0 0 31vw;
   }
 }
@@ -675,6 +744,10 @@ main {
   }
 
   .seta {
+    display: none;
+  }
+
+  .seta-bilheterias{
     display: none;
   }
 
@@ -703,6 +776,7 @@ main {
   .text-container.open {
     display: flex;
     animation: slideDown 0.6s ease forwards;
+    overflow: hidden;
   }
 
   @keyframes slideDown {
@@ -812,5 +886,9 @@ main {
   .img-assistir img {
     height: 4vh;
     width: auto;
+  }
+
+  .container-top-10-texto h1 {
+    height: 8vh;
   }
 }

@@ -26,13 +26,20 @@ import listadechindler from '../../assets/listadeschindler.webp';
 import pulpfiction from '../../assets/pulpfiction.jpg';
 import startwarsiv from '../../assets/starwarsiv.jpg';
 
+// --------BILHETERIAS----------------
+
+import avatar from '../../assets/avatar.webp'
+
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const carrosselRef = useRef(null);
+  const carrosselBilheteriaRef = useRef(null);
 
   useEffect(() => {
     AOS.init({ once: true });
   }, []);
+
+  // -------------------CLASSICOS--------------------
 
   const rolar = (direcao) => {
     const largura = carrosselRef.current.clientWidth;
@@ -40,6 +47,17 @@ function Home() {
       carrosselRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
     } else {
       carrosselRef.current.scrollBy({ left: largura, behavior: 'smooth' });
+    }
+  };
+
+  // ----------BILHETERIAS---------------------
+
+  const rolarBilheteria = (direcao) => {
+    const largura = carrosselBilheteriaRef.current.clientWidth;
+    if (direcao === 'esquerda') {
+      carrosselBilheteriaRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
+    } else {
+      carrosselBilheteriaRef.current.scrollBy({ left: largura, behavior: 'smooth' });
     }
   };
 
@@ -323,6 +341,46 @@ function Home() {
           </button>
         </section>
 
+
+        {/* --------------------CONTAINER DAS BILHETERIAS---------------------- */}
+        
+        <h1 id='top-10-h1-bilheterias' data-aos="fade-up" data-aos-duration="1000">
+            Os 10 maiores sucessos de bilheteria
+        </h1>
+
+        <section className="container-top-10-principal" id="bilheterias">
+          {/* Botão seta esquerda */}
+          <button className="seta-bilheterias seta-esquerda-bilheterias" onClick={() => rolarBilheteria('esquerda')}>
+            ❮
+          </button>
+
+          <div className="carrossel-top-10" ref={carrosselBilheteriaRef}>
+            {/* Aqui vão os cards de bilheteria — usa o mesmo padrão dos clássicos */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=5PSNL1qE6VY" target='_blank'>
+                  <img src={avatar} alt="Avatar" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>1 - Avatar (2009)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Repete a estrutura acima para os outros 9 filmes */}
+          </div>
+
+          {/* Botão seta direita */}
+          <button className="seta-bilheterias seta-direita-bilheterias" onClick={() => rolarBilheteria('direita')}>
+            ❯
+          </button>
+        </section>
 
 
       </main>
