@@ -33,6 +33,7 @@ import ultimato from '../../assets/ultimato.webp'
 import avataragua from '../../assets/avataragua.jpeg'
 import titanic from '../../assets/titanic.jpg'
 import despertardaforca from '../../assets/despertardaforca.webp'
+import guerrainfinita from '../../assets/guerrainfinita.webp'
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -75,7 +76,7 @@ function Home() {
 
           <div className={`text-container ${menuOpen ? 'open' : ''}`}>
             <a href="#classicos">Clássicos</a>
-            <a href="#">Bilheterias</a>
+            <a href="#bilheterias">Bilheterias</a>
             <a href="#">Oscars</a>
             <a href="#">Melhores avaliados</a>
             <a href="#">Séries</a>
@@ -105,7 +106,7 @@ function Home() {
           </div>
 
           <div data-aos="fade-up" data-aos-duration="1500">
-            <div className='btn-introducao-container'>
+            <div className='btn-introducao-container' id="classicos">
               <button id="btn-sobre">Leia sobre nós</button>
               <button id="btn-login">Cadastro</button>
             </div>
@@ -113,7 +114,7 @@ function Home() {
         </section>
 
         {/* --------------------CONTAINER DOS CLÁSSICOS---------------------- */}
-        <div id="classicos">
+        <div >
           <h1 id='top-10-h1'>Os 10 maiores clássicos</h1>
         </div>
 
@@ -472,6 +473,30 @@ function Home() {
                     <img src={disney} alt="Disney+" />
                   </a>
                   <a href="https://tv.apple.com/br/movie/star-wars-o-despertar-da-forca/umc.cmc.61i3yveu7xby4chfkqved19ka" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 6 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=4jGRyEa2jhE" target='_blank'>
+                  <img src={guerrainfinita} alt="Vingadores: Guerra Infinita" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>6 - Vingadores: Guerra Infinita (US$ 2.048.359)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-9a136e06-852a-41bf-b71d-fa061cb43225?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://www.primevideo.com/detail/Avengers-Infinity-War/0JTDAMFQF938HK16LTN698UJ7I/ref%3Datv_nb_lcl_pt_BR?ie=UTF8&language=pt_BR&utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/vingadores-guerra-infinita/umc.cmc.2do0xuo1u4tjmqbfz1p42a0p9" target='_blank'>
                     <img src={appletv} alt="AppleTV" />
                   </a>
                 </div>
