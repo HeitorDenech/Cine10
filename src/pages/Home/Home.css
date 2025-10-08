@@ -151,7 +151,7 @@ main {
 }
 
 .title-introducao-container h1 {
-  font-size: 70px;
+  font-size: 60px;
   width: 60%;
   text-align: center;
 }
@@ -165,8 +165,8 @@ main {
 }
 
 .text-introducao-container p {
-  font-size: 20px;
-  width: 50%;
+  font-size: 18px;
+  width: 40%;
   text-align: center;
   margin-top: 30px;
   line-height: 1.5;
@@ -181,7 +181,8 @@ main {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin-top: 3vh;
+  margin-top: 4vh;
+  margin-bottom: 10vh;
 }
 
 .btn-introducao-container #btn-sobre {
@@ -247,8 +248,9 @@ main {
   justify-content: start;
   flex-direction: row;
   width: 100%;
-  height: 50%;
+  height: auto;
   /* background-color: red; */
+  position: relative;
 }
 
 
@@ -292,7 +294,7 @@ main {
 }
 
 
-/* -------CONTAINER-top-10-TEXTO------- */
+/* -------CONTAINER-TOP-10-TEXTO------- */
 
 
 .container-top-10-texto {
@@ -363,7 +365,7 @@ main {
   overflow-x: auto;
   /* scroll horizontal natural */
   scroll-behavior: smooth;
-  padding: 20px 2vh;
+  padding: 20px 2.5vh;
   /* background-color: blue; */
 }
 
@@ -385,7 +387,7 @@ main {
 
 /* -----------------BILHETERIAS----------------- */
 
-#top-10-h1-bilheterias{
+#top-10-h1-bilheterias {
   color: white;
   font-size: 18px;
   text-align: start;
@@ -394,55 +396,6 @@ main {
   opacity: 100%;
   /* background-color: red; */
 }
-
-#bilheterias {
-  position: relative;
-  z-index: 2;
-  /* background-color: red; */
-  height: auto;
-}
-
-#bilheterias .container-top-10-principal {
-  background-color: transparent;
-  position: relative;
-  z-index: 2;
-}
-
-#bilheterias img {
-  display: block;
-  z-index: 3;
-  position: relative;
-}
-
-.seta-bilheterias{
-  position: absolute;
-  top: 30%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  /* box-shadow: 1px 1px 3px rgba(251, 251, 251, 0.4); */
-  color: white;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 4rem 0.8rem;
-  transition: all .55s ease-in-out;
-  z-index: 10;
-}
-
-.seta-bilheterias:hover {
-  background-color: rgba(107, 107, 107, 0.5);
-}
-
-.seta-esquerda-bilheterias {
-  /* left: 10px; */
-  border-radius: 0px 20px 20px 0px;
-}
-
-.seta-direita-bilheterias {
-  right: 10px;
-  border-radius: 20px 0px 0px 20px;
-}
-
 
 /* -------------------------------- SETAS ------------------------------ */
 
@@ -490,12 +443,12 @@ main {
   }
 
   .title-introducao-container h1 {
-    font-size: 80px;
+    font-size: 70px;
     width: 60%;
   }
 
   .text-introducao-container p {
-    font-size: 30px;
+    font-size: 25px;
     width: 40%;
   }
 
@@ -504,18 +457,18 @@ main {
   }
 
   .text-container a {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .btn-introducao-container #btn-sobre {
     height: 6vh;
-    width: 16vw;
+    width: 15vw;
     font-size: 22px;
   }
 
   .btn-introducao-container #btn-login {
     height: 6vh;
-    width: 16vw;
+    width: 15vw;
     font-size: 22px;
   }
 
@@ -534,8 +487,13 @@ main {
   }
 
   .seta {
-    top: 48%;
-    padding: 6rem 1rem;
+    top: 30%;
+    padding: 4rem 1rem;
+  }
+
+  .container-top-10 {
+    flex: 0vw 0vw 40vw;
+    margin-left: 3vh;
   }
 }
 
@@ -570,7 +528,7 @@ main {
   }
 
   .seta {
-    top: 50%;
+    top: 30%;
     padding: 4rem 1rem;
   }
 
@@ -606,7 +564,7 @@ main {
   }
 
   .seta {
-    top: 52%;
+    top: 30%;
     padding: 4rem 1rem;
   }
 
@@ -617,7 +575,7 @@ main {
 }
 
 
-@media screen and (min-width: 1250px) and (max-width: 1299px) {
+@media screen and (min-width: 1250px) and (max-width: 1300px) {
 
   /* ------------NAVBAR-TEXT---------------- */
 
@@ -647,13 +605,13 @@ main {
   }
 
   .seta {
-    top: 50%;
-    padding: 4rem 1rem;
+    top: 30%;
+    padding: 3rem 1rem;
   }
 
-  .seta-bilheterias{
-    top: 50%;
-    padding: 4rem 1rem;
+  .seta-bilheterias {
+    top: 30%;
+    padding: 3rem 1rem;
   }
 
   .container-top-10 {
@@ -662,7 +620,7 @@ main {
 
 }
 
-@media screen and (min-width: 1150px) and (max-width: 1249px) {
+@media screen and (min-width: 1150px) and (max-width: 1250px) {
 
   /* ------------NAVBAR-TEXT---------------- */
 
@@ -692,7 +650,12 @@ main {
   }
 
   .seta {
-    top: 56%;
+    top: 30%;
+    padding: 4rem 1rem;
+  }
+
+  .seta-bilheterias {
+    top: 30%;
     padding: 4rem 1rem;
   }
 
@@ -705,7 +668,12 @@ main {
 @media screen and (min-width:1001px) and (max-width: 1149px) {
 
   .seta {
-    top: 54%;
+    top: 30%;
+    padding: 3rem 1rem;
+  }
+
+  .seta-bilheterias {
+    top: 30%;
     padding: 3rem 1rem;
   }
 
@@ -716,12 +684,17 @@ main {
 
 @media screen and (min-width:800px) and (max-width: 1000px) {
   .seta {
-    top: 52%;
+    top: 30%;
+    padding: 3rem 1rem;
+  }
+
+  .seta-bilheterias {
+    top: 30%;
     padding: 3rem 1rem;
   }
 
   .container-top-10 {
-    flex: 0 0 31vw;
+    flex: 0 0 30vw;
   }
 }
 
@@ -739,7 +712,7 @@ main {
   /* --------------------CARROSSEL------------------ */
 
   .container-top-10 {
-    flex: 0 0 30vw;
+    flex: 0 0 40vw;
     margin-left: 3vh;
   }
 
@@ -747,7 +720,7 @@ main {
     display: none;
   }
 
-  .seta-bilheterias{
+  .seta-bilheterias {
     display: none;
   }
 
@@ -877,7 +850,7 @@ main {
   /* -------------------CARROSEL------------------ */
 
   .container-top-10 {
-    flex: 0 0 40vw;
+    flex: 0vw 0vw 40vw;
     margin-left: 3vh;
   }
 

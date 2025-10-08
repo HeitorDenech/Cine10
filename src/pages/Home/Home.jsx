@@ -29,6 +29,10 @@ import startwarsiv from '../../assets/starwarsiv.jpg';
 // --------BILHETERIAS----------------
 
 import avatar from '../../assets/avatar.webp'
+import ultimato from '../../assets/ultimato.webp'
+import avataragua from '../../assets/avataragua.jpeg'
+import titanic from '../../assets/titanic.jpg'
+import despertardaforca from '../../assets/despertardaforca.webp'
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -110,7 +114,7 @@ function Home() {
 
         {/* --------------------CONTAINER DOS CLÁSSICOS---------------------- */}
         <div id="classicos">
-          <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="1000">Os 10 maiores clássicos</h1>
+          <h1 id='top-10-h1'>Os 10 maiores clássicos</h1>
         </div>
 
         <section className="container-top-10-principal">
@@ -122,7 +126,7 @@ function Home() {
           <div className="carrossel-top-10" ref={carrosselRef}>
 
             {/* CARD 1 */}
-            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1400">
+            <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=8dxh3lwdOFw" target='_blank'>
                   <img src={cidadaokane} alt="Cidadão Kane" />
@@ -143,7 +147,7 @@ function Home() {
             </div>
 
             {/* CARD 2 */}
-            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1400">
+            <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=MF7JH_54d8c" target='_blank'>
                   <img src={casablanca} alt="Clássico 2" />
@@ -167,7 +171,7 @@ function Home() {
             </div>
 
             {/* CARD 3 */}
-            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1600">
+            <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=SaHZHU-44XA" target='_blank'>
                   <img src={poderosochefao} alt="Clássico 3" />
@@ -191,7 +195,7 @@ function Home() {
             </div>
 
             {/* CARD 4 */}
-            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
+            <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=KxYVSblvWQk" target='_blank'>
                   <img src={ventolevou} alt="Clássico 4" />
@@ -212,7 +216,7 @@ function Home() {
             </div>
 
             {/* CARD 5 */}
-            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
+            <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=BwVKSGu8wEA" target='_blank'>
                   <img src={psicose} alt="Clássico 4" />
@@ -236,7 +240,7 @@ function Home() {
             </div>
 
             {/* CARD 6 */}
-            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
+            <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=7E9CD3Hucws" target='_blank'>
                   <img src={odisseianoespaco} alt="Clássico 4" />
@@ -257,7 +261,7 @@ function Home() {
             </div>
 
             {/* CARD 7 */}
-            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
+            <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=s7z_NgOTQu8" target='_blank'>
                   <img src={cantandonachuva} alt="Clássico 4" />
@@ -278,7 +282,7 @@ function Home() {
             </div>
 
             {/* CARD 8 */}
-            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
+            <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=GAf0nGq_FXQ" target='_blank'>
                   <img src={listadechindler} alt="Clássico 4" />
@@ -296,7 +300,7 @@ function Home() {
             </div>
 
             {/* CARD 9 */}
-            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
+            <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=s7EdQ4FqbhY" target='_blank'>
                   <img src={pulpfiction} alt="Clássico 4" />
@@ -314,7 +318,7 @@ function Home() {
             </div>
 
             {/* CARD 10 */}
-            <div className='container-top-10' data-aos="fade-up" data-aos-duration="1800">
+            <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=vZ734NWnAHA" target='_blank'>
                   <img src={startwarsiv} alt="Clássico 4" />
@@ -343,19 +347,21 @@ function Home() {
 
 
         {/* --------------------CONTAINER DAS BILHETERIAS---------------------- */}
-        
-        <h1 id='top-10-h1-bilheterias' data-aos="fade-up" data-aos-duration="1000">
-            Os 10 maiores sucessos de bilheteria
-        </h1>
 
-        <section className="container-top-10-principal" id="bilheterias">
+        <div id="bilheterias">
+          <h1 id='top-10-h1'>As 10 maiores bilheterias</h1>
+        </div>
+
+        <section className="container-top-10-principal">
           {/* Botão seta esquerda */}
-          <button className="seta-bilheterias seta-esquerda-bilheterias" onClick={() => rolarBilheteria('esquerda')}>
+          <button className="seta seta-esquerda" onClick={() => rolarBilheteria('esquerda')}>
             ❮
           </button>
 
+          {/* Carrossel com TODOS os cards dentro */}
           <div className="carrossel-top-10" ref={carrosselBilheteriaRef}>
-            {/* Aqui vão os cards de bilheteria — usa o mesmo padrão dos clássicos */}
+
+            {/* CARD 1 */}
             <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=5PSNL1qE6VY" target='_blank'>
@@ -363,24 +369,125 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>1 - Avatar (2009)</h1>
+                <h1>1 - Avatar (US$ 2.923.710)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://www.disneyplus.com" target='_blank'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-357d8505-b9bc-41e3-9f27-0414738df143" target='_blank'>
                     <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Avatar/0LCOF5S7YR0UEA8EYW31TA7OF7" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/avatar/umc.cmc.1hmaf5hccvdvn71dc5hr7mgcj" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
                   </a>
                 </div>
               </div>
             </div>
 
-            {/* Repete a estrutura acima para os outros 9 filmes */}
+            {/* CARD 2 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=TcMBFSGVi1c" target='_blank'>
+                  <img src={ultimato} alt="Vingadores: Ultimato" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>2 - Vingadores: Ultimato (US$ 2.799.439)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-b39aa962-be56-4b09-a536-98617031717f" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Vingadores-Ultimato/0P5699HX4S6UTRBOYYMCIGWTK3" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/vingadores-ultimato/umc.cmc.4ao9tm6b6rz4sy7yj5v13ltf8" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 3 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=YE7VzlLtp-4" target='_blank'>
+                  <img src={avataragua} alt="Avatar: O Caminho da Água" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>3 - Avatar: O Caminho da Água (US$ 2.320.250)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-b39aa962-be56-4b09-a536-98617031717f" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Avatar/0LCOF5S7YR0UEA8EYW31TA7OF7" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/avatar/umc.cmc.1hmaf5hccvdvn71dc5hr7mgcj" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 4 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=IH6_CA_ocqY" target='_blank'>
+                  <img src={titanic} alt="Titanic" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>4 - Titanic (US$ 2.264.743)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-ed94de01-f394-4d37-9888-1186bd143ec8?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Titanic/0R7Q0SWNO615THQW59FZZBSGUD?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/titanic/umc.cmc.2xfg89gkgo2469x0985e0eqq7" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 5 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=4r0287tUEgk" target='_blank'>
+                  <img src={despertardaforca} alt="Star Wars: O despertar da força" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>5 - Star Wars: O Despertar da Força (US$ 2.068.223)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-2854a94d-3702-40bd-97a4-12d55a809188?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/star-wars-o-despertar-da-forca/umc.cmc.61i3yveu7xby4chfkqved19ka" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Adicione os outros cards da mesma forma: 4 a 10 */}
+
           </div>
 
           {/* Botão seta direita */}
-          <button className="seta-bilheterias seta-direita-bilheterias" onClick={() => rolarBilheteria('direita')}>
+          <button className="seta seta-direita" onClick={() => rolarBilheteria('direita')}>
             ❯
           </button>
         </section>
+
 
 
       </main>
