@@ -13,6 +13,7 @@ import appletv from '../../assets/appletv.webp';
 import netflix from '../../assets/netflix.webp';
 import globoplay from '../../assets/globoplay.jpg';
 import disney from '../../assets/disney.webp';
+import uol from '../../assets/uol.jpg'
 
 // ----------CLASSICOS---------------
 import cidadaokane from '../../assets/cidadao-kane.jpg';
@@ -44,6 +45,14 @@ import vingadores from '../../assets/vingadores.webp'
 
 import senhordosaneis from '../../assets/senhor-dos-aneis.jpg'
 import benhur from '../../assets/ben-hur.webp'
+import amorsublimeamor from '../../assets/amorsublimeamor.jpg'
+import gigi from '../../assets/gigi.webp'
+import oultimoimperador from '../../assets/oultimoimperador.webp'
+import opacienteingles from '../../assets/opacienteingles.jpg'
+import umpassodaeternidade from '../../assets/umpassodaeternidade.jpg'
+import sindicatodosladroes from '../../assets/sindicatodosladroes.jpg'
+
+// --------------------------------------------------
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -392,7 +401,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>1 - Avatar (US$ 2.923.710)</h1>
+                <h1>1 - Avatar (2009)</h1>
+                <span>US$ 2.923.710</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://www.disneyplus.com/pt-br/browse/entity-357d8505-b9bc-41e3-9f27-0414738df143" target='_blank'>
@@ -416,7 +426,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>2 - Vingadores: Ultimato (US$ 2.799.439)</h1>
+                <h1>2 - Vingadores: Ultimato (2019)</h1>
+                <span>US$ 2.799.439</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://www.disneyplus.com/pt-br/browse/entity-b39aa962-be56-4b09-a536-98617031717f" target='_blank'>
@@ -440,7 +451,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>3 - Avatar: O Caminho da Água (US$ 2.320.250)</h1>
+                <h1>3 - Avatar: O Caminho da Água (2022)</h1>
+                <span>US$ 2.320.250</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://www.disneyplus.com/pt-br/browse/entity-357d8505-b9bc-41e3-9f27-0414738df143?utm_source=chatgpt.com" target='_blank'>
@@ -464,7 +476,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>4 - Titanic (US$ 2.264.743)</h1>
+                <h1>4 - Titanic (1997)</h1>
+                <span>US$ 2.264.743</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://www.disneyplus.com/pt-br/browse/entity-ed94de01-f394-4d37-9888-1186bd143ec8?utm_source=chatgpt.com" target='_blank'>
@@ -488,7 +501,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>5 - Star Wars: O Despertar da Força (US$ 2.068.223)</h1>
+                <h1>5 - Star Wars: O Despertar da Força (2015)</h1>
+                <span>US$ 2.068.223</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://www.disneyplus.com/pt-br/browse/entity-2854a94d-3702-40bd-97a4-12d55a809188?utm_source=chatgpt.com" target='_blank'>
@@ -509,7 +523,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>6 - Vingadores: Guerra Infinita (US$ 2.048.359)</h1>
+                <h1>6 - Vingadores: Guerra Infinita (2018)</h1>
+                <span>US$ 2.048.359</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://www.disneyplus.com/pt-br/browse/entity-9a136e06-852a-41bf-b71d-fa061cb43225?utm_source=chatgpt.com" target='_blank'>
@@ -533,7 +548,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>7 - Homem-Aranha: Sem Volta para Casa (US$ 1.922.598)</h1>
+                <h1>7 - Homem-Aranha: Sem Volta para Casa (2021)</h1>
+                <span>US$ 1.922.598</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://tv.apple.com/br/movie/homem-aranha-sem-volta-para-casa/umc.cmc.2qf7xc5hds0m5jgx4roago580" target='_blank'>
@@ -557,7 +573,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>8 - Jurassic World (US$ 1.671.537)</h1>
+                <h1>8 - Jurassic World (2015)</h1>
+                <span>US$ 1.671.537</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://www.primevideo.com/-/pt/detail/Jurassic-World---O-Mundo-dos-Dinossauros/0KEKSTSQLSZRHAQQDLF83OP4AO?utm_source=chatgpt.com" target='_blank'>
@@ -575,7 +592,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>9 - O Rei Leão (US$ 1.663.075)</h1>
+                <h1>9 - O Rei Leão (2019)</h1>
+                <span>US$ 1.663.075</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://www.disneyplus.com/pt-br/browse/entity-87524f44-a8ea-4b08-b4d8-39103bed3eaa?utm_source=chatgpt.com" target='_blank'>
@@ -596,7 +614,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>10 - Vingadores (US$ 1.518.815)</h1>
+                <h1>10 - Vingadores (2012)</h1>
+                <span>US$ 1.518.815</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://www.disneyplus.com/pt-br/browse/entity-3a5596d6-5133-4a8e-8d21-00e1531a4e0f?utm_source=chatgpt.com" target='_blank'>
@@ -638,7 +657,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>1 - O Senhor dos Anéis: O Retorno do Rei (11 Oscars)</h1>
+                <h1>1 - O Senhor dos Anéis: O Retorno do Rei (2003)</h1>
+                <span>🏆 11 Oscars</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://play.hbomax.com/movie/ad704585-6774-4d37-8c61-1bd41154173f?utm_source=chatgpt.com" target='_blank'>
@@ -662,7 +682,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>2 - Titanic (11 Oscars)</h1>
+                <h1>2 - Titanic (1997)</h1>
+                <span>🏆 11 Oscars</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://www.disneyplus.com/pt-br/browse/entity-ed94de01-f394-4d37-9888-1186bd143ec8?utm_source=chatgpt.com" target='_blank'>
@@ -686,7 +707,8 @@ function Home() {
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>3 - Ben-Hur (11 Oscars)</h1>
+                <h1>3 - Ben-Hur (1959)</h1>
+                <span>🏆 11 Oscars</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://www.primevideo.com/-/pt/detail/Ben-Hur/0LTQ8E8PAEPPLI88E2WOL56Q3Z?utm_source=chatgpt.com" target='_blank'>
@@ -702,22 +724,17 @@ function Home() {
             {/* CARD 4 */}
             <div className='container-top-10'>
               <div className='container-top-10-imagem'>
-                <a href="https://www.youtube.com/watch?v=IH6_CA_ocqY" target='_blank'>
-                  <img src={titanic} alt="Titanic" />
+                <a href="https://www.youtube.com/watch?v=SZnexg3PTSg" target='_blank'>
+                  <img src={amorsublimeamor} alt="Amor, sublime Amor" />
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>4 - Titanic (US$ 2.264.743)</h1>
+                <h1>4 - Amor, Sublime Amor (West Side Story) (1961)</h1>
+                <span>🏆 10 Oscars</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://www.disneyplus.com/pt-br/browse/entity-ed94de01-f394-4d37-9888-1186bd143ec8?utm_source=chatgpt.com" target='_blank'>
-                    <img src={disney} alt="Disney+" />
-                  </a>
                   <a href="https://www.primevideo.com/-/pt/detail/Titanic/0R7Q0SWNO615THQW59FZZBSGUD?utm_source=chatgpt.com" target='_blank'>
                     <img src={primevideo} alt="PrimeVideo" />
-                  </a>
-                  <a href="https://tv.apple.com/br/movie/titanic/umc.cmc.2xfg89gkgo2469x0985e0eqq7" target='_blank'>
-                    <img src={appletv} alt="AppleTV" />
                   </a>
                 </div>
               </div>
@@ -726,19 +743,17 @@ function Home() {
             {/* CARD 5 */}
             <div className='container-top-10'>
               <div className='container-top-10-imagem'>
-                <a href="https://www.youtube.com/watch?v=4r0287tUEgk" target='_blank'>
-                  <img src={despertardaforca} alt="Star Wars: O despertar da força" />
+                <a href="https://www.youtube.com/watch?v=rH8aVaeHqq4" target='_blank'>
+                  <img src={gigi} alt="Gigia" />
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>5 - Star Wars: O Despertar da Força (US$ 2.068.223)</h1>
+                <h1>5 - Gigi (1958)</h1>
+                <span>🏆 9 Oscars</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://www.disneyplus.com/pt-br/browse/entity-2854a94d-3702-40bd-97a4-12d55a809188?utm_source=chatgpt.com" target='_blank'>
-                    <img src={disney} alt="Disney+" />
-                  </a>
-                  <a href="https://tv.apple.com/br/movie/star-wars-o-despertar-da-forca/umc.cmc.61i3yveu7xby4chfkqved19ka" target='_blank'>
-                    <img src={appletv} alt="AppleTV" />
+                  <a href="https://www.primevideo.com/detail/Gigi-1958/0RQYWFJ9OH5UEOSV4GPA6IF8LH?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
                   </a>
                 </div>
               </div>
@@ -747,21 +762,16 @@ function Home() {
             {/* CARD 6 */}
             <div className='container-top-10'>
               <div className='container-top-10-imagem'>
-                <a href="https://www.youtube.com/watch?v=4jGRyEa2jhE" target='_blank'>
-                  <img src={guerrainfinita} alt="Vingadores: Guerra Infinita" />
+                <a href="https://www.youtube.com/watch?v=A4cH6g1wD5g" target='_blank'>
+                  <img src={oultimoimperador} alt="O último Imperador" />
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>6 - Vingadores: Guerra Infinita (US$ 2.048.359)</h1>
+                <h1>6 - O Último Imperador (1987)</h1>
+                <span>🏆 9 Oscars</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://www.disneyplus.com/pt-br/browse/entity-9a136e06-852a-41bf-b71d-fa061cb43225?utm_source=chatgpt.com" target='_blank'>
-                    <img src={disney} alt="Disney+" />
-                  </a>
-                  <a href="https://www.primevideo.com/detail/Avengers-Infinity-War/0JTDAMFQF938HK16LTN698UJ7I/ref%3Datv_nb_lcl_pt_BR?ie=UTF8&language=pt_BR&utm_source=chatgpt.com" target='_blank'>
-                    <img src={primevideo} alt="PrimeVideo" />
-                  </a>
-                  <a href="https://tv.apple.com/br/movie/vingadores-guerra-infinita/umc.cmc.2do0xuo1u4tjmqbfz1p42a0p9" target='_blank'>
+                  <a href="https://tv.apple.com/br/movie/o-ultimo-imperador/umc.cmc.2lxa6rziv7drzecqhv6xmnhz1" target='_blank'>
                     <img src={appletv} alt="AppleTV" />
                   </a>
                 </div>
@@ -772,11 +782,12 @@ function Home() {
             <div className='container-top-10'>
               <div className='container-top-10-imagem'>
                 <a href="https://www.youtube.com/watch?v=bHzGeci_8wc" target='_blank'>
-                  <img src={semvoltapracasa} alt="Homem Aranha: Sem volta pra casa" />
+                  <img src={opacienteingles} alt="O Paciente Inglês" />
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>7 - Homem-Aranha: Sem Volta para Casa (US$ 1.922.598)</h1>
+                <h1>7 - O Paciente Inglês (The English Patient) (1996)</h1>
+                <span>🏆 9 Oscars</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
                   <a href="https://tv.apple.com/br/movie/homem-aranha-sem-volta-para-casa/umc.cmc.2qf7xc5hds0m5jgx4roago580" target='_blank'>
@@ -795,16 +806,20 @@ function Home() {
             {/* CARD 8 */}
             <div className='container-top-10'>
               <div className='container-top-10-imagem'>
-                <a href="https://www.youtube.com/watch?v=RFinNxS5KN4" target='_blank'>
-                  <img src={jurassicworld} alt="Jurassic World" />
+                <a href="https://www.youtube.com/watch?v=KxYVSblvWQk" target='_blank'>
+                  <img src={ventolevou} alt="E o Vento Levou" />
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>8 - Jurassic World (US$ 1.671.537)</h1>
+                <h1>8 - E o Vento Levou (Gone with the Wind) (1939)</h1>
+                <span>🏆 8 Oscars</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://www.primevideo.com/-/pt/detail/Jurassic-World---O-Mundo-dos-Dinossauros/0KEKSTSQLSZRHAQQDLF83OP4AO?utm_source=chatgpt.com" target='_blank'>
+                  <a href="https://www.primevideo.com/-/pt/detail/E-o-Vento-Levou/0NHEKJ1RE0VB21OE2XXWIBR00N?utm_source=chatgpt.com" target='_blank'>
                     <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/e-o-vento-levou/umc.cmc.yrquc45v8733x85h5klgxbeh" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
                   </a>
                 </div>
               </div>
@@ -813,18 +828,19 @@ function Home() {
             {/* CARD 9 */}
             <div className='container-top-10'>
               <div className='container-top-10-imagem'>
-                <a href="https://www.youtube.com/watch?v=WBDAsucUg58" target='_blank'>
-                  <img src={reileao} alt="O Rei Leão" />
+                <a href="https://www.youtube.com/watch?v=Z7PmarMfuog" target='_blank'>
+                  <img src={umpassodaeternidade} alt="A um Passo da Eternidade" />
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>9 - O Rei Leão (US$ 1.663.075)</h1>
+                <h1>9 - A Um Passo da Eternidade (From Here to Eternity) (1953)</h1>
+                <span>🏆 8 Oscars</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://www.disneyplus.com/pt-br/browse/entity-87524f44-a8ea-4b08-b4d8-39103bed3eaa?utm_source=chatgpt.com" target='_blank'>
-                    <img src={disney} alt="Disney+" />
+                  <a href="https://tv.apple.com/br/movie/a-um-passo-da-eternidade/umc.cmc.2zhxjgeniqb2uhgjclahid6fk" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
                   </a>
-                  <a href="https://www.primevideo.com/-/pt/detail/O-Rei-Le%C3%A3o/0JIS2E140I8USLXR5KTW6ZGAZY?utm_source=chatgpt.com" target='_blank'>
+                  <a href="https://www.primevideo.com/-/pt/detail/0S8NAEGFPCKWP8HGGZBETI7FCC/ref%3Datv_dl_rdr?utm_source=chatgpt.com" target='_blank'>
                     <img src={primevideo} alt="PrimeVideo" />
                   </a>
                 </div>
@@ -834,19 +850,20 @@ function Home() {
             {/* CARD 10 */}
             <div className='container-top-10'>
               <div className='container-top-10-imagem'>
-                <a href="https://www.youtube.com/watch?v=KeNEGtsCWEk" target='_blank'>
-                  <img src={vingadores} alt="Vingadores" />
+                <a href="https://www.youtube.com/watch?v=boekTHsOIY8" target='_blank'>
+                  <img src={sindicatodosladroes} alt="Sindicato de Ladrões" />
                 </a>
               </div>
               <div className='container-top-10-texto'>
-                <h1>10 - Vingadores (US$ 1.518.815)</h1>
+                <h1>10 - Sindicato de Ladrões (On the Waterfront) (1954)</h1>
+                <span>🏆 8 Oscars</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://www.disneyplus.com/pt-br/browse/entity-3a5596d6-5133-4a8e-8d21-00e1531a4e0f?utm_source=chatgpt.com" target='_blank'>
-                    <img src={disney} alt="Disney+" />
+                  <a href="https://www.primevideo.com/detail/On-the-Waterfront/0ST5SYU9UBY1TFLX4LGF6T1STF?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
                   </a>
-                  <a href="https://tv.apple.com/br/movie/the-avengers---os-vingadores/umc.cmc.7i757ymuvffa02onn3uva0emx" target='_blank'>
-                    <img src={appletv} alt="AppleTV" />
+                  <a href="https://painel.play.uol.com.br/movie/4759-sindicato-de-ladroes?utm_source=chatgpt.com" target='_blank'>
+                    <img src={uol} alt="UOL" />
                   </a>
                 </div>
               </div>

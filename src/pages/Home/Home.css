@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  max-width: 100vw;
-  background-color: black;
+  /* background-color: black; */
 }
 
 #classicos,
@@ -18,6 +17,13 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   /* bloqueia scroll horizontal no body e html */
+}
+
+span {
+  color: rgb(227, 216, 54);
+  opacity: 100%;
+  margin-top: 2vh;
+  margin-left: 1vh;
 }
 
 /* ------------HEADER---------------- */
@@ -217,6 +223,7 @@ main {
   color: white;
   font-size: 15px;
   transition: all 0.45s ease-in-out;
+  background-color: transparent;
 }
 
 .btn-introducao-container #btn-login:hover {
@@ -317,13 +324,14 @@ main {
   margin-top: 2vh;
   margin-left: 1vh;
   height: 6vh;
+  margin-bottom: 1vh;
 }
 
 .container-top-10-texto p {
   color: white;
   font-size: 12px;
   text-align: start;
-  margin-top: 1vh;
+  margin-top: 2vh;
   margin-left: 1vh;
   opacity: 70%;
   height: 3vh;
@@ -420,7 +428,7 @@ main {
 }
 
 .seta-direita {
-  right: 10px;
+  right: 0px;
   border-radius: 20px 0px 0px 20px;
 }
 
@@ -475,6 +483,10 @@ main {
     height: 7vh;
   }
 
+  span {
+    font-size: 24px;
+  }
+
   .container-top-10-texto p {
     font-size: 22px;
   }
@@ -521,6 +533,10 @@ main {
     height: 7vh;
   }
 
+  span {
+    font-size: 20px;
+  }
+
   .container-top-10-texto p {
     font-size: 17px;
   }
@@ -555,6 +571,10 @@ main {
   .container-top-10-texto h1 {
     font-size: 18px;
     height: 7vh;
+  }
+
+  span{
+    font-size: 18px;
   }
 
   .container-top-10-texto p {
@@ -596,6 +616,10 @@ main {
   .container-top-10-texto h1 {
     font-size: 15px;
     height: 7vh;
+  }
+
+  span{
+    font-size: 15px;
   }
 
   .container-top-10-texto p {
@@ -640,6 +664,10 @@ main {
   .container-top-10-texto h1 {
     font-size: 15px;
     height: 7vh;
+  }
+
+  span{
+    font-size: 15px;
   }
 
   .container-top-10-texto p {
@@ -878,5 +906,11 @@ main {
 
   .container-top-10-texto h1 {
     height: 8vh;
+    font-size: 15px;
   }
+
+  span{
+    font-size: 15px;
+  }
+
 }
