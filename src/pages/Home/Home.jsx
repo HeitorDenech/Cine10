@@ -59,6 +59,7 @@ function Home() {
   const carrosselRef = useRef(null);
   const carrosselBilheteriaRef = useRef(null);
   const carrosselOscarsRef = useRef(null);
+  const carrosselMelhoresAvaliadosRef = useRef(null)
 
   useEffect(() => {
     AOS.init({ once: true });
@@ -94,6 +95,17 @@ function Home() {
       carrosselOscarsRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
     } else {
       carrosselOscarsRef.current.scrollBy({ left: largura, behavior: 'smooth' });
+    }
+  };
+
+  // -----------OSCARS-----------------------------
+
+  const rolarMelhoresAvaliados = (direcao) => {
+    const largura = carrosselMelhoresAvaliadosRef.current.clientWidth;
+    if (direcao === 'esquerda') {
+      carrosselMelhoresAvaliadosRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
+    } else {
+      carrosselMelhoresAvaliadosRef.current.scrollBy({ left: largura, behavior: 'smooth' });
     }
   };
 
@@ -875,7 +887,246 @@ function Home() {
           </button>
         </section>
 
+        {/* --------------------CONTAINER DOS MELHORES AVALIADOS---------------------- */}
 
+        <div id="melhores-avaliados">
+          <h1 id='top-10-h1'>Os 10 melhores avaliados (IMDb)</h1>
+        </div>
+
+        <section className="container-top-10-principal">
+          {/* Botão seta esquerda */}
+          <button className="seta seta-esquerda" onClick={() => rolarMelhoresAvaliados('esquerda')}>
+            ❮
+          </button>
+
+          {/* Carrossel com TODOS os cards dentro */}
+          <div className="carrossel-top-10" ref={carrosselMelhoresAvaliadosRef}>
+
+            {/* CARD 1 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo" target='_blank'>
+                  <img src={senhordosaneis} alt="O Senhor dos Anéis: O Retorno do Rei" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>1 - O Senhor dos Anéis: O Retorno do Rei (2003)</h1>
+                <span>🏆 11 Oscars</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://play.hbomax.com/movie/ad704585-6774-4d37-8c61-1bd41154173f?utm_source=chatgpt.com" target='_blank'>
+                    <img src={hbomax} alt="HBO Max+" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/O-Senhor-dos-An%C3%A9is-O-Retorno-do-Rei/0NSGBFYAQDZQKEC8BBWKT8GILJ?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/the-lord-of-the-rings-the-return-of-the-king/umc.cmc.57s6i23z9ry0zsgwwc2mxjqi6" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 2 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=IH6_CA_ocqY" target='_blank'>
+                  <img src={titanic} alt="Titanic" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>2 - Titanic (1997)</h1>
+                <span>🏆 11 Oscars</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-ed94de01-f394-4d37-9888-1186bd143ec8?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Titanic/0R7Q0SWNO615THQW59FZZBSGUD?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/titanic/umc.cmc.2xfg89gkgo2469x0985e0eqq7" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 3 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=NR1ZHKw09n8" target='_blank'>
+                  <img src={benhur} alt="Ben Hur" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>3 - Ben-Hur (1959)</h1>
+                <span>🏆 11 Oscars</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.primevideo.com/-/pt/detail/Ben-Hur/0LTQ8E8PAEPPLI88E2WOL56Q3Z?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/ben-hur/umc.cmc.523sgjwmhal494z5qfp0xz51g" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 4 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=SZnexg3PTSg" target='_blank'>
+                  <img src={amorsublimeamor} alt="Amor, sublime Amor" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>4 - Amor, Sublime Amor (West Side Story) (1961)</h1>
+                <span>🏆 10 Oscars</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.primevideo.com/-/pt/detail/Titanic/0R7Q0SWNO615THQW59FZZBSGUD?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 5 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=rH8aVaeHqq4" target='_blank'>
+                  <img src={gigi} alt="Gigia" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>5 - Gigi (1958)</h1>
+                <span>🏆 9 Oscars</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.primevideo.com/detail/Gigi-1958/0RQYWFJ9OH5UEOSV4GPA6IF8LH?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 6 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=A4cH6g1wD5g" target='_blank'>
+                  <img src={oultimoimperador} alt="O último Imperador" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>6 - O Último Imperador (1987)</h1>
+                <span>🏆 9 Oscars</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://tv.apple.com/br/movie/o-ultimo-imperador/umc.cmc.2lxa6rziv7drzecqhv6xmnhz1" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 7 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=bHzGeci_8wc" target='_blank'>
+                  <img src={opacienteingles} alt="O Paciente Inglês" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>7 - O Paciente Inglês (The English Patient) (1996)</h1>
+                <span>🏆 9 Oscars</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://tv.apple.com/br/movie/homem-aranha-sem-volta-para-casa/umc.cmc.2qf7xc5hds0m5jgx4roago580" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                  <a href="https://www.netflix.com/br/TITLE/81465707?utm_source=chatgpt.com" target='_blank'>
+                    <img src={netflix} alt="Netflix" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Homem-Aranha-Sem-Volta-para-Casa/0GC8T3GTI8I9NMQUCNXJ8BLPK7?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 8 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=KxYVSblvWQk" target='_blank'>
+                  <img src={ventolevou} alt="E o Vento Levou" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>8 - E o Vento Levou (Gone with the Wind) (1939)</h1>
+                <span>🏆 8 Oscars</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.primevideo.com/-/pt/detail/E-o-Vento-Levou/0NHEKJ1RE0VB21OE2XXWIBR00N?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/e-o-vento-levou/umc.cmc.yrquc45v8733x85h5klgxbeh" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 9 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=Z7PmarMfuog" target='_blank'>
+                  <img src={umpassodaeternidade} alt="A um Passo da Eternidade" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>9 - A Um Passo da Eternidade (From Here to Eternity) (1953)</h1>
+                <span>🏆 8 Oscars</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://tv.apple.com/br/movie/a-um-passo-da-eternidade/umc.cmc.2zhxjgeniqb2uhgjclahid6fk" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/0S8NAEGFPCKWP8HGGZBETI7FCC/ref%3Datv_dl_rdr?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 10 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=boekTHsOIY8" target='_blank'>
+                  <img src={sindicatodosladroes} alt="Sindicato de Ladrões" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>10 - Sindicato de Ladrões (On the Waterfront) (1954)</h1>
+                <span>🏆 8 Oscars</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.primevideo.com/detail/On-the-Waterfront/0ST5SYU9UBY1TFLX4LGF6T1STF?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://painel.play.uol.com.br/movie/4759-sindicato-de-ladroes?utm_source=chatgpt.com" target='_blank'>
+                    <img src={uol} alt="UOL" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Botão seta direita */}
+          <button className="seta seta-direita" onClick={() => rolarMelhoresAvaliados('direita')}>
+            ❯
+          </button>
+        </section>
 
       </main>
 
