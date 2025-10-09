@@ -34,11 +34,22 @@ import avataragua from '../../assets/avataragua.jpeg'
 import titanic from '../../assets/titanic.jpg'
 import despertardaforca from '../../assets/despertardaforca.webp'
 import guerrainfinita from '../../assets/guerrainfinita.webp'
+import semvoltapracasa from '../../assets/semvoltapracasa.jpg'
+import jurassicworld from '../../assets/jurassicworld.jpg'
+import reileao from '../../assets/reileao.jpg'
+import vingadores from '../../assets/vingadores.webp'
+
+
+// -------------OSCARS------------------
+
+import senhordosaneis from '../../assets/senhor-dos-aneis.jpg'
+import benhur from '../../assets/ben-hur.webp'
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const carrosselRef = useRef(null);
   const carrosselBilheteriaRef = useRef(null);
+  const carrosselOscarsRef = useRef(null);
 
   useEffect(() => {
     AOS.init({ once: true });
@@ -55,7 +66,7 @@ function Home() {
     }
   };
 
-  // ----------BILHETERIAS---------------------
+  // ----------BILHETERIAS-------------------------
 
   const rolarBilheteria = (direcao) => {
     const largura = carrosselBilheteriaRef.current.clientWidth;
@@ -63,6 +74,17 @@ function Home() {
       carrosselBilheteriaRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
     } else {
       carrosselBilheteriaRef.current.scrollBy({ left: largura, behavior: 'smooth' });
+    }
+  };
+
+  // -----------OSCARS-----------------------------
+
+  const rolarOscars = (direcao) => {
+    const largura = carrosselOscarsRef.current.clientWidth;
+    if (direcao === 'esquerda') {
+      carrosselOscarsRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
+    } else {
+      carrosselOscarsRef.current.scrollBy({ left: largura, behavior: 'smooth' });
     }
   };
 
@@ -77,7 +99,7 @@ function Home() {
           <div className={`text-container ${menuOpen ? 'open' : ''}`}>
             <a href="#classicos">Clássicos</a>
             <a href="#bilheterias">Bilheterias</a>
-            <a href="#">Oscars</a>
+            <a href="#oscars">Oscars</a>
             <a href="#">Melhores avaliados</a>
             <a href="#">Séries</a>
           </div>
@@ -114,7 +136,7 @@ function Home() {
         </section>
 
         {/* --------------------CONTAINER DOS CLÁSSICOS---------------------- */}
-        <div >
+        <div>
           <h1 id='top-10-h1'>Os 10 maiores clássicos</h1>
         </div>
 
@@ -421,7 +443,7 @@ function Home() {
                 <h1>3 - Avatar: O Caminho da Água (US$ 2.320.250)</h1>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://www.disneyplus.com/pt-br/browse/entity-b39aa962-be56-4b09-a536-98617031717f" target='_blank'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-357d8505-b9bc-41e3-9f27-0414738df143?utm_source=chatgpt.com" target='_blank'>
                     <img src={disney} alt="Disney+" />
                   </a>
                   <a href="https://www.primevideo.com/-/pt/detail/Avatar/0LCOF5S7YR0UEA8EYW31TA7OF7" target='_blank'>
@@ -503,12 +525,335 @@ function Home() {
               </div>
             </div>
 
-            {/* Adicione os outros cards da mesma forma: 4 a 10 */}
+            {/* CARD 7 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=bHzGeci_8wc" target='_blank'>
+                  <img src={semvoltapracasa} alt="Homem Aranha: Sem volta pra casa" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>7 - Homem-Aranha: Sem Volta para Casa (US$ 1.922.598)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://tv.apple.com/br/movie/homem-aranha-sem-volta-para-casa/umc.cmc.2qf7xc5hds0m5jgx4roago580" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                  <a href="https://www.netflix.com/br/TITLE/81465707?utm_source=chatgpt.com" target='_blank'>
+                    <img src={netflix} alt="Netflix" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Homem-Aranha-Sem-Volta-para-Casa/0GC8T3GTI8I9NMQUCNXJ8BLPK7?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
 
+            {/* CARD 8 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=RFinNxS5KN4" target='_blank'>
+                  <img src={jurassicworld} alt="Jurassic World" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>8 - Jurassic World (US$ 1.671.537)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.primevideo.com/-/pt/detail/Jurassic-World---O-Mundo-dos-Dinossauros/0KEKSTSQLSZRHAQQDLF83OP4AO?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 9 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=WBDAsucUg58" target='_blank'>
+                  <img src={reileao} alt="O Rei Leão" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>9 - O Rei Leão (US$ 1.663.075)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-87524f44-a8ea-4b08-b4d8-39103bed3eaa?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/O-Rei-Le%C3%A3o/0JIS2E140I8USLXR5KTW6ZGAZY?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 10 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=KeNEGtsCWEk" target='_blank'>
+                  <img src={vingadores} alt="Vingadores" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>10 - Vingadores (US$ 1.518.815)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-3a5596d6-5133-4a8e-8d21-00e1531a4e0f?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/the-avengers---os-vingadores/umc.cmc.7i757ymuvffa02onn3uva0emx" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-
           {/* Botão seta direita */}
           <button className="seta seta-direita" onClick={() => rolarBilheteria('direita')}>
+            ❯
+          </button>
+        </section>
+
+        {/* --------------------CONTAINER DOS OSCARS---------------------- */}
+
+        <div id="oscars">
+          <h1 id='top-10-h1'>Os 10 filmes com mais Oscars</h1>
+        </div>
+
+        <section className="container-top-10-principal">
+          {/* Botão seta esquerda */}
+          <button className="seta seta-esquerda" onClick={() => rolarOscars('esquerda')}>
+            ❮
+          </button>
+
+          {/* Carrossel com TODOS os cards dentro */}
+          <div className="carrossel-top-10" ref={carrosselOscarsRef}>
+
+            {/* CARD 1 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo" target='_blank'>
+                  <img src={senhordosaneis} alt="O Senhor dos Anéis: O Retorno do Rei" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>1 - O Senhor dos Anéis: O Retorno do Rei (11 Oscars)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://play.hbomax.com/movie/ad704585-6774-4d37-8c61-1bd41154173f?utm_source=chatgpt.com" target='_blank'>
+                    <img src={hbomax} alt="HBO Max+" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/O-Senhor-dos-An%C3%A9is-O-Retorno-do-Rei/0NSGBFYAQDZQKEC8BBWKT8GILJ?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/the-lord-of-the-rings-the-return-of-the-king/umc.cmc.57s6i23z9ry0zsgwwc2mxjqi6" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 2 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=IH6_CA_ocqY" target='_blank'>
+                  <img src={titanic} alt="Titanic" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>2 - Titanic (11 Oscars)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-ed94de01-f394-4d37-9888-1186bd143ec8?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Titanic/0R7Q0SWNO615THQW59FZZBSGUD?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/titanic/umc.cmc.2xfg89gkgo2469x0985e0eqq7" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 3 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=YE7VzlLtp-4" target='_blank'>
+                  <img src={benhur} alt="Ben Hur" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>3 - Ben-Hur (11 Oscars)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.primevideo.com/-/pt/detail/Ben-Hur/0LTQ8E8PAEPPLI88E2WOL56Q3Z?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/ben-hur/umc.cmc.523sgjwmhal494z5qfp0xz51g" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 4 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=IH6_CA_ocqY" target='_blank'>
+                  <img src={titanic} alt="Titanic" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>4 - Titanic (US$ 2.264.743)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-ed94de01-f394-4d37-9888-1186bd143ec8?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Titanic/0R7Q0SWNO615THQW59FZZBSGUD?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/titanic/umc.cmc.2xfg89gkgo2469x0985e0eqq7" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 5 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=4r0287tUEgk" target='_blank'>
+                  <img src={despertardaforca} alt="Star Wars: O despertar da força" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>5 - Star Wars: O Despertar da Força (US$ 2.068.223)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-2854a94d-3702-40bd-97a4-12d55a809188?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/star-wars-o-despertar-da-forca/umc.cmc.61i3yveu7xby4chfkqved19ka" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 6 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=4jGRyEa2jhE" target='_blank'>
+                  <img src={guerrainfinita} alt="Vingadores: Guerra Infinita" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>6 - Vingadores: Guerra Infinita (US$ 2.048.359)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-9a136e06-852a-41bf-b71d-fa061cb43225?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://www.primevideo.com/detail/Avengers-Infinity-War/0JTDAMFQF938HK16LTN698UJ7I/ref%3Datv_nb_lcl_pt_BR?ie=UTF8&language=pt_BR&utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/vingadores-guerra-infinita/umc.cmc.2do0xuo1u4tjmqbfz1p42a0p9" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 7 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=bHzGeci_8wc" target='_blank'>
+                  <img src={semvoltapracasa} alt="Homem Aranha: Sem volta pra casa" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>7 - Homem-Aranha: Sem Volta para Casa (US$ 1.922.598)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://tv.apple.com/br/movie/homem-aranha-sem-volta-para-casa/umc.cmc.2qf7xc5hds0m5jgx4roago580" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                  <a href="https://www.netflix.com/br/TITLE/81465707?utm_source=chatgpt.com" target='_blank'>
+                    <img src={netflix} alt="Netflix" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Homem-Aranha-Sem-Volta-para-Casa/0GC8T3GTI8I9NMQUCNXJ8BLPK7?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 8 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=RFinNxS5KN4" target='_blank'>
+                  <img src={jurassicworld} alt="Jurassic World" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>8 - Jurassic World (US$ 1.671.537)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.primevideo.com/-/pt/detail/Jurassic-World---O-Mundo-dos-Dinossauros/0KEKSTSQLSZRHAQQDLF83OP4AO?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 9 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=WBDAsucUg58" target='_blank'>
+                  <img src={reileao} alt="O Rei Leão" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>9 - O Rei Leão (US$ 1.663.075)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-87524f44-a8ea-4b08-b4d8-39103bed3eaa?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/O-Rei-Le%C3%A3o/0JIS2E140I8USLXR5KTW6ZGAZY?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 10 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=KeNEGtsCWEk" target='_blank'>
+                  <img src={vingadores} alt="Vingadores" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>10 - Vingadores (US$ 1.518.815)</h1>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-3a5596d6-5133-4a8e-8d21-00e1531a4e0f?utm_source=chatgpt.com" target='_blank'>
+                    <img src={disney} alt="Disney+" />
+                  </a>
+                  <a href="https://tv.apple.com/br/movie/the-avengers---os-vingadores/umc.cmc.7i757ymuvffa02onn3uva0emx" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Botão seta direita */}
+          <button className="seta seta-direita" onClick={() => rolarOscars('direita')}>
             ❯
           </button>
         </section>
