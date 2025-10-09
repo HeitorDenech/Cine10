@@ -97,11 +97,11 @@ function Home() {
           </div>
 
           <div className={`text-container ${menuOpen ? 'open' : ''}`}>
-            <a href="#classicos">Clássicos</a>
-            <a href="#bilheterias">Bilheterias</a>
-            <a href="#oscars">Oscars</a>
-            <a href="#">Melhores avaliados</a>
-            <a href="#">Séries</a>
+            <a href="#classicos" onClick={() => setMenuOpen(false)}>Clássicos</a>
+            <a href="#bilheterias" onClick={() => setMenuOpen(false)}>Bilheterias</a>
+            <a href="#oscars" onClick={() => setMenuOpen(false)}>Oscars</a>
+            <a href="#" onClick={() => setMenuOpen(false)}>Melhores avaliados</a>
+            <a href="#" onClick={() => setMenuOpen(false)}>Séries</a>
           </div>
 
           <div className="contato-container">
@@ -128,7 +128,7 @@ function Home() {
           </div>
 
           <div data-aos="fade-up" data-aos-duration="1500">
-            <div className='btn-introducao-container' id="classicos">
+            <div className='btn-introducao-container'>
               <button id="btn-sobre">Leia sobre nós</button>
               <button id="btn-login">Cadastro</button>
             </div>
@@ -136,7 +136,7 @@ function Home() {
         </section>
 
         {/* --------------------CONTAINER DOS CLÁSSICOS---------------------- */}
-        <div>
+        <div id="classicos">
           <h1 id='top-10-h1'>Os 10 maiores clássicos</h1>
         </div>
 
@@ -681,7 +681,7 @@ function Home() {
             {/* CARD 3 */}
             <div className='container-top-10'>
               <div className='container-top-10-imagem'>
-                <a href="https://www.youtube.com/watch?v=YE7VzlLtp-4" target='_blank'>
+                <a href="https://www.youtube.com/watch?v=NR1ZHKw09n8" target='_blank'>
                   <img src={benhur} alt="Ben Hur" />
                 </a>
               </div>
