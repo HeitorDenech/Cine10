@@ -517,13 +517,13 @@ main {
   }
 
   .btn-introducao-container #btn-sobre {
-    height: 6vh;
+    height: 5vh;
     width: 16vw;
     font-size: 20px;
   }
 
   .btn-introducao-container #btn-login {
-    height: 6vh;
+    height: 5vh;
     width: 16vw;
     font-size: 20px;
   }
@@ -557,13 +557,13 @@ main {
   }
 
   .btn-introducao-container #btn-sobre {
-    height: 6vh;
+    height: 5vh;
     width: 15vw;
     font-size: 18px;
   }
 
   .btn-introducao-container #btn-login {
-    height: 6vh;
+    height: 5vh;
     width: 15vw;
     font-size: 18px;
   }
