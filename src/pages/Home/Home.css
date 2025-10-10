@@ -137,7 +137,7 @@ nav {
 main {
   margin-top: 5vh;
   background-color: black;
-  height: 200vh;
+  /* height: 200vh; */
   width: 100vw;
   position: relative;
   z-index: 1;
@@ -428,7 +428,7 @@ main {
 }
 
 .seta-direita {
-  right: 0px;
+  right: 10px;
   border-radius: 20px 0px 0px 20px;
 }
 

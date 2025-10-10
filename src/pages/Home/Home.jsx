@@ -131,7 +131,7 @@ function Home() {
             <a href="#classicos" onClick={() => setMenuOpen(false)}>Clássicos</a>
             <a href="#bilheterias" onClick={() => setMenuOpen(false)}>Bilheterias</a>
             <a href="#oscars" onClick={() => setMenuOpen(false)}>Oscars</a>
-            <a href="melhores-avaliados" onClick={() => setMenuOpen(false)}>Melhores avaliados</a>
+            <a href="#melhores-avaliados" onClick={() => setMenuOpen(false)}>Melhores avaliados</a>
             <a href="#" onClick={() => setMenuOpen(false)}>Séries</a>
           </div>
 
@@ -477,13 +477,13 @@ function Home() {
                 <span>US$ 2.320.250</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://www.disneyplus.com/pt-br/browse/entity-357d8505-b9bc-41e3-9f27-0414738df143?utm_source=chatgpt.com" target='_blank'>
+                  <a href="https://www.disneyplus.com/pt-br/browse/entity-e6ef640e-787e-4477-aba4-9e05925ebac2?utm_source=chatgpt.com" target='_blank'>
                     <img src={disney} alt="Disney+" />
                   </a>
-                  <a href="https://www.primevideo.com/-/pt/detail/Avatar/0LCOF5S7YR0UEA8EYW31TA7OF7" target='_blank'>
+                  <a href="https://www.primevideo.com/-/pt/detail/Avatar-O-Caminho-Da-%C3%81gua/0R6MAB6Q360AL86YRENF5C0IF3?utm_source=chatgpt.com" target='_blank'>
                     <img src={primevideo} alt="PrimeVideo" />
                   </a>
-                  <a href="https://tv.apple.com/br/movie/avatar/umc.cmc.1hmaf5hccvdvn71dc5hr7mgcj" target='_blank'>
+                  <a href="https://tv.apple.com/br/movie/avatar-the-way-of-water/umc.cmc.5k5xo2espahvd6kcswi2b5oe9" target='_blank'>
                     <img src={appletv} alt="AppleTV" />
                   </a>
                 </div>
@@ -815,14 +815,8 @@ function Home() {
                 <span>🏆 9 Oscars</span>
                 <p>Onde assistir</p>
                 <div className='img-assistir'>
-                  <a href="https://tv.apple.com/br/movie/homem-aranha-sem-volta-para-casa/umc.cmc.2qf7xc5hds0m5jgx4roago580" target='_blank'>
+                  <a href="https://tv.apple.com/br/movie/o-paciente-ingles/umc.cmc.61v7tb5a7940pr2qo1fuhdirf" target='_blank'>
                     <img src={appletv} alt="AppleTV" />
-                  </a>
-                  <a href="https://www.netflix.com/br/TITLE/81465707?utm_source=chatgpt.com" target='_blank'>
-                    <img src={netflix} alt="Netflix" />
-                  </a>
-                  <a href="https://www.primevideo.com/-/pt/detail/Homem-Aranha-Sem-Volta-para-Casa/0GC8T3GTI8I9NMQUCNXJ8BLPK7?utm_source=chatgpt.com" target='_blank'>
-                    <img src={primevideo} alt="PrimeVideo" />
                   </a>
                 </div>
               </div>
