@@ -17,6 +17,7 @@ import globoplay from '../../assets/globoplay.jpg';
 import disney from '../../assets/disney.webp';
 import uol from '../../assets/uol.jpg'
 import paramount from '../../assets/paramount.avif'
+import crunchyroll from '../../assets/crunchyroll.jpg'
 
 // ----------CLASSICOS---------------
 import cidadaokane from '../../assets/cidadao-kane.jpg';
@@ -64,13 +65,24 @@ import homenseumasentenca from '../../assets/homeneumasentenca.jpg'
 import asociedadedoanel from '../../assets/asociedadedoanel.jpg'
 import treshomensemconflito from '../../assets/treshomensemconflito.webp'
 
-// -----------------SERIES----------------------------
+// -----------------CARROUSEL-VER-SERIES----------------------------
 
 import twd from '../../assets/twd.jpg'
 import got from '../../assets/got.jpg'
-import breakingbad from '../../assets/breakingbad.jpg'
-import series from '../../assets/series.jpg'
 import ossopranos from '../../assets/ossopranos.png'
+
+// ----------------------ANIMES-IMDB-----------------------------
+
+import fullmetal from '../../assets/fullmetal.jpg'
+import atackontitan from '../../assets/atackontitan.png'
+import hunterxhunter from '../../assets/hunterxhunter.jpg'
+import onepiece from '../../assets/onepiece.avif'
+import deathnote from '../../assets/deathnote.jpg'
+import cowboy from '../../assets/cowboy.jpg'
+import steinsgate from '../../assets/steinsgate.avif'
+import dragonballz from '../../assets/dragonballz.jpg'
+import narutoshippuden from '../../assets/narutoshippuden.webp'
+import berserk from '../../assets/berserk.avif'
 
 // --------------------------------------------------
 
@@ -80,6 +92,7 @@ function Home() {
   const carrosselBilheteriaRef = useRef(null);
   const carrosselOscarsRef = useRef(null);
   const carrosselMelhoresAvaliadosRef = useRef(null)
+  const carrosselMelhoresAvaliadosAnimesRef = useRef(null)
 
   const [indicePrincipal, setIndicePrincipal] = useState(0);
   const imagensPrincipal = [ossopranos, got, twd];
@@ -134,6 +147,17 @@ function Home() {
       carrosselMelhoresAvaliadosRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
     } else {
       carrosselMelhoresAvaliadosRef.current.scrollBy({ left: largura, behavior: 'smooth' });
+    }
+  };
+
+  // -----------MELHORES-AVALIADOS-ANIMES----------------------------
+
+  const rolarMelhoresAvaliadosAnimes = (direcao) => {
+    const largura = carrosselMelhoresAvaliadosAnimesRef.current.clientWidth;
+    if (direcao === 'esquerda') {
+      carrosselMelhoresAvaliadosAnimesRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
+    } else {
+      carrosselMelhoresAvaliadosAnimesRef.current.scrollBy({ left: largura, behavior: 'smooth' });
     }
   };
 
@@ -1159,23 +1183,273 @@ function Home() {
           </button>
         </section>
 
-
-
-
-        {/* -------------------SERIES----------------------- */}
+        {/* -------------------CARROUSEL-VER-SERIES----------------------- */}
 
         <section className='container-series'>
-        <div className='container-series-absolute'>
-          <div className='container-series-btn'>
-            <button id='btn-1'>Saiba mais</button>
-            <button id='btn-2'>Ver mais séries</button>
+          <div className='container-series-absolute'>
+            <div className='container-series-btn'>
+              <button id='btn-1'>Ver séries</button>
+            </div>
           </div>
+
+          <div className='container-series-img'>
+            <img src={imagensPrincipal[indicePrincipal]} alt="" />
+          </div>
+        </section>
+
+        {/* --------------------CONTAINER DOS ANIMES MAIS POPULARES---------------------- */}
+
+        <div>
+          <h1 id='top-10-h1'>Os 10 melhores animes (IMDb)</h1>
         </div>
 
-        <div className='container-series-img'>
-          <img src={imagensPrincipal[indicePrincipal]} alt="" />
-        </div>
-      </section>
+        <section className="container-top-10-principal">
+          {/* Botão seta esquerda */}
+          <button className="seta seta-esquerda" onClick={() => rolarMelhoresAvaliadosAnimes('esquerda')}>
+            ❮
+          </button>
+
+          {/* Carrossel com TODOS os cards dentro */}
+          <div className="carrossel-top-10" ref={carrosselMelhoresAvaliadosAnimesRef}>
+
+            {/* CARD 1 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=-GoNo0DGroU" target='_blank'>
+                  <img src={fullmetal} alt="Fullmetal Alchemist: Brotherhood" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>1 - Fullmetal Alchemist: Brotherhood (2009)</h1>
+                <span>⭐ 9,1</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.netflix.com/search?q=fullmetal&jbv=70204981" target='_blank'>
+                    <img src={netflix} alt="Netflix" />
+                  </a>
+                  <a href="https://www.crunchyroll.com/pt-br/series/GRGGPG93R/fullmetal-alchemist-brotherhood" target='_blank'>
+                    <img src={crunchyroll} alt="Crunchyroll" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 2 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=LV-nazLVmgo" target='_blank'>
+                  <img src={atackontitan} alt="Attack on Titan" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>2 - Attack on Titan (Shingeki no Kyojin) (2013 – 2023)</h1>
+                <span>⭐ 9,0</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.crunchyroll.com/pt-br/series/GR751KNZY/attack-on-titan" target='_blank'>
+                    <img src={crunchyroll} alt="Crunchyroll" />
+                  </a>
+                  <a href="https://www.primevideo.com/detail/Attack-on-Titan/0NLTGUZQHA4YXRGRROASC155Q3?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://tv.apple.com/br/show/attack-on-titan/umc.cmc.1o8bhtjzw43b5sxvfr1g2qc5" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 3 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=d6kBeJjTGnY" target='_blank'>
+                  <img src={hunterxhunter} alt="Hunter x Hunter" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>3 - Hunter × Hunter (2011 – 2014)</h1>
+                <span>⭐ 9,0</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.crunchyroll.com/pt-br/series/GY3VKX1MR/hunter-x-hunter" target='_blank'>
+                    <img src={crunchyroll} alt="Crunchyroll" />
+                  </a>
+                  <a href="https://www.netflix.com/title/70300472" target='_blank'>
+                    <img src={netflix} alt="Netflix" />
+                  </a>
+                  <a href="https://tv.apple.com/br/show/hunter-x-hunter/umc.cmc.6iubybdmze8hzxhis7q2gzmk3" target='_blank'>
+                    <img src={appletv} alt="AppleTV" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 4 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=MCb13lbVGE0" target='_blank'>
+                  <img src={onepiece} alt="One Piece" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>4 - One Piece (1999 – presente)</h1>
+                <span>⭐ 9</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.netflix.com/search?q=one%20piece&jbv=80107103" target='_blank'>
+                    <img src={netflix} alt="Netflix" />
+                  </a>
+                  <a href="https://www.crunchyroll.com/pt-br/series/GRMG8ZQZR/one-piece" target='_blank'>
+                    <img src={crunchyroll} alt="Crunchyroll" />
+                  </a>
+                  <a href="https://play.hbomax.com/show/37901cbf-ba0c-4a6d-9f5f-f7def2e34a62" target='_blank'>
+                    <img src={hbomax} alt="HBOmax" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 5 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=NlJZ-YgAt-c" target='_blank'>
+                  <img src={deathnote} alt="Death Note" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>5 - Death Note (2006 – 2007)</h1>
+                <span>⭐ 8,9</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.netflix.com/title/70204970" target='_blank'>
+                    <img src={netflix} alt="Neftlix" />
+                  </a>
+                  <a href="https://play.hbomax.com/show/fabd8a3d-dd29-4f94-bc46-55941b14eacf" target='_blank'>
+                    <img src={hbomax} alt="HBOmax" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 6 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=AJKEXDKBVdk" target='_blank'>
+                  <img src={cowboy} alt="Cowboy Bebop" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>6 -  Cowboy Bebop (1998 – 1999)</h1>
+                <span>⭐ 8,9</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.crunchyroll.com/pt-br/series/GYVNXMVP6/cowboy-bebop" target='_blank'>
+                    <img src={crunchyroll} alt="Crunchyroll" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Cowboy-Bebop/0N0DXY700USE7GTCKH5C6LMOEN" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 7 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=uMYhjVwp0Fk" target='_blank'>
+                  <img src={steinsgate} alt="Steins;Gate" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>7 -  Steins;Gate (2011)</h1>
+                <span>⭐ 8,8</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.primevideo.com/-/pt/detail/SteinsGate/0STD2YPX0N9A2MLD4IFOUDBMRZ" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                  <a href="https://www.crunchyroll.com/pt-br/series/GYWE7W5GY/steinsgate" target='_blank'>
+                    <img src={crunchyroll} alt="Crunchyroll" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 8 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="" target='_blank'>
+                  <img src={dragonballz} alt="Dragon Ball Z" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>8 - Dragon Ball Z (1989 – 1996)</h1>
+                <span>⭐ 8,8</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.crunchyroll.com/pt-br/series/G9VHN9PPW/dragon-ball-z" target='_blank'>
+                    <img src={crunchyroll} alt="Crunchyroll" />
+                  </a>
+                  <a href="https://www.primevideo.com/-/pt/detail/Dragon-Ball-Z/0TRO4DHORIMNWHPHII7IHCGFJ9" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 9 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=22R0j8UKRzY" target='_blank'>
+                  <img src={narutoshippuden} alt="Pulp Fiction" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>9 - Naruto: Shippuden (2007 - 2017) </h1>
+                <span>⭐ 8,7</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.crunchyroll.com/pt-br/series/GYQ4MW246/naruto-shippuden" target='_blank'>
+                    <img src={crunchyroll} alt="Crunchyroll" />
+                  </a>
+                  <a href="https://www.netflix.com/title/80000603" target='_blank'>
+                    <img src={netflix} alt="Netflix" />
+                  </a>
+                  <a href="https://www.primevideo.com/detail/Naruto-Shippuden/0ISLEJE0SYLJ721266RFP6FWGA" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 10 */}
+            <div className='container-top-10'>
+              <div className='container-top-10-imagem'>
+                <a href="https://www.youtube.com/watch?v=IXL5r3n862U" target='_blank'>
+                  <img src={berserk} alt="Berserk" />
+                </a>
+              </div>
+              <div className='container-top-10-texto'>
+                <h1>10 - Berserk (1997 – 1998)</h1>
+                <span>⭐ 8,7</span>
+                <p>Onde assistir</p>
+                <div className='img-assistir'>
+                  <a href="https://www.crunchyroll.com/pt-br/series/GYX04955R/berserk" target='_blank'>
+                    <img src={crunchyroll} alt="Crunchyroll" />
+                  </a>
+                  <a href="https://www.primevideo.com/detail/Berserk/0G9DT2288XX9ZZU9HU8AWZFVNC?utm_source=chatgpt.com" target='_blank'>
+                    <img src={primevideo} alt="PrimeVideo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Botão seta direita */}
+          <button className="seta seta-direita" onClick={() => rolarMelhoresAvaliadosAnimes('direita')}>
+            ❯
+          </button>
+        </section>
+
 
       </main>
 
