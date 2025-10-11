@@ -69,6 +69,8 @@ import treshomensemconflito from '../../assets/treshomensemconflito.webp'
 import twd from '../../assets/twd.jpg'
 import got from '../../assets/got.jpg'
 import breakingbad from '../../assets/breakingbad.jpg'
+import series from '../../assets/series.jpg'
+import ossopranos from '../../assets/ossopranos.png'
 
 // --------------------------------------------------
 
@@ -79,10 +81,18 @@ function Home() {
   const carrosselOscarsRef = useRef(null);
   const carrosselMelhoresAvaliadosRef = useRef(null)
 
+  const [indicePrincipal, setIndicePrincipal] = useState(0);
+  const imagensPrincipal = [ossopranos, got, twd];
+
   useEffect(() => {
     AOS.init({ once: true });
-  }, []);
 
+    const intervalo = setInterval(() => {
+      setIndicePrincipal((prev) => (prev + 1) % imagensPrincipal.length);
+    }, 5000); // quantos segundos troca
+
+    return () => clearInterval(intervalo);
+  }, []);
   // -------------------CLASSICOS--------------------
 
   const rolar = (direcao) => {
@@ -1154,19 +1164,18 @@ function Home() {
 
         {/* -------------------SERIES----------------------- */}
 
-        <section className='container-series'> 
-
-          <div className='container-series-absolute'>
-            <div className='container-series-btn'>
-              <button id='btn-1'>Saiba mais</button>
-              <button id='btn-2'>Ver mais séries</button>
-            </div>
+        <section className='container-series'>
+        <div className='container-series-absolute'>
+          <div className='container-series-btn'>
+            <button id='btn-1'>Saiba mais</button>
+            <button id='btn-2'>Ver mais séries</button>
           </div>
+        </div>
 
-          <div className='container-series-img'>
-            <img src={twd} alt="" />
-          </div>
-        </section>
+        <div className='container-series-img'>
+          <img src={imagensPrincipal[indicePrincipal]} alt="" />
+        </div>
+      </section>
 
       </main>
 
