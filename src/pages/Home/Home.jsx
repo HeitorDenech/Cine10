@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import './Home.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import logo_branca_sem_fundo from '../../assets/logo_branca_sem_fundo.png';
 
@@ -61,6 +63,12 @@ import poderosochefao2 from '../../assets/poderosochefao2.jpg'
 import homenseumasentenca from '../../assets/homeneumasentenca.jpg'
 import asociedadedoanel from '../../assets/asociedadedoanel.jpg'
 import treshomensemconflito from '../../assets/treshomensemconflito.webp'
+
+// -----------------SERIES----------------------------
+
+import twd from '../../assets/twd.jpg'
+import got from '../../assets/got.jpg'
+import breakingbad from '../../assets/breakingbad.jpg'
 
 // --------------------------------------------------
 
@@ -1139,6 +1147,25 @@ function Home() {
           <button className="seta seta-direita" onClick={() => rolarMelhoresAvaliados('direita')}>
             ❯
           </button>
+        </section>
+
+
+
+
+        {/* -------------------SERIES----------------------- */}
+
+        <section className='container-series'> 
+
+          <div className='container-series-absolute'>
+            <div className='container-series-btn'>
+              <button id='btn-1'>Saiba mais</button>
+              <button id='btn-2'>Ver mais séries</button>
+            </div>
+          </div>
+
+          <div className='container-series-img'>
+            <img src={twd} alt="" />
+          </div>
         </section>
 
       </main>

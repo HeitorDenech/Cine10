@@ -203,7 +203,7 @@ main {
   width: 13vw;
   border: 1px solid white;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 15px;
   transition: all 0.45s ease-in-out;
 }
@@ -219,7 +219,7 @@ main {
   height: 6vh;
   width: 13vw;
   border: 1px solid white;
-  border-radius: 20px;
+  border-radius: 10px;
   color: white;
   font-size: 15px;
   transition: all 0.45s ease-in-out;
@@ -436,6 +436,85 @@ main {
   margin-top: 5vh;
 }
 
+/* ----------------------------CONTAINER-SERIES-------------------------- */
+
+.container-series {
+  position: relative;
+  /* necessário para os absolutos funcionarem */
+  margin-top: 0vh;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-series-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 90vw;
+}
+
+.container-series-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* mantém proporção e cobre o container */
+}
+
+.container-series-absolute {
+  position: absolute;
+  top: 70%;
+  /* centraliza verticalmente */
+  left: 50%;
+  /* centraliza horizontalmente */
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* centraliza os botões horizontalmente */
+  gap: 2vh;
+  /* espaçamento entre os botões */
+}
+
+.container-series-btn {
+  display: flex;
+  gap: 1vh;
+  /* espaçamento entre os botões */
+}
+
+#btn-1,
+#btn-2 {
+  height: 7vh;
+  width: 11vw;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.45s ease-in-out;
+}
+
+#btn-1 {
+  background-color: white;
+}
+
+#btn-1:hover {
+  background-color: black;
+  color: white;
+}
+
+#btn-2 {
+  background-color: rgb(52, 52, 52);
+  color: white;
+}
+
+#btn-2:hover {
+  background-color: black;
+  color: white;
+}
+
 /* ------------------------------RESPONSIVO--------------------------------- */
 
 @media screen and (min-width: 1900px) and (max-width: 2560px) {
@@ -505,6 +584,36 @@ main {
     flex: 0vw 0vw 40vw;
     margin-left: 3vh;
   }
+
+  .container-series-img {
+    height: 110vh;
+    width: 100vw;
+    margin-top: 5vh;
+  }
+
+  .container-series-img img {
+    height: 100%;
+    width: 95%;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+
+  .container-series-absolute {
+    top: 95%;
+  }
+
+  #btn-1 {
+    height: 7vh;
+    width: 16vw;
+    font-size: 20px;
+  }
+
+  #btn-2 {
+    height: 7vh;
+    width: 18vw;
+    font-size: 20px;
+  }
+
 }
 
 
@@ -546,6 +655,35 @@ main {
     padding: 4rem 1rem;
   }
 
+  .container-series-img {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 5vh;
+  }
+
+  .container-series-img img {
+    height: 100%;
+    width: 95%;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+
+  .container-series-absolute {
+    top: 95%;
+  }
+
+  #btn-1 {
+    height: 6vh;
+    width: 18vw;
+    font-size: 20px;
+  }
+
+  #btn-2 {
+    height: 6vh;
+    width: 18vw;
+    font-size: 20px;
+  }
+
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1439px) {
@@ -557,14 +695,14 @@ main {
   }
 
   .btn-introducao-container #btn-sobre {
-    height: 5vh;
-    width: 15vw;
+    height: 6.5vh;
+    width: 14vw;
     font-size: 18px;
   }
 
   .btn-introducao-container #btn-login {
-    height: 5vh;
-    width: 15vw;
+    height: 6.5vh;
+    width: 14vw;
     font-size: 18px;
   }
 
@@ -573,7 +711,7 @@ main {
     height: 7vh;
   }
 
-  span{
+  span {
     font-size: 18px;
   }
 
@@ -588,6 +726,35 @@ main {
 
   .container-top-10 {
     flex: 0 0 22vw;
+  }
+
+  .container-series-img {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 5vh;
+  }
+
+  .container-series-img img {
+    height: 100%;
+    width: 95%;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+
+  .container-series-absolute {
+    top: 95%;
+  }
+
+  #btn-1 {
+    height: 6vh;
+    width: 16vw;
+    font-size: 17px;
+  }
+
+  #btn-2 {
+    height: 6vh;
+    width: 16vw;
+    font-size: 17px;
   }
 
 }
@@ -618,7 +785,7 @@ main {
     height: 7vh;
   }
 
-  span{
+  span {
     font-size: 15px;
   }
 
@@ -637,6 +804,36 @@ main {
 
   .container-top-10 {
     flex: 0 0 20vw;
+  }
+
+
+  .container-series-img {
+    height: 70vh;
+    width: 100vw;
+    margin-top: 5vh;
+  }
+
+  .container-series-img img {
+    height: 100%;
+    width: 95%;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+
+  .container-series-absolute {
+    top: 95%;
+  }
+
+  #btn-1 {
+    height: 5vh;
+    width: 18vw;
+    font-size: 17px;
+  }
+
+  #btn-2 {
+    height: 5vh;
+    width: 18vw;
+    font-size: 17px;
   }
 
 }
@@ -666,7 +863,7 @@ main {
     height: 7vh;
   }
 
-  span{
+  span {
     font-size: 15px;
   }
 
@@ -688,6 +885,37 @@ main {
     flex: 0 0 24vw;
   }
 
+
+  .container-series-img {
+    margin-top: 5vh;
+    height: 60vh;
+    width: 100vw;
+
+  }
+
+  .container-series-img img {
+    height: 100%;
+    width: 95%;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+
+  .container-series-absolute {
+    top: 95%;
+  }
+
+  #btn-1 {
+    height: 4vh;
+    width: 20vw;
+    font-size: 15px;
+  }
+
+  #btn-2 {
+    height: 4vh;
+    width: 20vw;
+    font-size: 15px;
+  }
+
 }
 
 @media screen and (min-width:1001px) and (max-width: 1149px) {
@@ -705,6 +933,36 @@ main {
   .container-top-10 {
     flex: 0 0 28vw;
   }
+
+
+  .container-series-img {
+    height: 60vh;
+    width: 100vw;
+
+  }
+
+  .container-series-img img {
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+
+  .container-series-absolute {
+    top: 94%;
+  }
+
+  #btn-1 {
+    height: 4vh;
+    width: 20vw;
+    font-size: 15px;
+  }
+
+  #btn-2 {
+    height: 4vh;
+    width: 20vw;
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width:800px) and (max-width: 1000px) {
@@ -720,6 +978,36 @@ main {
 
   .container-top-10 {
     flex: 0 0 30vw;
+  }
+
+
+  .container-series-img {
+    height: 60vh;
+    width: 100vw;
+
+  }
+
+  .container-series-img img {
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+
+  .container-series-absolute {
+    top: 94%;
+  }
+
+  #btn-1 {
+    height: 4vh;
+    width: 20vw;
+    font-size: 15px;
+  }
+
+  #btn-2 {
+    height: 4vh;
+    width: 20vw;
+    font-size: 15px;
   }
 }
 
@@ -833,11 +1121,69 @@ main {
   .contato-container {
     display: none;
   }
+
+  .container-series-img {
+    height: 60vh;
+    width: 100vw;
+
+  }
+
+  .container-series-img img {
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+
+  .container-series-absolute {
+    top: 94%;
+  }
+
+  #btn-1 {
+    height: 4vh;
+    width: 20vw;
+    font-size: 15px;
+  }
+
+  #btn-2 {
+    height: 4vh;
+    width: 20vw;
+    font-size: 15px;
+  }
 }
 
 /* ----------CELULAR---------------- */
 
 @media screen and (max-width: 430px) {
+
+  .container-series-img {
+    height: 50vh;
+    width: 100vw;
+
+  }
+
+  .container-series-img img {
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+
+  .container-series-absolute {
+    top: 94%;
+  }
+
+  #btn-1 {
+    height: 4vh;
+    width: 24vw;
+    font-size: 12px;
+  }
+
+  #btn-2 {
+    height: 4vh;
+    width: 24vw;
+    font-size: 12px;
+  }
 
   #classicos,
   #bilheterias,
@@ -909,7 +1255,7 @@ main {
     font-size: 15px;
   }
 
-  span{
+  span {
     font-size: 15px;
   }
 
