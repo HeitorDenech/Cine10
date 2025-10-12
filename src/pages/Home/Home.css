@@ -5,10 +5,8 @@
   /* background-color: black; */
 }
 
-#classicos,
-#bilheterias,
-#oscars,
-#melhores-avaliados {
+#filmes,
+#animes {
   scroll-margin-top: 100px;
   /* altura do header */
 }
@@ -447,9 +445,7 @@ main {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /* evita que a imagem "vaze" */
   height: 100vh;
-  /* ocupa toda a altura da tela */
   width: 100vw;
   border-radius: 20px;
 }
@@ -460,17 +456,49 @@ main {
   justify-content: center;
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .container-series-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transition: opacity 1s ease-in-out;
-  /* transição suave */
-  opacity: 1;
   position: absolute;
-  /* para sobrepor imagens se quiser fade */
+  opacity: 1;
+}
+
+/* fade-in: aparece suavemente */
+.fade-in {
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+/* fade-out: desaparece suavemente */
+.fade-out {
+  animation: fadeOut 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(1.03);
+  }
 }
 
 .container-series-absolute {
@@ -521,6 +549,7 @@ main {
   background-color: black;
   color: white;
 }
+
 
 /* ------------------------------RESPONSIVO--------------------------------- */
 
@@ -675,7 +704,7 @@ main {
 
 @media screen and (min-width: 1300px) and (max-width: 1439px) {
 
-  #top-10-h1{
+  #top-10-h1 {
     font-size: 20px;
   }
 
@@ -989,15 +1018,18 @@ main {
     padding: 10px 0;
     /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); */
     z-index: 1000;
-    height: 80vh;
+    height: 90vh;
     opacity: 0;
     transform: translateY(-20px);
     transition: all 0.6s ease;
+    overflow: hidden;
   }
 
   /* Animação ao abrir o menu */
   .text-container.open {
     display: flex;
+    align-items: center;
+    justify-content: center;
     animation: slideDown 0.6s ease forwards;
     overflow: hidden;
   }
@@ -1152,10 +1184,13 @@ main {
 
   /* -------------------CARROSEL------------------ */
 
-  /* .container-top-10 {
-    flex: 0vw 0vw 40vw;
+  .container-top-10-principal{
+    margin-left: -2vh;
+  }
+
+  .container-top-10 {
     margin-left: 3vh;
-  } */
+  }
 
   /* -------------IMG-ASSISTIR---------------- */
 

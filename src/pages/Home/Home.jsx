@@ -70,6 +70,8 @@ import treshomensemconflito from '../../assets/treshomensemconflito.webp'
 import twd from '../../assets/twd.jpg'
 import got from '../../assets/got.jpg'
 import ossopranos from '../../assets/ossopranos.png'
+import origem from '../../assets/origem.jpg'
+import modernfamily from '../../assets/modernfamily.jpg'
 
 // ----------------------ANIMES-IMDB-----------------------------
 
@@ -91,74 +93,77 @@ function Home() {
   const carrosselRef = useRef(null);
   const carrosselBilheteriaRef = useRef(null);
   const carrosselOscarsRef = useRef(null);
-  const carrosselMelhoresAvaliadosRef = useRef(null)
-  const carrosselMelhoresAvaliadosAnimesRef = useRef(null)
+  const carrosselMelhoresAvaliadosRef = useRef(null);
+  const carrosselMelhoresAvaliadosAnimesRef = useRef(null);
 
   const [indicePrincipal, setIndicePrincipal] = useState(0);
-  const imagensPrincipal = [ossopranos, got, twd];
+  const [animacao, setAnimacao] = useState('fade-in'); // controla animação
+  const imagensPrincipal = [ossopranos, got, twd, origem, modernfamily];
 
   useEffect(() => {
     AOS.init({ once: true });
 
     const intervalo = setInterval(() => {
-      setIndicePrincipal((prev) => (prev + 1) % imagensPrincipal.length);
-    }, 5000); // quantos segundos troca
+      setAnimacao('fade-out'); // aplica fade-out
+
+      setTimeout(() => {
+        // troca a imagem após o fade-out
+        setIndicePrincipal((prev) => (prev + 1) % imagensPrincipal.length);
+        setAnimacao('fade-in'); // entra fade-in
+      }, 800); // tempo do fade-out
+    }, 7000); // troca a cada 5s
 
     return () => clearInterval(intervalo);
-  }, []);
-  // -------------------CLASSICOS--------------------
+  }, [imagensPrincipal.length]);
 
+  // --- resto dos carrosséis (como já estava) ---
   const rolar = (direcao) => {
     const largura = carrosselRef.current.clientWidth;
-    if (direcao === 'esquerda') {
-      carrosselRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
-    } else {
-      carrosselRef.current.scrollBy({ left: largura, behavior: 'smooth' });
-    }
+    carrosselRef.current.scrollBy({
+      left: direcao === 'esquerda' ? -largura : largura,
+      behavior: 'smooth',
+    });
   };
 
-  // ----------BILHETERIAS-------------------------
+  // -----------------ROLAR-BILHETEROIA-FILMES----------------
 
   const rolarBilheteria = (direcao) => {
     const largura = carrosselBilheteriaRef.current.clientWidth;
-    if (direcao === 'esquerda') {
-      carrosselBilheteriaRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
-    } else {
-      carrosselBilheteriaRef.current.scrollBy({ left: largura, behavior: 'smooth' });
-    }
+    carrosselBilheteriaRef.current.scrollBy({
+      left: direcao === 'esquerda' ? -largura : largura,
+      behavior: 'smooth',
+    });
   };
-
-  // -----------OSCARS-----------------------------
+  
+  // ------------------ROLAS-OSCARS--------------------
 
   const rolarOscars = (direcao) => {
     const largura = carrosselOscarsRef.current.clientWidth;
-    if (direcao === 'esquerda') {
-      carrosselOscarsRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
-    } else {
-      carrosselOscarsRef.current.scrollBy({ left: largura, behavior: 'smooth' });
-    }
+    carrosselOscarsRef.current.scrollBy({
+      left: direcao === 'esquerda' ? -largura : largura,
+      behavior: 'smooth',
+    });
   };
 
-  // -----------MELHORES-AVALIADOS-----------------------------
+  // ---------------MELHORES-AVALIADOS-FILMES--------------
+
 
   const rolarMelhoresAvaliados = (direcao) => {
     const largura = carrosselMelhoresAvaliadosRef.current.clientWidth;
-    if (direcao === 'esquerda') {
-      carrosselMelhoresAvaliadosRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
-    } else {
-      carrosselMelhoresAvaliadosRef.current.scrollBy({ left: largura, behavior: 'smooth' });
-    }
+    carrosselMelhoresAvaliadosRef.current.scrollBy({
+      left: direcao === 'esquerda' ? -largura : largura,
+      behavior: 'smooth',
+    });
   };
 
-  // -----------MELHORES-AVALIADOS-ANIMES----------------------------
+  // ---------------MELHORES-AVALIADOS-ANIMES--------------
 
   const rolarMelhoresAvaliadosAnimes = (direcao) => {
     const largura = carrosselMelhoresAvaliadosAnimesRef.current.clientWidth;
-    if (direcao === 'esquerda') {
-      carrosselMelhoresAvaliadosAnimesRef.current.scrollBy({ left: -largura, behavior: 'smooth' });
-    } else {
-      carrosselMelhoresAvaliadosAnimesRef.current.scrollBy({ left: largura, behavior: 'smooth' });
-    }
+    carrosselMelhoresAvaliadosAnimesRef.current.scrollBy({
+      left: direcao === 'esquerda' ? -largura : largura,
+      behavior: 'smooth',
+    });
   };
 
   return (
@@ -170,11 +175,11 @@ function Home() {
           </div>
 
           <div className={`text-container ${menuOpen ? 'open' : ''}`}>
-            <a href="#classicos" onClick={() => setMenuOpen(false)}>Clássicos</a>
-            <a href="#bilheterias" onClick={() => setMenuOpen(false)}>Bilheterias</a>
-            <a href="#oscars" onClick={() => setMenuOpen(false)}>Oscars</a>
-            <a href="#melhores-avaliados" onClick={() => setMenuOpen(false)}>Melhores avaliados</a>
-            <a href="#" onClick={() => setMenuOpen(false)}>Séries</a>
+            <a href="#filmes" onClick={() => setMenuOpen(false)}>Filmes</a>
+            <a href="#animes" onClick={() => setMenuOpen(false)}>Animes</a>
+            <a href="#series" onClick={() => setMenuOpen(false)}>Séries</a>
+            <a href="#desenhos" onClick={() => setMenuOpen(false)}>Desenhos</a>
+            <a href="#outros" onClick={() => setMenuOpen(false)}>Outros</a>
           </div>
 
           <div className="contato-container">
@@ -209,7 +214,7 @@ function Home() {
         </section>
 
         {/* --------------------CONTAINER DOS CLÁSSICOS---------------------- */}
-        <div id="classicos">
+        <div id="filmes">
           <h1 id='top-10-h1'>Os 10 maiores clássicos</h1>
         </div>
 
@@ -703,7 +708,7 @@ function Home() {
 
         {/* --------------------CONTAINER DOS OSCARS---------------------- */}
 
-        <div id="oscars">
+        <div>
           <h1 id='top-10-h1'>Os 10 filmes com mais Oscars</h1>
         </div>
 
@@ -938,7 +943,7 @@ function Home() {
 
         {/* --------------------CONTAINER DOS MELHORES AVALIADOS---------------------- */}
 
-        <div id="melhores-avaliados">
+        <div>
           <h1 id='top-10-h1'>Os 10 melhores avaliados (IMDb)</h1>
         </div>
 
@@ -1193,13 +1198,17 @@ function Home() {
           </div>
 
           <div className='container-series-img'>
-            <img src={imagensPrincipal[indicePrincipal]} alt="" />
+            <img
+              src={imagensPrincipal[indicePrincipal]}
+              alt='Slide principal'
+              className={animacao}
+            />
           </div>
         </section>
 
         {/* --------------------CONTAINER DOS ANIMES MAIS POPULARES---------------------- */}
 
-        <div>
+        <div id="animes">
           <h1 id='top-10-h1'>Os 10 melhores animes (IMDb)</h1>
         </div>
 
