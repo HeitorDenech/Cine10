@@ -71,7 +71,15 @@ import twd from '../../assets/twd.jpg'
 import got from '../../assets/got.jpg'
 import ossopranos from '../../assets/ossopranos.png'
 import origem from '../../assets/origem.jpg'
-import modernfamily from '../../assets/modernfamily.jpg'
+import modernfamily from '../../assets/modernfamily.webp'
+
+// -----------------CARROUSEL-VER-SERIES-MOBILE----------------------------
+
+import sopranosmobile from '../../assets/sopranosmobile.webp'
+import gotmobile from '../../assets/gotmobile.jpg'
+import twdmobile from '../../assets/twdmobile.jpg'
+import frommobile from '../../assets/frommobile.jpg'
+import modernfamilymobile from '../../assets/modernfamilymobile.jpg'
 
 // ----------------------ANIMES-IMDB-----------------------------
 
@@ -97,33 +105,23 @@ function Home() {
   const carrosselMelhoresAvaliadosAnimesRef = useRef(null);
 
   const [indicePrincipal, setIndicePrincipal] = useState(0);
-  const [animacao, setAnimacao] = useState('fade-in'); // controla animação
+  const [animacao, setAnimacao] = useState('fade-in');
   const imagensPrincipal = [ossopranos, got, twd, origem, modernfamily];
+  const imagensPrincipalMobile = [sopranosmobile, gotmobile, twdmobile, frommobile, modernfamilymobile];
 
   useEffect(() => {
     AOS.init({ once: true });
 
     const intervalo = setInterval(() => {
-      setAnimacao('fade-out'); // aplica fade-out
-
+      setAnimacao('fade-out');
       setTimeout(() => {
-        // troca a imagem após o fade-out
         setIndicePrincipal((prev) => (prev + 1) % imagensPrincipal.length);
-        setAnimacao('fade-in'); // entra fade-in
-      }, 800); // tempo do fade-out
-    }, 7000); // troca a cada 5s
+        setAnimacao('fade-in');
+      }, 800);
+    }, 7000);
 
     return () => clearInterval(intervalo);
   }, [imagensPrincipal.length]);
-
-  // --- resto dos carrosséis (como já estava) ---
-  const rolar = (direcao) => {
-    const largura = carrosselRef.current.clientWidth;
-    carrosselRef.current.scrollBy({
-      left: direcao === 'esquerda' ? -largura : largura,
-      behavior: 'smooth',
-    });
-  };
 
   // -----------------ROLAR-BILHETEROIA-FILMES----------------
 
@@ -134,7 +132,7 @@ function Home() {
       behavior: 'smooth',
     });
   };
-  
+
   // ------------------ROLAS-OSCARS--------------------
 
   const rolarOscars = (direcao) => {
@@ -1198,13 +1196,22 @@ function Home() {
           </div>
 
           <div className='container-series-img'>
+            {/* imagem normal (desktop) */}
             <img
               src={imagensPrincipal[indicePrincipal]}
               alt='Slide principal'
-              className={animacao}
+              className={`img-desktop ${animacao}`}
+            />
+
+            {/* imagem versão mobile */}
+            <img
+              src={imagensPrincipalMobile[indicePrincipal]}
+              alt='Slide principal mobile'
+              className={`img-mobile ${animacao}`}
             />
           </div>
         </section>
+
 
         {/* --------------------CONTAINER DOS ANIMES MAIS POPULARES---------------------- */}
 
