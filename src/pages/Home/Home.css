@@ -93,31 +93,19 @@ nav {
   opacity: 100%;
 }
 
-/* -------CONTATO-CONTAINER-------------- */
-.contato-container {
+/* -------PERFIL-CONTAINER-------------- */
+
+.perfil-container {
   display: flex;
   align-items: center;
   justify-content: center;
   /* padding: 15px; */
 }
 
-.contato-container button {
-  height: 5vh;
-  width: 4vw;
-  border-radius: 20px;
-  background-color: black;
-  border: 1px solid white;
-  transition: all 0.45s ease-in-out;
-}
-
-.contato-container button:hover {
-  opacity: 60%;
-  cursor: pointer;
-}
-
-.contato-container i {
-  font-size: 18px;
-  color: white;
+.perfil-container img{
+    height: auto;
+    width: 3vw;
+    border-radius: 10px
 }
 
 /* --------MENU TOGGLE (HAMBURGER)---------- */
@@ -538,28 +526,15 @@ main {
   border: none;
   font-size: 16px;
   font-weight: bold;
-  transition: all 0.45s ease-in-out;
+  transition: all .50s ease-in-out;
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
-#btn-1 {
-  background-color: white;
-}
-
-#btn-1:hover {
-  background-color: black;
-  color: white;
-}
-
-#btn-2 {
-  background-color: rgb(52, 52, 52);
-  color: white;
-}
-
-#btn-2:hover {
-  background-color: black;
-  color: white;
+#btn-1:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
 }
 
 
@@ -569,10 +544,6 @@ main {
 
   .logo-container h1 {
     font-size: 30px;
-  }
-
-  .contato-container i {
-    font-size: 23px;
   }
 
   .title-introducao-container h1 {
@@ -638,7 +609,7 @@ main {
     width: 95vw;
     margin-left: 2. 5vw;
     /* border: 1px solid white; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
 
   .container-series-absolute {
@@ -698,7 +669,7 @@ main {
     width: 95vw;
     margin-left: 2.5vw;
     /* border: 1px solid white; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
 
   .container-series-absolute {
@@ -765,7 +736,7 @@ main {
     width: 95vw;
     margin-left: 2.5vw;
     /* border: 1px solid white; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
 
   .container-series-absolute {
@@ -834,7 +805,7 @@ main {
     width: 95vw;
     margin-left: 2.5vw;
     /* border: 1px solid white; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
 
   .container-series-absolute {
@@ -902,7 +873,7 @@ main {
     width: 95vw;
     margin-left: 2.5vw;
     /* border: 1px solid white; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
 
   .container-series-absolute {
@@ -940,7 +911,7 @@ main {
     width: 95vw;
     margin-left: 2.5vw;
     /* border: 1px solid white; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
 
   .container-series-absolute {
@@ -1041,7 +1012,7 @@ main {
   .text-container.open {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     animation: slideDown 0.6s ease forwards;
     overflow: hidden;
   }
@@ -1066,6 +1037,7 @@ main {
     transform: translateY(-10px);
     animation: fadeInLinks 0.5s ease forwards;
     animation-delay: 0.1s;
+    padding-top: 5vh;
   }
 
   .text-container.open a:nth-child(1) {
@@ -1099,7 +1071,7 @@ main {
     display: block;
   }
 
-  .contato-container {
+  .perfil-container {
     display: none;
   }
 
@@ -1135,8 +1107,8 @@ main {
   }
 
   .container-series {
-    height: 50vh;
-    width: 90vw;
+    height: 60vh;
+    width: 95vw;
     border: 1px solid white;
   }
 
