@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
@@ -99,7 +100,6 @@ import berserk from '../../assets/berserk.avif'
 // --------------------------------------------------
 
 function Home() {
-    const [menuOpen, setMenuOpen] = useState(false);
     const carrosselRef = useRef(null);
     const carrosselBilheteriaRef = useRef(null);
     const carrosselOscarsRef = useRef(null);
@@ -110,6 +110,21 @@ function Home() {
     const [animacao, setAnimacao] = useState('fade-in');
     const imagensPrincipal = [ossopranos, got, twd, origem, modernfamily];
     const imagensPrincipalMobile = [sopranosmobile, gotmobile, twdmobile, frommobile, modernfamilymobile];
+    const navigate = useNavigate(); // ✅ Inicializa navigate
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [nomeUsuario, setNomeUsuario] = useState('');
+
+    function sair() {
+        localStorage.removeItem('usuario'); // limpa usuário
+        navigate('/login'); // redireciona para login
+    }
+    useEffect(() => {
+        const usuario = localStorage.getItem('usuario');
+        if (usuario) {
+            const userObj = JSON.parse(usuario);
+            setNomeUsuario(userObj.nome);
+        }
+    }, []);
 
     useEffect(() => {
         AOS.init({ once: true });
@@ -183,7 +198,8 @@ function Home() {
                     </div>
 
                     <div className="perfil-container">
-                        <img src={perfil} alt="" />
+                        <h1>{nomeUsuario ? nomeUsuario : "Visitante"}</h1>
+                        {/* <button onClick={sair}>Sair</button> */}
                     </div>
 
                     <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
@@ -205,7 +221,7 @@ function Home() {
 
                     <div data-aos="fade-up" data-aos-duration="1500">
                         <div className='btn-introducao-container'>
-                            <button id="btn-sobre">Fale conosco</button>
+                            <button id="btn-sobre" onClick={sair}>Sair</button>
                             <Link to="/Login">
                                 <button id="btn-login">Login</button>
                             </Link>

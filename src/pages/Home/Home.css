@@ -99,13 +99,27 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: red; */
+  height: 100%;
   /* padding: 15px; */
 }
 
-.perfil-container img{
-    height: auto;
-    width: 3vw;
-    border-radius: 10px
+.perfil-container h1{
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.perfil-container button{
+  margin-left: 1vh;
+  height: 4vh;
+  width: 3vw;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 16px;
 }
 
 /* --------MENU TOGGLE (HAMBURGER)---------- */
@@ -1072,7 +1086,11 @@ main {
   }
 
   .perfil-container {
-    display: none;
+    display: flex;
+  }
+
+  .perfil-container h1{
+    font-size: 16px;
   }
 
   .container-series {
