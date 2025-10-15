@@ -18,5 +18,10 @@
     "nome": "fabiano",
     "email": "fabiano.denech.gmail.com",
     "senha": "$2b$10$N0YSRtuU2IqSQ.buQS00F.uo9NyXndmvrMhQarfXTYmL00fHIzPoq"
+  },
+  {
+    "nome": "Gabriel",
+    "email": "genzo.dozza@gmail.com",
+    "senha": "$2b$10$eS.ZreRuL6XFP70NVtC8ReUolRnwoGZig5c0XfSiWab93G7C51uN2"
   }
 ]
