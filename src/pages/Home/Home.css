@@ -1196,6 +1196,10 @@ main {
 
   /* -------------------CARROSEL------------------ */
 
+  .container-top-10-imagem{
+    height: 25vh;
+  }
+
   .container-top-10-principal {
     margin-left: -2vh;
   }
