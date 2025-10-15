@@ -100,8 +100,23 @@
   opacity: 80%;
 }
 
+@media screen and (min-width: 1900px) {
+
+  .cadastro-container{
+    width: 30vw;
+  } 
+  
+  .cadastro-container input {
+    height: 7vh;
+  }
+
+  .cadastro-container button {
+    height: 7vh;
+  }
+}
+
 /* Responsividade */
-@media screen and (min-width: 1441px) and (max-width:2000px) {
+@media screen and (min-width: 1441px) and (max-width:1900) {
   .cadastro-container {
     width: 35vw;
   }
@@ -110,7 +125,7 @@
     font-size: 16px;
   }
 
-  .cadastro-text a{
+  .cadastro-text a {
     margin-left: 0.5vh;
   }
 }
@@ -125,7 +140,7 @@
   }
 }
 
-@media screen and (min-width:769px) and (max-width: 1024px){
+@media screen and (min-width:769px) and (max-width: 1024px) {
   .cadastro-container {
     width: 55vw;
   }

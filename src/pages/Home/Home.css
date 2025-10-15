@@ -639,7 +639,12 @@ main {
 
   .container-top-10-imagem{
     height: 35vh;
+    width: 19vw;
   }
+
+  /* .container-top-10 {
+    flex: 0 0 22vw;
+  } */
 
 }
 
@@ -706,9 +711,13 @@ main {
     width: auto;
   }
 
+  /* .container-top-10 {
+    flex: 0 0 22vw;
+  } */
+
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1439px) {
+@media screen and (min-width: 1300px) and (max-width: 1440px) {
 
   #top-10-h1 {
     font-size: 20px;
@@ -721,14 +730,14 @@ main {
   }
 
   .btn-introducao-container #btn-sobre {
-    height: 6.5vh;
-    width: 14vw;
+    height: 5.5vh;
+    width: 13vw;
     font-size: 18px;
   }
 
   .btn-introducao-container #btn-login {
-    height: 6.5vh;
-    width: 14vw;
+    height: 5.5vh;
+    width: 13vw;
     font-size: 18px;
   }
 
@@ -751,9 +760,9 @@ main {
     padding: 4rem 1.2rem;
   }
 
-  .container-top-10 {
+  /* .container-top-10 {
     flex: 0 0 22vw;
-  }
+  } */
 
   .container-series {
     height: 100vh;
@@ -776,12 +785,13 @@ main {
 
   .container-top-10-imagem{
     height: 40vh;
+    width: 20vw;
   }
 
 }
 
 
-@media screen and (min-width: 1250px) and (max-width: 1299px) {
+@media screen and (min-width: 1250px) and (max-width: 1300px) {
 
   /* ------------NAVBAR-TEXT---------------- */
 
@@ -823,9 +833,9 @@ main {
     margin-top: 5vh;
   } */
 
-  .container-top-10 {
+  /* .container-top-10 {
     flex: 0 0 20vw;
-  }
+  } */
 
 
   .container-series {
@@ -849,6 +859,7 @@ main {
 
   .container-top-10-imagem{
     height: 35vh;
+    width: 20vw;
   }
 
 }
@@ -896,9 +907,9 @@ main {
     padding: 4rem 1rem;
   }
 
-  .container-top-10 {
+  /* .container-top-10 {
     flex: 0 0 24vw;
-  }
+  } */
 
   .container-series {
     height: 75vh;
@@ -921,11 +932,12 @@ main {
 
   .container-top-10-imagem{
     height: 35vh;
+    width: 22vw;
   }
 
 }
 
-@media screen and (min-width:1001px) and (max-width: 1149px) {
+@media screen and (min-width:1001px) and (max-width: 1150px) {
 
   .seta {
     top: 30%;
@@ -937,9 +949,9 @@ main {
     padding: 3rem 1rem;
   }
 
-  .container-top-10 {
+  /* .container-top-10 {
     flex: 0 0 28vw;
-  }
+  } */
 
 
   .container-series {
@@ -959,9 +971,14 @@ main {
     width: 23vw;
     height: 5vh;
   }
+
+  .container-top-10-imagem{
+    height: 32vh;
+    width: 25vw;
+  }
 }
 
-@media screen and (min-width:800px) and (max-width: 1000px) {
+@media screen and (min-width:800px) and (max-width: 1001px) {
   .seta {
     top: 30%;
     padding: 3rem 1rem;
@@ -972,9 +989,9 @@ main {
     padding: 3rem 1rem;
   }
 
-  .container-top-10 {
+  /* .container-top-10 {
     flex: 0 0 30vw;
-  }
+  } */
 
   .container-series {
     height: 60vh;
@@ -993,6 +1010,11 @@ main {
     width: 25vw;
     height: 5vh;
   }
+
+  .container-top-10-imagem{
+    height: 32vh;
+    width: 22vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1000,8 +1022,15 @@ main {
   /* -----------BTN-INTRODUCAO-CONTAINER--------- */
 
   .btn-introducao-container #btn-sobre {
-    height: 6vh;
-    width: 30vw;
+    height: 5.5vh;
+    width: 25vw;
+    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .btn-introducao-container #btn-login {
+    height: 5.5vh;
+    width: 25vw;
     font-size: 14px;
     font-size: 16px;
   }
@@ -1010,7 +1039,7 @@ main {
   /* --------------------CARROSSEL------------------ */
 
   .container-top-10 {
-    flex: 0 0 40vw;
+    /* flex: 0 0 40vw; */
     margin-left: 3vh;
   }
 
@@ -1132,6 +1161,11 @@ main {
     width: 30vw;
     height: 5vh;
   }
+
+  .container-top-10-imagem{
+    height: 30vh;
+    width: 35vw;
+  }
 }
 
 /* ----------CELULAR---------------- */
@@ -1229,6 +1263,10 @@ main {
   .container-top-10 {
     margin-left: 3vh;
   }
+
+  /* .container-top-10 {
+    flex: 0 0 22vw;
+  } */
 
   /* -------------IMG-ASSISTIR---------------- */
 

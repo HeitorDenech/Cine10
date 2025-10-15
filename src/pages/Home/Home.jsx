@@ -149,6 +149,16 @@ function Home() {
         return () => clearInterval(intervalo);
     }, [imagensPrincipal.length]);
 
+    // -----------------ROLAR-CLASSICOS-FILMES----------------
+
+    const rolar = (direcao) => {
+        const largura = carrosselRef.current.clientWidth;
+        carrosselRef.current.scrollBy({
+            left: direcao === 'esquerda' ? -largura : largura,
+            behavior: 'smooth',
+        });
+    };
+
     // -----------------ROLAR-BILHETEROIA-FILMES----------------
 
     const rolarBilheteria = (direcao) => {
@@ -1250,7 +1260,7 @@ function Home() {
                 </section>
 
 
-                {/* --------------------CONTAINER DOS ANIMES MAIS POPULARES---------------------- */}
+                {/* --------------------CONTAINER DOS ANIMES MAIS AVALIADOS---------------------- */}
 
                 <div id="animes">
                     <h1 id='top-10-h1'>Os 10 melhores animes (IMDb)</h1>
@@ -1767,7 +1777,9 @@ function Home() {
 
             </main>
 
-            <footer></footer>
+            <footer>
+
+            </footer>
         </>
     );
 }
