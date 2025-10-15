@@ -235,7 +235,7 @@ function Home() {
                     </div>
 
                     <div className="text-introducao-container" data-aos="fade-up" data-aos-duration="1500">
-                        <p>As listas mais completas, as críticas mais confiáveis e os clássicos que todo amante do cinema precisa conhecer.</p>
+                        <p>Não perca tempo procurando o que assistir! No Cine10, selecionamos os melhores dos melhores para você.</p>
                     </div>
 
                     <div data-aos="fade-up" data-aos-duration="1500">
@@ -550,7 +550,7 @@ function Home() {
                         {/* CARD 3 */}
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=YE7VzlLtp-4" target='_blank'>
+                                <a href="https://www.youtube.com/watch?v=d9MyW72ELq0" target='_blank'>
                                     <img src={avataragua} alt="Avatar: O Caminho da Água" />
                                 </a>
                             </div>

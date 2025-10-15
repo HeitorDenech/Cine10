@@ -554,7 +554,7 @@ main {
 
 /* ------------------------------RESPONSIVO--------------------------------- */
 
-@media screen and (min-width: 1900px) and (max-width: 2560px) {
+@media screen and (min-width: 1899px) and (max-width: 2560px) {
 
   .logo-container h1 {
     font-size: 30px;
@@ -580,13 +580,13 @@ main {
 
   .btn-introducao-container #btn-sobre {
     height: 6vh;
-    width: 15vw;
+    width: 13vw;
     font-size: 22px;
   }
 
   .btn-introducao-container #btn-login {
     height: 6vh;
-    width: 15vw;
+    width: 13vw;
     font-size: 22px;
   }
 
@@ -621,7 +621,7 @@ main {
   .container-series {
     height: 110vh;
     width: 95vw;
-    margin-left: 2. 5vw;
+    margin-left: 2.5vw;
     /* border: 1px solid white; */
     /* border: 1px solid white; */
   }
@@ -637,6 +637,10 @@ main {
     font-size: 20px;
   }
 
+  .container-top-10-imagem{
+    height: 35vh;
+  }
+
 }
 
 
@@ -649,20 +653,20 @@ main {
   }
 
   .btn-introducao-container #btn-sobre {
-    height: 5vh;
-    width: 16vw;
+    height: 5.5vh;
+    width: 13vw;
     font-size: 20px;
   }
 
   .btn-introducao-container #btn-login {
-    height: 5vh;
-    width: 16vw;
+    height: 5.5vh;
+    width: 13vw;
     font-size: 20px;
   }
 
   .container-top-10-texto h1 {
     font-size: 20px;
-    height: 7vh;
+    height: 6vh;
   }
 
   span {
@@ -697,6 +701,11 @@ main {
     font-size: 20px;
   }
 
+  .container-top-10-imagem{
+    height: 37vh;
+    width: auto;
+  }
+
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1439px) {
@@ -725,7 +734,8 @@ main {
 
   .container-top-10-texto h1 {
     font-size: 18px;
-    height: 7vh;
+    height: 5vh;
+    /* background-color: red; */
   }
 
   span {
@@ -764,10 +774,14 @@ main {
     font-size: 18px;
   }
 
+  .container-top-10-imagem{
+    height: 40vh;
+  }
+
 }
 
 
-@media screen and (min-width: 1250px) and (max-width: 1300px) {
+@media screen and (min-width: 1250px) and (max-width: 1299px) {
 
   /* ------------NAVBAR-TEXT---------------- */
 
@@ -776,20 +790,20 @@ main {
   }
 
   .btn-introducao-container #btn-sobre {
-    height: 6vh;
-    width: 14vw;
+    height: 5.5vh;
+    width: 15vw;
     font-size: 18px;
   }
 
   .btn-introducao-container #btn-login {
-    height: 6vh;
-    width: 14vw;
+    height: 5.5vh;
+    width: 15vw;
     font-size: 18px;
   }
 
   .container-top-10-texto h1 {
     font-size: 15px;
-    height: 7vh;
+    height: 4vh;
   }
 
   span {
@@ -833,6 +847,10 @@ main {
     font-size: 18px;
   }
 
+  .container-top-10-imagem{
+    height: 35vh;
+  }
+
 }
 
 @media screen and (min-width: 1150px) and (max-width: 1250px) {
@@ -844,13 +862,13 @@ main {
   }
 
   .btn-introducao-container #btn-sobre {
-    height: 6vh;
+    height: 5.5vh;
     width: 13vw;
     font-size: 16px;
   }
 
   .btn-introducao-container #btn-login {
-    height: 6vh;
+    height: 5.5vh;
     width: 13vw;
     font-size: 16px;
   }
@@ -899,6 +917,10 @@ main {
     width: 16vw;
     height: 6vh;
     font-size: 18px;
+  }
+
+  .container-top-10-imagem{
+    height: 35vh;
   }
 
 }
