@@ -108,11 +108,18 @@ import swordart from '../../assets/swordart.webp'
 // --------------CARROSSEL-VER-DESENHOS-----------------
 
 import httyd from '../../assets/httyd.jpg'
-
+import walle from '../../assets/walle.webp'
+import up from '../../assets/up.jpg'
+import toystore from '../../assets/toystore.jpg'
+import avataraang from '../../assets/avataraang.jpg'
 
 // --------------CARROSSEL-VER-DESENHOS-MOBILE-----------------
 
 import httydmobile from '../../assets/httydmobile.jpg'
+import wallemobile from '../../assets/wallemobile.webp'
+import upmobile from '../../assets/upmobile.jpg'
+import toystoremobile from '../../assets/toystoremobile.jpg'
+import avataraangmobile from '../../assets/avataraangmobile.jpg'
 
 // -----------------------SERIES-EMMY----------------------
 
@@ -120,6 +127,12 @@ import gotemmy from '../../assets/gotemmy.webp'
 import fraiser from '../../assets/fraiser.webp'
 import simpsons from '../../assets/simpsons.webp'
 import westwing from '../../assets/westwing.webp'
+import hillstreet from '../../assets/hillstreet.jpeg'
+import marytyler from '../../assets/marytyler.jpg'
+import thecrown from '../../assets/thecrown.jpg'
+import cheers from '../../assets/cheers.jpg'
+import modernfamilyseries from '../../assets/modernfamilyseries.jpg'
+import handmaids from '../../assets/handmaids.jpg'
 
 // --------------------------------------------------
 
@@ -138,8 +151,8 @@ function Home() {
     const imagensPrincipal = [ossopranos, got, twd, origem, modernfamily];
     const imagensPrincipalMobile = [sopranosmobile, gotmobile, twdmobile, frommobile, modernfamilymobile];
 
-    const imagensPrincipalDesenho = [httyd, httyd, httyd, httyd, httyd]
-    const imagensPrincipalMobileDesenho = [httydmobile]
+    const imagensPrincipalDesenho = [httyd, walle, up, toystore, avataraang]
+    const imagensPrincipalMobileDesenho = [httydmobile, wallemobile, upmobile, toystoremobile, avataraangmobile]
 
 
     const navigate = useNavigate(); // ✅ Inicializa navigate
@@ -1930,12 +1943,73 @@ function Home() {
                         {/* CARD 4 */}
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=3hlHoixi0vY" target='_blank'>
+                                    <img src={marytyler} alt="Hill Street Blues" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>4 - The Mary Tyler Moore Show (1970)</h1>
+                                <span>🏆 29 prêmios</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.primevideo.com/-/pt/detail/The-Mary-Tyler-Moore-Show/0IZFD9NYYTAWCP7BURXYDHHVOO?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 5 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=Dve_7Kbt3EA" target='_blank'>
+                                    <img src={cheers} alt="Cheers" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>5 - Cheers (1982)</h1>
+                                <span>🏆 28 prêmios</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.primevideo.com/-/pt_PT/detail/Cheers/0P0TGDWUU3O1GVI4OCLPQXKK51?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 6 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=dFZC-_T_irA" target='_blank'>
+                                    <img src={thecrown} alt="The Crown" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>6 - The Crown (2016)</h1>
+                                <span>🏆 27 prêmios</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.netflix.com/title/80025678" target='_blank'>
+                                        <img src={netflix} alt="Netflix" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/the-crown/umc.cmc.hs9h7a6mis7c65sx94txykbd" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        {/* CARD 7 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
                                 <a href="https://www.youtube.com/watch?v=oBZlwRkB6Bs" target='_blank'>
                                     <img src={westwing} alt="The West Wing" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
-                                <h1>3 - The West Wing (1999)</h1>
+                                <h1>7 - The West Wing (1999)</h1>
                                 <span>🏆 26 prêmios</span>
                                 <p>Onde assistir</p>
                                 <div className='img-assistir'>
@@ -1952,7 +2026,77 @@ function Home() {
                             </div>
                         </div>
 
+                        {/* CARD 8 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=oUX3TPKVf_Y" target='_blank'>
+                                    <img src={hillstreet} alt="Hill Street Blues" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>8 - Hill Street Blues (1981)</h1>
+                                <span>🏆 26 prêmios</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.disneyplus.com/pt-br" target='_blank'>
+                                        <img src={disney} alt="Disney+" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Hill-Street-Blues/0G0V1UQX0NYP0PAB46IYDLVGSH?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
+                        {/* CARD 9 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=O5uuMr1YEyE" target='_blank'>
+                                    <img src={modernfamilyseries} alt="Hill Street Blues" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>9 - Modern Family (2009)</h1>
+                                <span>🏆 22 prêmios</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.disneyplus.com/pt-br/browse/entity-943f5577-caad-4e34-a8d3-4a9a816d078a?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={disney} alt="Disney+" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/detail/Modern-Family/0N4OYGW2CLLQZSLPX1W45S43O0?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/modern-family/umc.cmc.cmw0vccgg7hpwfa3wgvvu5q0" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 10 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=dVLiDETfx1c" target='_blank'>
+                                    <img src={handmaids} alt="Hill Street Blues" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>10 - The Handmaid’s Tale (2017)</h1>
+                                <span>🏆 15 prêmios</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.intl.paramountplus.com/br/shows/the-handmaids-tale/?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={paramount} alt="Paramount" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/the-handmaids-tale/umc.cmc.al37oeqemkp1j935xh0if7ep" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.disneyplus.com/pt-br/browse/entity-565d8976-9d26-4e63-866c-40f8a137ce5f?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={disney} alt="Disney+" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                     {/* Botão seta direita */}

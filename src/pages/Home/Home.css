@@ -592,7 +592,8 @@ main {
 
   .container-top-10-texto h1 {
     font-size: 24px;
-    height: 7vh;
+    height: 8vh;
+    width: 90%;
   }
 
   span {
@@ -639,7 +640,7 @@ main {
 
   .container-top-10-imagem{
     height: 35vh;
-    width: 19vw;
+    width: 18vw;
   }
 
   /* .container-top-10 {
@@ -707,7 +708,7 @@ main {
   }
 
   .container-top-10-imagem{
-    height: 37vh;
+    height: 35vh;
     width: auto;
   }
 
