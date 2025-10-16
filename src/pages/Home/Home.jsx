@@ -105,6 +105,22 @@ import jujutsu from '../../assets/jujutsu.webp'
 import heroacademia from '../../assets/heroacademia.jpg'
 import swordart from '../../assets/swordart.webp'
 
+// --------------CARROSSEL-VER-DESENHOS-----------------
+
+import httyd from '../../assets/httyd.jpg'
+
+
+// --------------CARROSSEL-VER-DESENHOS-MOBILE-----------------
+
+import httydmobile from '../../assets/httydmobile.jpg'
+
+// -----------------------SERIES-EMMY----------------------
+
+import gotemmy from '../../assets/gotemmy.webp'
+import fraiser from '../../assets/fraiser.webp'
+import simpsons from '../../assets/simpsons.webp'
+import westwing from '../../assets/westwing.webp'
+
 // --------------------------------------------------
 
 function Home() {
@@ -114,11 +130,18 @@ function Home() {
     const carrosselMelhoresAvaliadosRef = useRef(null);
     const carrosselMelhoresAvaliadosAnimesRef = useRef(null);
     const carrosselAnimesPopularRef = useRef(null);
+    const carrosselSeriesEmmyRef = useRef(null);
+
 
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
     const imagensPrincipal = [ossopranos, got, twd, origem, modernfamily];
     const imagensPrincipalMobile = [sopranosmobile, gotmobile, twdmobile, frommobile, modernfamilymobile];
+
+    const imagensPrincipalDesenho = [httyd, httyd, httyd, httyd, httyd]
+    const imagensPrincipalMobileDesenho = [httydmobile]
+
+
     const navigate = useNavigate(); // ✅ Inicializa navigate
     const [menuOpen, setMenuOpen] = useState(false);
     const [nomeUsuario, setNomeUsuario] = useState('');
@@ -200,11 +223,21 @@ function Home() {
         });
     };
 
-     // ----------------ANIMES-POPULARES--------------
+    // ----------------ANIMES-POPULARES--------------
 
     const rolarAnimesPopulares = (direcao) => {
         const largura = carrosselAnimesPopularRef.current.clientWidth;
         carrosselAnimesPopularRef.current.scrollBy({
+            left: direcao === 'esquerda' ? -largura : largura,
+            behavior: 'smooth',
+        });
+    };
+
+    // ----------------SERIES-EMMY--------------
+
+    const rolarSeriesEmmy = (direcao) => {
+        const largura = carrosselSeriesEmmyRef.current.clientWidth;
+        carrosselSeriesEmmyRef.current.scrollBy({
             left: direcao === 'esquerda' ? -largura : largura,
             behavior: 'smooth',
         });
@@ -1238,7 +1271,9 @@ function Home() {
                 <section className='container-series'>
                     <div className='container-series-absolute'>
                         <div className='container-series-btn'>
-                            <button id='btn-1'>Ver séries</button>
+                            <a href="#series">
+                                <button id='btn-1'>Ver séries</button>
+                            </a>
                         </div>
                     </div>
 
@@ -1773,6 +1808,159 @@ function Home() {
                         ❯
                     </button>
                 </section>
+
+                {/* -------------------CARROUSEL-VER-DESENHOS----------------------- */}
+
+                <section className='container-series'>
+                    <div className='container-series-absolute'>
+                        <div className='container-series-btn'>
+                            <a href="#desenhos">
+                                <button id='btn-1'>Ver desenhos</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className='container-series-img'>
+                        {/* imagem normal (desktop) */}
+                        <img
+                            src={imagensPrincipalDesenho[indicePrincipal]}
+                            alt='Slide principal'
+                            className={`img-desktop ${animacao}`}
+                        />
+
+                        {/* imagem versão mobile */}
+                        <img
+                            src={imagensPrincipalMobileDesenho[indicePrincipal]}
+                            alt='Slide principal mobile'
+                            className={`img-mobile ${animacao}`}
+                        />
+                    </div>
+                </section>
+
+                {/* --------------------CONTAINER DAS SERIES MAIS PREMIADAS---------------------- */}
+
+                <div id="series">
+                    <h1 id='top-10-h1'>As 10 séries mais premiadas (Emmy)</h1>
+                </div>
+
+                <section className="container-top-10-principal">
+                    {/* Botão seta esquerda */}
+                    <button className="seta seta-esquerda" onClick={() => rolarSeriesEmmy('esquerda')}>
+                        ❮
+                    </button>
+
+                    {/* Carrossel com TODOS os cards dentro */}
+                    <div className="carrossel-top-10" ref={carrosselSeriesEmmyRef}>
+
+                        {/* CARD 1 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=bjqEWgDVPe0" target='_blank'>
+                                    <img src={gotemmy} alt="Saturday Night Live" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>1 - Game of Thrones (2011)</h1>
+                                <span>🏆 59 prêmios</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
+                                        <img src={hbomax} alt="HBOmax" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/game-of-thrones/umc.cmc.7htjb4sh74ynzxavta5boxuzq" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Game-of-Thrones/0GQTRXWTJFHS0DKID09GPGGYKY?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 2 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=d6rIzxICCio" target='_blank'>
+                                    <img src={fraiser} alt="Saturday Night Live" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>2 - Frasier (1993)</h1>
+                                <span>🏆 37 prêmios</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.paramountplus.com/br/shows/frasier/?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={paramount} alt="Paramount" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/frasier/umc.cmc.7a9dlsnehalzsqin5uia98qox" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Frasier/0GM6BD1ECCRRR3W8AYKDFE2EAR?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 3 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=luhb2X4Me7U" target='_blank'>
+                                    <img src={simpsons} alt="Simpsons" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>3 - The Simpsons (1989)</h1>
+                                <span>🏆 37 prêmios</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.disneyplus.com/pt-br/browse/entity-cac75c8f-a9e2-4d95-ac73-1cf1cc7b9568?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={disney} alt="Disney+" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/os-simpsons/umc.cmc.1kfo3z1jtaj8ff6wsh9cvxbwu" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/The-Simpsons/0M9BZWC5OK1HO62ULKJO7VE1ZV?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 4 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=oBZlwRkB6Bs" target='_blank'>
+                                    <img src={westwing} alt="The West Wing" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>3 - The West Wing (1999)</h1>
+                                <span>🏆 26 prêmios</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
+                                        <img src={hbomax} alt="HBOmax" />
+                                    </a>
+                                    <a href="https://tv.apple.com/us/show/the-west-wing/umc.cmc.6hflo28r5ubzod2qfebs0dowf" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/The-West-Wing/0O3PONZNJJE4ZQ7018PX6U1EP3?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    {/* Botão seta direita */}
+                    <button className="seta seta-direita" onClick={() => rolarSeriesEmmy('direita')}>
+                        ❯
+                    </button>
+                </section>
+
 
 
             </main>
