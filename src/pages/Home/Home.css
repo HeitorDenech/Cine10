@@ -104,14 +104,14 @@ nav {
   /* padding: 15px; */
 }
 
-.perfil-container h1{
-    font-size: 18px;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.perfil-container h1 {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.perfil-container button{
+.perfil-container button {
   margin-left: 1vh;
   height: 4vh;
   width: 3vw;
@@ -545,10 +545,10 @@ main {
   border: 1px solid black;
 }
 
-#btn-1:hover{
-    border: 1px solid white;
-    background-color: black;
-    color: white;
+#btn-1:hover {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
 }
 
 
@@ -579,29 +579,29 @@ main {
   }
 
   .btn-introducao-container #btn-sobre {
-    height: 6vh;
-    width: 13vw;
-    font-size: 22px;
+    height: 5.5vh;
+    width: 10vw;
+    font-size: 20px;
   }
 
   .btn-introducao-container #btn-login {
-    height: 6vh;
-    width: 13vw;
-    font-size: 22px;
+    height: 5.5vh;
+    width: 10vw;
+    font-size: 20px;
   }
 
   .container-top-10-texto h1 {
-    font-size: 24px;
-    height: 8vh;
-    width: 90%;
+    font-size: 22px;
+    height: 7vh;
+    width: 80%;
   }
 
   span {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .container-top-10-texto p {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .img-assistir img {
@@ -614,10 +614,10 @@ main {
     padding: 4rem 1.5rem;
   }
 
-  .container-top-10 {
+  /* .container-top-10 {
     flex: 0vw 0vw 40vw;
     margin-left: 3vh;
-  }
+  } */
 
   .container-series {
     height: 110vh;
@@ -638,14 +638,19 @@ main {
     font-size: 20px;
   }
 
-  .container-top-10-imagem{
-    height: 35vh;
-    width: 18vw;
+  .container-top-10-imagem {
+    height: 40vh;
+    /* width: 17vw; */
   }
 
   /* .container-top-10 {
     flex: 0 0 22vw;
   } */
+
+  .img-assistir img {
+    height: 5.3vh;
+    margin-top: 1vh;
+  }
 
 }
 
@@ -655,28 +660,29 @@ main {
   /* ------------NAVBAR-TEXT---------------- */
 
   .text-container a {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .btn-introducao-container #btn-sobre {
     height: 5.5vh;
-    width: 13vw;
-    font-size: 20px;
+    width: 12vw;
+    font-size: 17px;
   }
 
   .btn-introducao-container #btn-login {
     height: 5.5vh;
-    width: 13vw;
-    font-size: 20px;
+    width: 12vw;
+    font-size: 17px;
   }
 
   .container-top-10-texto h1 {
-    font-size: 20px;
+    font-size: 18px;
     height: 6vh;
+    width: 80%;
   }
 
   span {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .container-top-10-texto p {
@@ -707,14 +713,19 @@ main {
     font-size: 20px;
   }
 
-  .container-top-10-imagem{
-    height: 35vh;
-    width: auto;
+  .container-top-10-imagem {
+    height: 30vh;
+    /* width: 17vw; */
   }
 
   /* .container-top-10 {
     flex: 0 0 22vw;
   } */
+
+  .img-assistir img {
+    height: 4.7vh;
+    margin-top: 1vh;
+  }
 
 }
 
@@ -727,29 +738,39 @@ main {
   /* ------------NAVBAR-TEXT---------------- */
 
   .text-container a {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .btn-introducao-container #btn-sobre {
     height: 5.5vh;
     width: 13vw;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .btn-introducao-container #btn-login {
     height: 5.5vh;
     width: 13vw;
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .title-introducao-container h1 {
+    font-size: 55px;
+  }
+
+  .text-introducao-container p {
+    font-size: 17px;
+    width: 40%;
   }
 
   .container-top-10-texto h1 {
-    font-size: 18px;
-    height: 7 vh;
+    font-size: 16px;
+    height: 7vh;
+    width: 80%;
     /* background-color: red; */
   }
 
   span {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .container-top-10-texto p {
@@ -773,6 +794,7 @@ main {
     /* border: 1px solid white; */
   }
 
+
   .container-series-absolute {
     top: 95%;
   }
@@ -784,9 +806,14 @@ main {
     font-size: 18px;
   }
 
-  .container-top-10-imagem{
-    height: 40vh;
-    width: 20vw;
+  .container-top-10-imagem {
+    height: 36vh;
+    /* width: 100%; */
+  }
+
+  .img-assistir img {
+    height: 5vh;
+    margin-top: 1vh;
   }
 
 }
@@ -800,16 +827,24 @@ main {
     font-size: 16px;
   }
 
-  .btn-introducao-container #btn-sobre {
-    height: 5.5vh;
-    width: 15vw;
+  .title-introducao-container h1 {
+    font-size: 50px;
+  }
+
+  .text-introducao-container p {
     font-size: 18px;
   }
 
+  .btn-introducao-container #btn-sobre {
+    height: 5vh;
+    width: 13vw;
+    font-size: 16px;
+  }
+
   .btn-introducao-container #btn-login {
-    height: 5.5vh;
-    width: 15vw;
-    font-size: 18px;
+    height: 5vh;
+    width: 13vw;
+    font-size: 16px;
   }
 
   .container-top-10-texto h1 {
@@ -858,9 +893,14 @@ main {
     font-size: 18px;
   }
 
-  .container-top-10-imagem{
+  .container-top-10-imagem {
     height: 35vh;
-    width: 20vw;
+    /* width: 20vw; */
+  }
+
+  .img-assistir img {
+    height: 5vh;
+    margin-top: 1vh;
   }
 
 }
@@ -874,20 +914,20 @@ main {
   }
 
   .btn-introducao-container #btn-sobre {
-    height: 5.5vh;
-    width: 13vw;
+    height: 5vh;
+    width: 12vw;
     font-size: 16px;
   }
 
   .btn-introducao-container #btn-login {
-    height: 5.5vh;
-    width: 13vw;
+    height: 5vh;
+    width: 12vw;
     font-size: 16px;
   }
 
   .container-top-10-texto h1 {
     font-size: 15px;
-    height: 7vh;
+    height: 5vh;
   }
 
   span {
@@ -931,9 +971,14 @@ main {
     font-size: 18px;
   }
 
-  .container-top-10-imagem{
-    height: 35vh;
-    width: 22vw;
+  .container-top-10-imagem {
+    height: 32vh;
+    /* width: 22vw; */
+  }
+
+  .img-assistir img {
+    height: 4.3vh;
+    margin-top: 1vh;
   }
 
 }
@@ -973,9 +1018,14 @@ main {
     height: 5vh;
   }
 
-  .container-top-10-imagem{
-    height: 32vh;
-    width: 25vw;
+  .container-top-10-imagem {
+    height: 30vh;
+    /* width: 25vw; */
+  }
+
+  .img-assistir img {
+    height: 4vh;
+    margin-top: 0vh;
   }
 }
 
@@ -1006,15 +1056,20 @@ main {
     top: 94%;
   }
 
+  .img-assistir img {
+    margin-top: 1vh;
+    height: 4vh;
+  }
+
   #btn-1,
   #btn-2 {
     width: 25vw;
     height: 5vh;
   }
 
-  .container-top-10-imagem{
-    height: 32vh;
-    width: 22vw;
+  .container-top-10-imagem {
+    height: 30vh;
+    /* width: 22vw; */
   }
 }
 
@@ -1141,7 +1196,7 @@ main {
     display: flex;
   }
 
-  .perfil-container h1{
+  .perfil-container h1 {
     font-size: 16px;
   }
 
@@ -1163,7 +1218,7 @@ main {
     height: 5vh;
   }
 
-  .container-top-10-imagem{
+  .container-top-10-imagem {
     height: 30vh;
     width: 35vw;
   }
@@ -1253,7 +1308,7 @@ main {
 
   /* -------------------CARROSEL------------------ */
 
-  .container-top-10-imagem{
+  .container-top-10-imagem {
     height: 25vh;
   }
 
