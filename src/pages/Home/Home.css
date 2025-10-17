@@ -763,18 +763,18 @@ main {
   }
 
   .container-top-10-texto h1 {
-    font-size: 16px;
+    font-size: 14px;
     height: 7vh;
     width: 80%;
     /* background-color: blue; */
   }
 
   span {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .container-top-10-texto p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .seta {
@@ -824,7 +824,7 @@ main {
   /* ------------NAVBAR-TEXT---------------- */
 
   .text-container a {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .title-introducao-container h1 {
@@ -848,16 +848,16 @@ main {
   }
 
   .container-top-10-texto h1 {
-    font-size: 15px;
-    height: 4vh;
+    font-size: 14px;
+    height: 8vh;
   }
 
   span {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .container-top-10-texto p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .seta {
@@ -875,7 +875,7 @@ main {
 
 
   .container-series {
-    height: 80vh;
+    height: 100vh;
     width: 95vw;
     margin-left: 2.5vw;
     /* border: 1px solid white; */
@@ -894,12 +894,12 @@ main {
   }
 
   .container-top-10-imagem {
-    height: 35vh;
-    width: 18vw;
+    height: 42vh;
+    width: 15vw;
   }
 
   .img-assistir img {
-    height: 4.5vh;
+    height: 4.8vh;
     margin-top: 0vh;
   }
 
@@ -1034,13 +1034,13 @@ main {
   .btn-introducao-container #btn-sobre {
     height: 5vh;
     width: 15vw;
-    font-size:16px;
+    font-size: 16px;
   }
 
   .btn-introducao-container #btn-login {
     height: 5vh;
     width: 15vw;
-    font-size:16px;
+    font-size: 16px;
   }
 
   .seta {
@@ -1323,6 +1323,7 @@ main {
 
   .container-top-10-imagem {
     height: 25vh;
+    width: 30vw;
   }
 
   .container-top-10-principal {
@@ -1340,14 +1341,15 @@ main {
   /* -------------IMG-ASSISTIR---------------- */
 
   .img-assistir img {
-    height: 3.7vh;
+    height: 3.5vh;
     width: auto;
     margin-top: 0vh;
   }
 
   .container-top-10-texto h1 {
     height: 8vh;
-    font-size: 14px;
+    font-size: 12px;
+    width: 80%;
   }
 
   span {

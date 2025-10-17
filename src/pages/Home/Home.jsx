@@ -135,6 +135,18 @@ import cheers from '../../assets/cheers.jpg'
 import modernfamilyseries from '../../assets/modernfamilyseries.jpg'
 import handmaids from '../../assets/handmaids.jpg'
 
+// -----------------SERIES-IMDB-------------------------
+
+import breakingbadimdb from '../../assets/breakingbadimdb.jpg'
+import bandofbrothers from '../../assets/bandofbrothers.avif'
+import chernobyl from '../../assets/chernobyl.webp'
+import thewire from '../../assets/thewire.webp'
+import sherlock from '../../assets/sherlock.webp'
+import alemdaimaginacao from '../../assets/alemdaimaginacao.webp'
+import sahsiyet from '../../assets/sahsiyet.jpg'
+import theoffice from '../../assets/theoffice.avif'
+import onlyfoolsandhorses from '../../assets/onlyfoolsandhorses.webp'
+
 // --------------------------------------------------
 
 function Home() {
@@ -145,7 +157,7 @@ function Home() {
     const carrosselMelhoresAvaliadosAnimesRef = useRef(null);
     const carrosselAnimesPopularRef = useRef(null);
     const carrosselSeriesEmmyRef = useRef(null);
-
+    const carrosselSeriesImdbRef = useRef(null);
 
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
@@ -252,6 +264,16 @@ function Home() {
     const rolarSeriesEmmy = (direcao) => {
         const largura = carrosselSeriesEmmyRef.current.clientWidth;
         carrosselSeriesEmmyRef.current.scrollBy({
+            left: direcao === 'esquerda' ? -largura : largura,
+            behavior: 'smooth',
+        });
+    };
+
+    // ----------------SERIES-IMDB--------------
+
+    const rolarSeriesImdb = (direcao) => {
+        const largura = carrosselSeriesImdbRef.current.clientWidth;
+        carrosselSeriesImdbRef.current.scrollBy({
             left: direcao === 'esquerda' ? -largura : largura,
             behavior: 'smooth',
         });
@@ -1036,7 +1058,7 @@ function Home() {
                 {/* --------------------CONTAINER DOS MELHORES AVALIADOS---------------------- */}
 
                 <div>
-                    <h1 id='top-10-h1'>Os 10 melhores avaliados (IMDb)</h1>
+                    <h1 id='top-10-h1'>Os 10 melhores filmes (IMDb)</h1>
                 </div>
 
                 <section className="container-top-10-principal">
@@ -2106,7 +2128,250 @@ function Home() {
                     </button>
                 </section>
 
+                {/* --------------------CONTAINER DAS MELHORES SERIES---------------------- */}
 
+                <div id="series">
+                    <h1 id='top-10-h1'>As 10 melhores séries (Imdb)</h1>
+                </div>
+
+                <section className="container-top-10-principal">
+                    {/* Botão seta esquerda */}
+                    <button className="seta seta-esquerda" onClick={() => rolarSeriesImdb('esquerda')}>
+                        ❮
+                    </button>
+
+                    {/* Carrossel com TODOS os cards dentro */}
+                    <div className="carrossel-top-10" ref={carrosselSeriesImdbRef}>
+
+                        {/* CARD 1 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=HhesaQXLuRY" target='_blank'>
+                                    <img src={breakingbadimdb} alt="Breaking Bad" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>1 - Breaking Bad (2008)</h1>
+                                <span>⭐ 9,5</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.netflix.com/title/70143836" target='_blank'>
+                                        <img src={netflix} alt="Netflix" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Breaking-Bad/0KEKSTS1O6SJNXQ00DUZ7BPY7M?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 2 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=KKRBAFlN5ww" target='_blank'>
+                                    <img src={bandofbrothers} alt="Irmãos de Guerra" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>2 - Irmãos de Guerra (2001)</h1>
+                                <span>⭐ 9,4</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
+                                        <img src={hbomax} alt="HBOmax" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/band-of-brothers/umc.cmc.6w0w9swttxab3xshv7zsh7tr8" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 3 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=s9APLXM9Ei8" target='_blank'>
+                                    <img src={chernobyl} alt="Chernobyl" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>3 - Chernobyl (2019)</h1>
+                                <span>⭐ 9,3</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
+                                        <img src={hbomax} alt="HBOmax" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/chernobyl/umc.cmc.4r07f208iugn79go4pmvpcqbt" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 4 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=1S5khOZ1wBs" target='_blank'>
+                                    <img src={thewire} alt="A escuta" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>4 - A escuta (2002)</h1>
+                                <span>⭐ 9,3</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
+                                        <img src={hbomax} alt="HBOmax" />
+                                    </a>
+                                    <a href="https://tv.apple.com/pt/show/the-wire/umc.cmc.73x6fvjkh3m9uq42w1f97pxop" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 5 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=KMx4iFcozK0" target='_blank'>
+                                    <img src={sopranosmobile} alt="Família Soprano" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>5 - Família Soprano (1999)</h1>
+                                <span>⭐ 9,2</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
+                                        <img src={hbomax} alt="HBOmax" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/familia-soprano/umc.cmc.7fvpbc4pqotnxhpx36c739tyd" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 6 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=bjqEWgDVPe0" target='_blank'>
+                                    <img src={gotemmy} alt="Saturday Night Live" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>6 - Game of Thrones (2011)</h1>
+                                <span>⭐ 9,2</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
+                                        <img src={hbomax} alt="HBOmax" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/game-of-thrones/umc.cmc.7htjb4sh74ynzxavta5boxuzq" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Game-of-Thrones/0GQTRXWTJFHS0DKID09GPGGYKY?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 7 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=bjqEWgDVPe0" target='_blank'>
+                                    <img src={sherlock} alt="Saturday Night Live" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>7 - Sherlock (2010)</h1>
+                                <span>⭐ 9,0</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.netflix.com/title/70202589" target='_blank'>
+                                        <img src={netflix} alt="Netflix" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/0QBPAEOS9TM1WB3TW5M8VGDS05/ref=atv_sr_fle_c_srce7a38_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B0B8Q8HXT3&qid=1760674847392" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 8 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=5ymjp2uIBws" target='_blank'>
+                                    <img src={alemdaimaginacao} alt="Além da Imaginação" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>8 - Além da Imaginação (1959)</h1>
+                                <span>⭐ 9,0</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://tv.apple.com/us/show/the-twilight-zone/umc.cmc.3tg58h9lglzj81tldi0n9167g" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/The-Twilight-Zone-Classic/0KPKZU2H05HF57GYDSKLU80B1S?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 9 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=wTrn8dmAjaQ" target='_blank'>
+                                    <img src={onlyfoolsandhorses} alt="Only Fools and Horses" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>9 - Only Fools and Horses (1981)</h1>
+                                <span>⭐ 9,0</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://tv.apple.com/fi/episode/big-brother/umc.cmc.4ca4o30iz9vcwltneda6n14hy?showId=umc.cmc.6r4coauwtq86wykaaqsx7rhij" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt_PT/detail/Only-Fools-and-Horses/0L0TH0K4VDUTO9ZK1I0QAAXW4A?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 10 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=-C2z-nshFts" target='_blank'>
+                                    <img src={theoffice} alt="The Office" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>10 - The Office (2005)</h1>
+                                <span>⭐ 9,0</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://tv.apple.com/br/show/the-office/umc.cmc.455js879szmdywutf3qjewagm" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/The-Office/0Q38DX2K1Y5F1VNEHM346VNIFI" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    {/* Botão seta direita */}
+                    <button className="seta seta-direita" onClick={() => rolarSeriesImdb('direita')}>
+                        ❯
+                    </button>
+                </section>
 
             </main>
 
