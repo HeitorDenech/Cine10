@@ -264,7 +264,7 @@ main {
   flex-direction: row;
   width: 100%;
   height: auto;
-  /* background-color: red; */
+  /* background-color: blue; */
   position: relative;
 }
 
@@ -273,7 +273,7 @@ main {
 
 
 .container-top-10 {
-  /* width: 25%; */
+  /* width: 30%; */
   /* height: 70%; */
   display: flex;
   flex-direction: column;
@@ -393,7 +393,7 @@ main {
 /* Ajuste dos cards */
 .container-top-10 {
   margin-top: 0vh;
-  flex: 0 0 20vw;
+  /* flex: 0 0 20vw; */
   /* largura fixa de 300px, não encolhe */
   display: flex;
   flex-direction: column;
@@ -639,8 +639,8 @@ main {
   }
 
   .container-top-10-imagem {
-    height: 42vh;
-    width: 17vw;
+    height: 40vh;
+    width: 15vw;
   }
 
   /* .container-top-10 {
@@ -766,7 +766,7 @@ main {
     font-size: 16px;
     height: 7vh;
     width: 80%;
-    /* background-color: red; */
+    /* background-color: blue; */
   }
 
   span {
@@ -808,7 +808,7 @@ main {
 
   .container-top-10-imagem {
     height: 42vh;
-    width: 18vw;
+    width: 16vw;
   }
 
   .img-assistir img {
@@ -895,7 +895,7 @@ main {
 
   .container-top-10-imagem {
     height: 35vh;
-    /* width: 20vw; */
+    width: 18vw;
   }
 
   .img-assistir img {
@@ -973,7 +973,7 @@ main {
 
   .container-top-10-imagem {
     height: 32vh;
-    /* width: 22vw; */
+    width: 20vw;
   }
 
   .img-assistir img {
@@ -1232,8 +1232,8 @@ main {
   }
 
   .container-top-10-imagem {
-    height: 30vh;
-    width: 35vw;
+    height: 28vh;
+    width: 28vw;
   }
 }
 

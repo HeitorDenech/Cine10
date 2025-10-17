@@ -50,6 +50,7 @@ import vingadores from '../../assets/vingadores.webp'
 
 // -------------OSCARS------------------
 
+import oretornodorei from '../../assets/oretornodorei.webp'
 import senhordosaneis from '../../assets/senhor-dos-aneis.jpg'
 import benhur from '../../assets/ben-hur.webp'
 import amorsublimeamor from '../../assets/amorsublimeamor.jpg'
@@ -306,7 +307,7 @@ function Home() {
 
                 {/* --------------------CONTAINER DOS CLÁSSICOS---------------------- */}
                 <div id="filmes">
-                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="1400">Os 10 maiores clássicos</h1>
+                    <h1 id='top-10-h1'>Os 10 maiores clássicos</h1>
                 </div>
 
                 <section className="container-top-10-principal">
@@ -315,7 +316,7 @@ function Home() {
                         ❮
                     </button>
 
-                    <div className="carrossel-top-10" ref={carrosselRef} data-aos="fade-up" data-aos-duration="1500">
+                    <div className="carrossel-top-10" ref={carrosselRef}>
 
                         {/* CARD 1 */}
                         <div className='container-top-10'>
@@ -541,10 +542,10 @@ function Home() {
                 {/* --------------------CONTAINER DAS BILHETERIAS---------------------- */}
 
                 <div id="bilheterias">
-                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">As 10 maiores bilheterias</h1>
+                    <h1 id='top-10-h1'>As 10 maiores bilheterias</h1>
                 </div>
 
-                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
+                <section className="container-top-10-principal">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarBilheteria('esquerda')}>
                         ❮
@@ -800,10 +801,10 @@ function Home() {
                 {/* --------------------CONTAINER DOS OSCARS---------------------- */}
 
                 <div>
-                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">Os 10 filmes com mais Oscars</h1>
+                    <h1 id='top-10-h1'>Os 10 filmes com mais Oscars</h1>
                 </div>
 
-                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
+                <section className="container-top-10-principal">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarOscars('esquerda')}>
                         ❮
@@ -816,7 +817,7 @@ function Home() {
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
                                 <a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo" target='_blank'>
-                                    <img src={senhordosaneis} alt="O Senhor dos Anéis: O Retorno do Rei" />
+                                    <img src={oretornodorei} alt="O Senhor dos Anéis: O Retorno do Rei" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
@@ -1035,10 +1036,10 @@ function Home() {
                 {/* --------------------CONTAINER DOS MELHORES AVALIADOS---------------------- */}
 
                 <div>
-                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">Os 10 melhores avaliados (IMDb)</h1>
+                    <h1 id='top-10-h1'>Os 10 melhores avaliados (IMDb)</h1>
                 </div>
 
-                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
+                <section className="container-top-10-principal">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarMelhoresAvaliados('esquerda')}>
                         ❮
@@ -1311,10 +1312,10 @@ function Home() {
                 {/* --------------------CONTAINER DOS ANIMES MAIS AVALIADOS---------------------- */}
 
                 <div id="animes">
-                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">Os 10 melhores animes (IMDb)</h1>
+                    <h1 id='top-10-h1'>Os 10 melhores animes (IMDb)</h1>
                 </div>
 
-                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
+                <section className="container-top-10-principal">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarMelhoresAvaliadosAnimes('esquerda')}>
                         ❮
@@ -1564,10 +1565,10 @@ function Home() {
                 {/* --------------------CONTAINER DOS ANIMES MAIS POPULARES---------------------- */}
 
                 <div>
-                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">Os 10 animes mais populares</h1>
+                    <h1 id='top-10-h1'>Os 10 animes mais populares</h1>
                 </div>
 
-                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
+                <section className="container-top-10-principal">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarAnimesPopulares('esquerda')}>
                         ❮
@@ -1853,10 +1854,10 @@ function Home() {
                 {/* --------------------CONTAINER DAS SERIES MAIS PREMIADAS---------------------- */}
 
                 <div id="series">
-                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">As 10 séries mais premiadas (Emmy)</h1>
+                    <h1 id='top-10-h1'>As 10 séries mais premiadas (Emmy)</h1>
                 </div>
 
-                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
+                <section className="container-top-10-principal">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarSeriesEmmy('esquerda')}>
                         ❮
