@@ -290,11 +290,11 @@ function Home() {
                         <h1>Explore, aproveite e inspire-se.</h1>
                     </div>
 
-                    <div className="text-introducao-container" data-aos="fade-up" data-aos-duration="1500">
+                    <div className="text-introducao-container" data-aos="fade-up" data-aos-duration="1200">
                         <p>Não perca tempo procurando o que assistir! No Cine10, selecionamos os melhores dos melhores para você.</p>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-duration="1500">
+                    <div data-aos="fade-up" data-aos-duration="1300">
                         <div className='btn-introducao-container'>
                             <button id="btn-sobre" onClick={sair}>Sair</button>
                             <Link to="/Login">
@@ -306,7 +306,7 @@ function Home() {
 
                 {/* --------------------CONTAINER DOS CLÁSSICOS---------------------- */}
                 <div id="filmes">
-                    <h1 id='top-10-h1'>Os 10 maiores clássicos</h1>
+                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="1400">Os 10 maiores clássicos</h1>
                 </div>
 
                 <section className="container-top-10-principal">
@@ -315,7 +315,7 @@ function Home() {
                         ❮
                     </button>
 
-                    <div className="carrossel-top-10" ref={carrosselRef}>
+                    <div className="carrossel-top-10" ref={carrosselRef} data-aos="fade-up" data-aos-duration="1500">
 
                         {/* CARD 1 */}
                         <div className='container-top-10'>
@@ -541,10 +541,10 @@ function Home() {
                 {/* --------------------CONTAINER DAS BILHETERIAS---------------------- */}
 
                 <div id="bilheterias">
-                    <h1 id='top-10-h1'>As 10 maiores bilheterias</h1>
+                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">As 10 maiores bilheterias</h1>
                 </div>
 
-                <section className="container-top-10-principal">
+                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarBilheteria('esquerda')}>
                         ❮
@@ -800,10 +800,10 @@ function Home() {
                 {/* --------------------CONTAINER DOS OSCARS---------------------- */}
 
                 <div>
-                    <h1 id='top-10-h1'>Os 10 filmes com mais Oscars</h1>
+                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">Os 10 filmes com mais Oscars</h1>
                 </div>
 
-                <section className="container-top-10-principal">
+                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarOscars('esquerda')}>
                         ❮
@@ -1035,10 +1035,10 @@ function Home() {
                 {/* --------------------CONTAINER DOS MELHORES AVALIADOS---------------------- */}
 
                 <div>
-                    <h1 id='top-10-h1'>Os 10 melhores avaliados (IMDb)</h1>
+                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">Os 10 melhores avaliados (IMDb)</h1>
                 </div>
 
-                <section className="container-top-10-principal">
+                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarMelhoresAvaliados('esquerda')}>
                         ❮
@@ -1311,10 +1311,10 @@ function Home() {
                 {/* --------------------CONTAINER DOS ANIMES MAIS AVALIADOS---------------------- */}
 
                 <div id="animes">
-                    <h1 id='top-10-h1'>Os 10 melhores animes (IMDb)</h1>
+                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">Os 10 melhores animes (IMDb)</h1>
                 </div>
 
-                <section className="container-top-10-principal">
+                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarMelhoresAvaliadosAnimes('esquerda')}>
                         ❮
@@ -1404,7 +1404,7 @@ function Home() {
                             </div>
                             <div className='container-top-10-texto'>
                                 <h1>4 - One Piece (1999 – presente)</h1>
-                                <span>⭐ 9</span>
+                                <span>⭐ 9,0</span>
                                 <p>Onde assistir</p>
                                 <div className='img-assistir'>
                                     <a href="https://www.netflix.com/search?q=one%20piece&jbv=80107103" target='_blank'>
@@ -1564,10 +1564,10 @@ function Home() {
                 {/* --------------------CONTAINER DOS ANIMES MAIS POPULARES---------------------- */}
 
                 <div>
-                    <h1 id='top-10-h1'>Os 10 animes mais populares</h1>
+                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">Os 10 animes mais populares</h1>
                 </div>
 
-                <section className="container-top-10-principal">
+                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarAnimesPopulares('esquerda')}>
                         ❮
@@ -1853,10 +1853,10 @@ function Home() {
                 {/* --------------------CONTAINER DAS SERIES MAIS PREMIADAS---------------------- */}
 
                 <div id="series">
-                    <h1 id='top-10-h1'>As 10 séries mais premiadas (Emmy)</h1>
+                    <h1 id='top-10-h1' data-aos="fade-up" data-aos-duration="800">As 10 séries mais premiadas (Emmy)</h1>
                 </div>
 
-                <section className="container-top-10-principal">
+                <section className="container-top-10-principal" data-aos="fade-up" data-aos-duration="800">
                     {/* Botão seta esquerda */}
                     <button className="seta seta-esquerda" onClick={() => rolarSeriesEmmy('esquerda')}>
                         ❮
