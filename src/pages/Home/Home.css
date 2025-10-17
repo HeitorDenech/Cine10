@@ -6,7 +6,8 @@
 }
 
 #filmes,
-#animes {
+#animes,
+#series {
   scroll-margin-top: 100px;
   /* altura do header */
 }
@@ -154,7 +155,7 @@ main {
   justify-content: center;
   flex-direction: column;
   color: white;
-  margin-top: 15vh;
+  margin-top: 5vh;
 }
 
 /* ------TITLE-INTRODUCAO-CONTAINER-------  */
@@ -639,7 +640,7 @@ main {
   }
 
   .container-top-10-imagem {
-    height: 40vh;
+    height: 42vh;
     width: 15vw;
   }
 
@@ -714,8 +715,8 @@ main {
   }
 
   .container-top-10-imagem {
-    height: 35vh;
-    width: 18vw;
+    height: 40vh;
+    width: 15vw;
   }
 
   /* .container-top-10 {
@@ -1092,14 +1093,14 @@ main {
 
   .btn-introducao-container #btn-sobre {
     height: 5.5vh;
-    width: 25vw;
+    width: 22vw;
     font-size: 14px;
     font-size: 16px;
   }
 
   .btn-introducao-container #btn-login {
     height: 5.5vh;
-    width: 25vw;
+    width: 22vw;
     font-size: 14px;
     font-size: 16px;
   }
@@ -1214,7 +1215,7 @@ main {
   }
 
   .container-series {
-    height: 50vh;
+    height: 60vh;
     width: 95vw;
     margin-left: 2.5vw;
     /* border: 1px solid white; */
@@ -1232,8 +1233,8 @@ main {
   }
 
   .container-top-10-imagem {
-    height: 28vh;
-    width: 28vw;
+    height: 32vh;
+    width: 24vw;
   }
 }
 

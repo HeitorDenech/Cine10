@@ -22,6 +22,12 @@ import uol from '../../assets/uol.jpg'
 import paramount from '../../assets/paramount.avif'
 import crunchyroll from '../../assets/crunchyroll.jpg'
 
+// -----------------CARROSSEL-FILMES------------------
+
+import cine10poster from '../../assets/cine10.png'
+import cine10postermobile from '../../assets/cine10mobile.png'
+
+
 // ----------CLASSICOS---------------
 import cidadaokane from '../../assets/cidadao-kane.jpg';
 import casablanca from '../../assets/casablanca.webp';
@@ -167,6 +173,8 @@ function Home() {
     const imagensPrincipalDesenho = [httyd, walle, up, toystore, avataraang]
     const imagensPrincipalMobileDesenho = [httydmobile, wallemobile, upmobile, toystoremobile, avataraangmobile]
 
+    const imagensPrincipalFilmes = [httyd, walle, up, toystore, avataraang]
+    const imagensPrincipalMobileFilmes = [httydmobile, wallemobile, upmobile, toystoremobile, avataraangmobile]
 
     const navigate = useNavigate(); // ✅ Inicializa navigate
     const [menuOpen, setMenuOpen] = useState(false);
@@ -308,6 +316,36 @@ function Home() {
             </header>
 
             <main>
+
+                {/* //------------------CONTAINER-FILMES------------------ */}
+
+                <section className='container-series'>
+                    <div className='container-series-absolute'>
+                        <div className='container-series-btn'>
+                            <a href="#desenhos">
+                                <button id='btn-1'>Ver filmes</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className='container-series-img'>
+                        {/* imagem normal (desktop) */}
+                        <img
+                            src={imagensPrincipalFilmes[indicePrincipal]}
+                            alt='Slide principal'
+                            className={`img-desktop ${animacao}`}
+                        />
+
+                        {/* imagem versão mobile */}
+                        <img
+                            src={imagensPrincipalMobileFilmes[indicePrincipal]}
+                            alt='Slide principal mobile'
+                            className={`img-mobile ${animacao}`}
+                        />
+                    </div>
+                </section>
+
+
                 <section className="introducao-container">
                     <div className="title-introducao-container" data-aos="fade-up" data-aos-duration="1000">
                         <h1>Explore, aproveite e inspire-se.</h1>
