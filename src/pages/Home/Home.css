@@ -16,6 +16,7 @@ body,
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: black;
   /* bloqueia scroll horizontal no body e html */
 }
 
@@ -135,6 +136,34 @@ nav {
 
 /* -------------------------------------MAIN------------------------------------ */
 
+.nav-mobile {
+  display: none;
+}
+
+.barra-de-pesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.barra-de-pesquisa input {
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  height: 4vh;
+  width: 13vw;
+  padding: 5px;
+  opacity: 70%;
+}
+
+.barra-de-pesquisa i {
+  font-size: 18px;
+  color: white;
+  opacity: 70%;
+}
 
 main {
   margin-top: 5vh;
@@ -155,7 +184,8 @@ main {
   justify-content: center;
   flex-direction: column;
   color: white;
-  margin-top: 5vh;
+  margin-top: -5vh;
+  /* background-color: red; */
 }
 
 /* ------TITLE-INTRODUCAO-CONTAINER-------  */
@@ -653,6 +683,19 @@ main {
     margin-top: 1vh;
   }
 
+  .barra-de-pesquisa {
+    gap: 15px;
+  }
+
+  .barra-de-pesquisa input {
+    height: 4vh;
+    width: 15vw;
+  }
+
+  .barra-de-pesquisa i {
+    font-size: 20px;
+  }
+
 }
 
 
@@ -726,6 +769,19 @@ main {
   .img-assistir img {
     height: 4.7vh;
     margin-top: 0vh;
+  }
+
+  .barra-de-pesquisa {
+    gap: 15px;
+  }
+
+  .barra-de-pesquisa input {
+    height: 4vh;
+    width: 15vw;
+  }
+
+  .barra-de-pesquisa i {
+    font-size: 20px;
   }
 
 }
@@ -817,6 +873,19 @@ main {
     margin-top: 0.5vh;
   }
 
+  .barra-de-pesquisa {
+    gap: 15px;
+  }
+
+  .barra-de-pesquisa input {
+    height: 4vh;
+    width: 15vw;
+  }
+
+  .barra-de-pesquisa i {
+    font-size: 20px;
+  }
+
 }
 
 
@@ -904,6 +973,19 @@ main {
     margin-top: 0vh;
   }
 
+  .barra-de-pesquisa {
+    gap: 15px;
+  }
+
+  .barra-de-pesquisa input {
+    height: 4vh;
+    width: 15vw;
+  }
+
+  .barra-de-pesquisa i {
+    font-size: 20px;
+  }
+
 }
 
 @media screen and (min-width: 1150px) and (max-width: 1250px) {
@@ -982,6 +1064,19 @@ main {
     margin-top: 1vh;
   }
 
+  .barra-de-pesquisa {
+    gap: 15px;
+  }
+
+  .barra-de-pesquisa input {
+    height: 4vh;
+    width: 15vw;
+  }
+
+  .barra-de-pesquisa i {
+    font-size: 20px;
+  }
+
 }
 
 @media screen and (min-width:1001px) and (max-width: 1150px) {
@@ -1028,20 +1123,43 @@ main {
     height: 4vh;
     margin-top: 0vh;
   }
+
+  .barra-de-pesquisa {
+    gap: 15px;
+  }
+
+  .barra-de-pesquisa input {
+    height: 4vh;
+    width: 15vw;
+  }
+
+  .barra-de-pesquisa i {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width:800px) and (max-width: 1001px) {
 
+  .title-introducao-container h1 {
+    font-size: 45px;
+    width: 100%;
+  }
+
+  .text-introducao-container p {
+    font-size: 20px;
+    width: 80%;
+  }
+
   .btn-introducao-container #btn-sobre {
     height: 5vh;
     width: 15vw;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .btn-introducao-container #btn-login {
     height: 5vh;
     width: 15vw;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .seta {
@@ -1085,9 +1203,30 @@ main {
     height: 28vh;
     width: 22vw;
   }
+
+  .barra-de-pesquisa {
+    gap: 15px;
+  }
+
+  .barra-de-pesquisa input {
+    height: 3.5vh;
+    width: 15vw;
+  }
+
+  .barra-de-pesquisa i {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+
+
+  #filmes,
+  #animes,
+  #series {
+    scroll-margin-top: 200px;
+    /* altura do header */
+  }
 
   /* -----------BTN-INTRODUCAO-CONTAINER--------- */
 
@@ -1125,7 +1264,74 @@ main {
     height: 15vh;
   }
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    margin-left: 3vh;
+  }
+
+  .perfil-container {
+    display: flex;
+    margin-right: 2vh;
+  }
+
+  .perfil-container h1 {
+    font-size: 13px;
+  }
+
   .text-container {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    position: fixed;
+    /* mantém o header fixo no topo */
+    top: 8vh;
+    left: 0;
+    z-index: 10000;
+  }
+
+  .text-container-2 {
+    /* margin-top: 3vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1vh;
+    gap: 20px;
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+  }
+
+  .text-container-2 button {
+    height: 4.5vh;
+    width: 17vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+  }
+
+  .barra-de-pesquisa {
+    margin-right: 3vh;
+    gap: 15px;
+  }
+
+  .barra-de-pesquisa input {
+    height: 3.5vh;
+    width: 30vw;
+  }
+
+  .barra-de-pesquisa i {
+    font-size: 20px;
+  }
+
+  /* .text-container {
     position: absolute;
     top: 10vh;
     left: 0;
@@ -1134,7 +1340,6 @@ main {
     background-color: rgb(0, 0, 0);
     display: none;
     padding: 10px 0;
-    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); */
     z-index: 1000;
     height: 90vh;
     opacity: 0;
@@ -1143,7 +1348,6 @@ main {
     overflow: hidden;
   }
 
-  /* Animação ao abrir o menu */
   .text-container.open {
     display: flex;
     align-items: center;
@@ -1204,17 +1408,10 @@ main {
 
   .menu-toggle {
     display: block;
-  }
-
-  .perfil-container {
-    display: flex;
-  }
-
-  .perfil-container h1 {
-    font-size: 13px;
-  }
+  } */
 
   .container-series {
+    margin-top: 15vh;
     height: 60vh;
     width: 95vw;
     margin-left: 2.5vw;
@@ -1242,6 +1439,49 @@ main {
 
 @media screen and (max-width: 430px) {
 
+
+  #filmes,
+  #animes,
+  #series {
+    scroll-margin-top: 200px;
+    /* altura do header */
+  }
+
+  .nav-mobile {
+    display: flex;
+    position: fixed;
+    /* mantém o header fixo no topo */
+    top: 7vh;
+    left: 0;
+    z-index: 10000;
+  }
+
+  .barra-de-pesquisa input{
+    height: 3vh;
+    width: 30vw;
+  }
+
+  .text-container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1vh;
+    gap: 20px;
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+  }
+
+  .text-container-2 button {
+    height: 4vh;
+    width: 17vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+  }
+
   .img-desktop {
     display: none;
   }
@@ -1251,7 +1491,8 @@ main {
   }
 
   .container-series {
-    height: 60vh;
+    margin-top: 15vh;
+    height: 65vh;
     width: 95vw;
     border: 1px solid white;
   }
@@ -1304,8 +1545,12 @@ main {
 
   /* --------------BTN-INTRODUCAO-CONTAINER----------------  */
 
+  .introducao-container {
+    margin-top: -5vh;
+  }
+
   .btn-introducao-container {
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
   }
 
   .btn-introducao-container #btn-sobre {
