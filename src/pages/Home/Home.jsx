@@ -156,6 +156,13 @@ import onlyfoolsandhorses from '../../assets/onlyfoolsandhorses.webp'
 // --------------------------------------------------
 
 function Home() {
+
+    const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
+
+    const togglePesquisa = () => {
+        setMostrarPesquisa(!mostrarPesquisa);
+    };
+
     const carrosselRef = useRef(null);
     const carrosselBilheteriaRef = useRef(null);
     const carrosselOscarsRef = useRef(null);
@@ -296,7 +303,9 @@ function Home() {
                     </div>
 
                     <div className={`text-container ${menuOpen ? 'open' : ''}`}>
-                        <a href="#filmes" onClick={() => setMenuOpen(false)}>Filmes</a>
+                        <Link to="/Filmes">
+                            <a href="">Filmes</a>
+                        </Link>
                         <a href="#animes" onClick={() => setMenuOpen(false)}>Animes</a>
                         <a href="#series" onClick={() => setMenuOpen(false)}>Séries</a>
                         <a href="#desenhos" onClick={() => setMenuOpen(false)}>Desenhos</a>
@@ -308,8 +317,12 @@ function Home() {
                     </div> */}
 
                     <div className='barra-de-pesquisa'>
-                        <input type="text" />
-                        <i class="bi bi-search"></i>
+                        <input
+                            type="text"
+                            placeholder="Pesquisar..."
+                            className={mostrarPesquisa ? 'ativa' : ''}
+                        />
+                        <i className="bi bi-search" onClick={togglePesquisa}></i>
                     </div>
 
                     <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
@@ -323,9 +336,11 @@ function Home() {
 
                 <section className='nav-mobile'>
                     <div className='text-container-2'>
-                        <a href="#filmes">
-                            <button>Filmes</button>
-                        </a>
+                        <Link to="/Filmes">
+                            <a href="#filmes">
+                                <button>Filmes</button>
+                            </a>
+                        </Link>
                         <a href="#animes">
                             <button>Animes</button>
                         </a>
@@ -1342,7 +1357,7 @@ function Home() {
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
-                                <h1>10 - Três Homens em Conflito (The Good, the Bad and the Ugly) (1966)</h1>
+                                <h1>10 - Três Homens em Conflito (1966)</h1>
                                 <span>⭐ 8,8</span>
                                 <p>Onde assistir</p>
                                 <div className='img-assistir'>
