@@ -306,26 +306,30 @@ function Home() {
                         <Link to="/Filmes">
                             Filmes
                         </Link>
-                         <Link to="/Animes">
+                        <Link to="/Animes">
                             Animes
                         </Link>
+                        <Link to="/Series">
+                            Séries
+                        </Link>
                         {/* <a href="#animes" onClick={() => setMenuOpen(false)}>Animes</a> */}
-                        <a href="#series" onClick={() => setMenuOpen(false)}>Séries</a>
+                        {/* <a href="#series" onClick={() => setMenuOpen(false)}>Séries</a> */}
                         <a href="#desenhos" onClick={() => setMenuOpen(false)}>Desenhos</a>
                     </div>
 
-                    {/* <div className="perfil-container">
-                        <h1>{nomeUsuario ? nomeUsuario : "Visitante"}</h1>
-                    </div> */}
+                    <div className="perfil-container">
+                        <h1 id='perfil-container-h1'>{nomeUsuario ? nomeUsuario : "Visitante"}</h1>
+                        <img src={perfil} alt="" />
+                    </div>
 
-                    <div className='barra-de-pesquisa'>
+                    {/* <div className='barra-de-pesquisa'>
                         <input
                             type="text"
                             placeholder="Pesquisar..."
                             className={mostrarPesquisa ? 'ativa' : ''}
                         />
                         <i className="bi bi-search" onClick={togglePesquisa}></i>
-                    </div>
+                    </div> */}
 
                     <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
                         <i className="bi bi-list"></i>
@@ -339,14 +343,14 @@ function Home() {
                 <section className='nav-mobile'>
                     <div className='text-container-2'>
                         <Link to="/Filmes">
-                                <button>Filmes</button>
+                            <button>Filmes</button>
                         </Link>
                         <Link to="/Animes">
-                                <button>Animes</button>
+                            <button>Animes</button>
                         </Link>
-                        <a href="#series">
+                        <Link to="/Series">
                             <button>Séries</button>
-                        </a>
+                        </Link>
                         <a href="#desenhos">
                             <button>Desenhos</button>
                         </a>

@@ -1331,18 +1331,18 @@ main {
     }
 
     .text-container-animes {
-        /* margin-top: 3vh; */
         display: flex;
         align-items: center;
         justify-content: center;
         margin-left: 1vh;
+        margin-top: 1vh;
         gap: 20px;
-        height: 10vh;
+        height: 8vh;
         width: 100vw;
         background-color: black;
     }
 
-    #animes-text button{
+    #animes-text button {
         color: white;
     }
 
@@ -1353,8 +1353,7 @@ main {
         border-radius: 20px;
         background-color: transparent;
         color: gray;
-        /* opacity: 50%; */
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .barra-de-pesquisa {
@@ -1544,7 +1543,7 @@ main {
         margin-left: -2vh;
     }
 
-    #animes-text button{
+    #animes-text button {
         z-index: 11111;
         color: white;
     }
@@ -1554,8 +1553,9 @@ main {
         align-items: center;
         justify-content: start;
         margin-left: 1vh;
+        margin-top: 2vh;
         gap: 20px;
-        height: 10vh;
+        height: 8vh;
         width: 100vw;
         background-color: black;
     }

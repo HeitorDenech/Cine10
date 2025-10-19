@@ -712,6 +712,21 @@ main {
     opacity: 1;
   }
 
+  #perfil-container-h1 {
+    font-size: 16px;
+    margin-top: 1vh;
+  }
+
+  .perfil-container {
+    gap: 15px;
+  }
+
+  .perfil-container img {
+    height: 6vh;
+    width: auto;
+    border-radius: 10px;
+  }
+
 }
 
 
@@ -798,6 +813,21 @@ main {
 
   .barra-de-pesquisa i {
     font-size: 20px;
+  }
+
+  #perfil-container-h1 {
+    font-size: 14px;
+    margin-top: 1vh;
+  }
+
+  .perfil-container {
+    gap: 15px;
+  }
+
+  .perfil-container img {
+    height: 5.5vh;
+    width: auto;
+    border-radius: 10px;
   }
 
 }
@@ -902,6 +932,21 @@ main {
     font-size: 20px;
   }
 
+  #perfil-container-h1 {
+    font-size: 14px;
+    margin-top: 1vh;
+  }
+
+  .perfil-container {
+    gap: 15px;
+  }
+
+  .perfil-container img {
+    height: 5vh;
+    width: auto;
+    border-radius: 10px;
+  }
+
 }
 
 
@@ -1002,6 +1047,21 @@ main {
     font-size: 20px;
   }
 
+  #perfil-container-h1 {
+    font-size: 14px;
+    margin-top: 1vh;
+  }
+
+  .perfil-container {
+    gap: 15px;
+  }
+
+  .perfil-container img {
+    height: 5vh;
+    width: auto;
+    border-radius: 10px;
+  }
+
 }
 
 @media screen and (min-width: 1150px) and (max-width: 1250px) {
@@ -1093,10 +1153,39 @@ main {
     font-size: 20px;
   }
 
+  #perfil-container-h1 {
+    font-size: 14px;
+    margin-top: 1vh;
+  }
+
+  .perfil-container {
+    gap: 15px;
+  }
+
+  .perfil-container img {
+    height: 5.5vh;
+    width: auto;
+    border-radius: 10px;
+  }
 
 }
 
 @media screen and (min-width:1001px) and (max-width: 1150px) {
+
+  #perfil-container-h1 {
+    font-size: 14px;
+    margin-top: 1vh;
+  }
+
+  .perfil-container {
+    gap: 15px;
+  }
+
+  .perfil-container img {
+    height: 5vh;
+    width: auto;
+    border-radius: 10px;
+  }
 
   .seta {
     top: 30%;
@@ -1164,6 +1253,21 @@ main {
 }
 
 @media screen and (min-width:800px) and (max-width: 1001px) {
+
+  .perfil-container {
+    gap: 20px;
+  }
+
+  .perfil-container img {
+    height: 5vh;
+    width: auto;
+    border-radius: 10px;
+  }
+
+  #perfil-container-h1 {
+    font-size: 13px;
+    margin-top: 1vh;
+  }
 
   .title-introducao-container h1 {
     font-size: 45px;
@@ -1298,13 +1402,25 @@ main {
     margin-left: 3vh;
   }
 
+  #perfil-container-h1 {
+    font-size: 13px;
+    margin-top: 1vh;
+  }
+
+
   .perfil-container {
     display: flex;
     margin-right: 2vh;
   }
 
-  .perfil-container h1 {
-    font-size: 13px;
+  .perfil-container {
+    gap: 20px;
+  }
+
+  .perfil-container img {
+    height: 5vh;
+    width: auto;
+    border-radius: 10px;
   }
 
   .text-container {
@@ -1315,30 +1431,30 @@ main {
     display: flex;
     position: fixed;
     /* mantém o header fixo no topo */
-    top: 8vh;
+    top: 7vh;
     left: 0;
     z-index: 10000;
   }
 
   .text-container-2 {
-    /* margin-top: 3vh; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 1vh;
+    margin-top: 1vh;
     gap: 20px;
-    height: 10vh;
+    height: 8vh;
     width: 100vw;
     background-color: black;
   }
 
   .text-container-2 button {
-    height: 4vh;
-    width: 17vw;
+    height: 3.5vh;
+    width: 12vw;
     border: 1px solid white;
     border-radius: 20px;
     background-color: transparent;
-    color: white;
+    color: gray;
     font-size: 14px;
   }
 
@@ -1475,6 +1591,23 @@ main {
 
 @media screen and (max-width: 430px) {
 
+  .perfil-container {
+    width: 30%;
+    background-color: black;
+    gap: 10px;
+  }
+
+  .perfil-container img {
+    height: 4vh;
+    width: auto;
+    border-radius: 10px;
+  }
+
+  #perfil-container-h1 {
+    font-size: 13px;
+    margin-top: 1vh;
+  }
+
 
   #filmes,
   #animes,
@@ -1535,8 +1668,9 @@ main {
     align-items: center;
     justify-content: start;
     margin-left: 1vh;
+    margin-top: 2vh;
     gap: 20px;
-    height: 10vh;
+    height: 8vh;
     width: 100vw;
     background-color: black;
   }
@@ -1547,7 +1681,7 @@ main {
     border: 1px solid rgb(105, 105, 105);
     border-radius: 20px;
     background-color: transparent;
-    color: white;
+    color: gray;
     font-size: 11px;
   }
 

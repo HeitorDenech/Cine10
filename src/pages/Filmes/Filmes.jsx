@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { Link } from 'react-router-dom';
 
+import perfil from '../../assets/perfil.jpg'
+
 // ----------PLATAFORMAS---------------
 import oldflix from '../../assets/oldflix-removebg-preview.png';
 import primevideo from '../../assets/prime-video-logo-preta.jpg';
@@ -195,22 +197,17 @@ function Filmes() {
                         <Link to="/Animes">
                             Animes
                         </Link>
-                        <a href="#series" onClick={() => setMenuOpen(false)}>Séries</a>
+                        <Link to="/Series">
+                            Séries
+                        </Link>
                         <a href="#desenhos" onClick={() => setMenuOpen(false)}>Desenhos</a>
                     </div>
 
-                    {/* <div className="perfil-container">
-                        <h1>{nomeUsuario ? nomeUsuario : "Visitante"}</h1>
-                    </div> */}
-
-                    <div className='barra-de-pesquisa'>
-                        <input
-                            type="text"
-                            placeholder="Pesquisar..."
-                            className={mostrarPesquisa ? 'ativa' : ''}
-                        />
-                        <i className="bi bi-search" onClick={togglePesquisa}></i>
+                    <div className="perfil-container">
+                        <h1 id='perfil-container-h1'>{nomeUsuario ? nomeUsuario : "Visitante"}</h1>
+                        <img src={perfil} alt="" />
                     </div>
+
 
                     <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
                         <i className="bi bi-list"></i>
@@ -229,9 +226,9 @@ function Filmes() {
                         <Link to="/Animes">
                             <button>Animes</button>
                         </Link>
-                        <a href="#series">
+                        <Link to="/Series">
                             <button>Séries</button>
-                        </a>
+                        </Link>
                         <a href="#desenhos">
                             <button>Desenhos</button>
                         </a>
