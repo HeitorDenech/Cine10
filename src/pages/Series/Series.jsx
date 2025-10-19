@@ -231,11 +231,11 @@ function Series() {
 
 
                 <section className="introducao-container">
-                    <div className="title-introducao-container" data-aos="fade-up" data-aos-duration="1000">
+                    <div className="title-introducao-container" >
                         <h1>Explore, aproveite e inspire-se.</h1>
                     </div>
 
-                    <div className="text-introducao-container" data-aos="fade-up" data-aos-duration="1200">
+                    <div className="text-introducao-container">
                         <p>Não perca tempo procurando o que assistir! No Cine10, selecionamos os melhores dos melhores para você.</p>
                     </div>
 
