@@ -75,19 +75,13 @@ import treshomensemconflito from '../../assets/treshomensemconflito.webp'
 
 // --------------------------------------------------
 
-// -----------------CARROUSEL-VER-DESENHOS / FILMES - imagens usadas no slideshow principal -----------------
-import httyd from '../../assets/httyd.jpg';
-import walle from '../../assets/walle.webp';
-import up from '../../assets/up.jpg';
-import toystore from '../../assets/toystore.jpg';
-import avataraang from '../../assets/avataraang.jpg';
+// ------------CARROSSEL-VER-FILMES-----------------
 
-// versão mobile
-import httydmobile from '../../assets/httydmobile.jpg';
-import wallemobile from '../../assets/wallemobile.webp';
-import upmobile from '../../assets/upmobile.jpg';
-import toystoremobile from '../../assets/toystoremobile.jpg';
-import avataraangmobile from '../../assets/avataraangmobile.jpg';
+import avatarposter from '../../assets/avatarposter.jpg'
+import lotrposter from '../../assets/lotrposter.jpg'
+import starwarsposter from '../../assets/starwarsposter.jpg'
+import vingadoresultimatoposter from '../../assets/vingadoresultimatoposter.jpg'
+import jurassicworldposter from '../../assets/jurassicworldposter.jpg'
 
 function Filmes() {
 
@@ -105,8 +99,8 @@ function Filmes() {
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
 
-    const imagensPrincipalFilmes = [httyd, walle, up, toystore, avataraang]
-    const imagensPrincipalMobileFilmes = [httydmobile, wallemobile, upmobile, toystoremobile, avataraangmobile]
+    const imagensPrincipalFilmes = [lotrposter, avatarposter, starwarsposter, vingadoresultimatoposter, jurassicworldposter]
+    const imagensPrincipalMobileFilmes = [oretornodorei, avatar, despertardaforca, ultimato, jurassicworld]
 
     const navigate = useNavigate(); // ✅ Inicializa navigate
     const [menuOpen, setMenuOpen] = useState(false);
@@ -194,7 +188,7 @@ function Filmes() {
                         <Link to="/Filmes" id='filmes-text'>
                             Filmes
                         </Link>
-                        <Link to="/Animes">
+                        <Link to="/Animes"> 
                             Animes
                         </Link>
                         <Link to="/Series">
@@ -241,7 +235,7 @@ function Filmes() {
                 <section className='container-series'>
                     <div className='container-series-absolute'>
                         <div className='container-series-btn'>
-                            <a href="#desenhos">
+                            <a href="#filmes">
                                 <button id='btn-1'>Ver filmes</button>
                             </a>
                         </div>
@@ -274,7 +268,7 @@ function Filmes() {
                         <p>Não perca tempo procurando o que assistir! No Cine10, selecionamos os melhores dos melhores para você.</p>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-duration="1300">
+                    <div>
                         <div className='btn-introducao-container'>
                             <button id="btn-sobre" onClick={sair}>Sair</button>
                             <Link to="/Login">

@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { Link } from 'react-router-dom';
 
+import perfil from '../../assets/perfil.jpg'
+
 // ----------PLATAFORMAS---------------
 import oldflix from '../../assets/oldflix-removebg-preview.png';
 import primevideo from '../../assets/prime-video-logo-preta.jpg';
@@ -18,6 +20,14 @@ import disney from '../../assets/disney.webp';
 import uol from '../../assets/uol.jpg'
 import paramount from '../../assets/paramount.avif'
 import crunchyroll from '../../assets/crunchyroll.jpg'
+
+// -----------------CARROUSEL-VER-SERIES----------------------------
+
+import twd from '../../assets/twd.jpg'
+import got from '../../assets/got.jpg'
+import ossopranos from '../../assets/ossopranos.png'
+import origem from '../../assets/origem.jpg'
+import modernfamily from '../../assets/modernfamily.webp'
 
 // -----------------CARROUSEL-VER-SERIES-MOBILE----------------------------
 
@@ -54,19 +64,7 @@ import onlyfoolsandhorses from '../../assets/onlyfoolsandhorses.webp'
 
 // --------------------------------------------------
 
-// -----------------CARROUSEL-VER-DESENHOS / FILMES - imagens usadas no slideshow principal -----------------
-import httyd from '../../assets/httyd.jpg';
-import walle from '../../assets/walle.webp';
-import up from '../../assets/up.jpg';
-import toystore from '../../assets/toystore.jpg';
-import avataraang from '../../assets/avataraang.jpg';
 
-// versão mobile
-import httydmobile from '../../assets/httydmobile.jpg';
-import wallemobile from '../../assets/wallemobile.webp';
-import upmobile from '../../assets/upmobile.jpg';
-import toystoremobile from '../../assets/toystoremobile.jpg';
-import avataraangmobile from '../../assets/avataraangmobile.jpg';
 
 function Series() {
 
@@ -82,8 +80,8 @@ function Series() {
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
 
-    const imagensPrincipalFilmes = [httyd, walle, up, toystore, avataraang]
-    const imagensPrincipalMobileFilmes = [httydmobile, wallemobile, upmobile, toystoremobile, avataraangmobile]
+    const imagensPrincipalSeries = [twd, got, ossopranos, origem, modernfamily];
+    const imagensPrincipalMobileSeries = [twdmobile, gotmobile, sopranosmobile, frommobile, modernfamilymobile];
 
     const navigate = useNavigate(); // ✅ Inicializa navigate
     const [menuOpen, setMenuOpen] = useState(false);
@@ -107,13 +105,13 @@ function Series() {
         const intervalo = setInterval(() => {
             setAnimacao('fade-out');
             setTimeout(() => {
-                setIndicePrincipal((prev) => (prev + 1) % imagensPrincipalFilmes.length);
+                setIndicePrincipal((prev) => (prev + 1) % imagensPrincipalSeries.length);
                 setAnimacao('fade-in');
             }, 800);
         }, 7000);
 
         return () => clearInterval(intervalo);
-    }, [imagensPrincipalFilmes.length]);
+    }, [imagensPrincipalSeries.length]);
 
     // ----------------SERIES-EMMY--------------
 
@@ -161,17 +159,9 @@ function Series() {
                         </Link>
                     </div>
 
-                    {/* <div className="perfil-container">
-                        <h1>{nomeUsuario ? nomeUsuario : "Visitante"}</h1>
-                    </div> */}
-
-                    <div className='barra-de-pesquisa'>
-                        <input
-                            type="text"
-                            placeholder="Pesquisar..."
-                            className={mostrarPesquisa ? 'ativa' : ''}
-                        />
-                        <i className="bi bi-search" onClick={togglePesquisa}></i>
+                    <div className="perfil-container">
+                        <h1 id='perfil-container-h1'>{nomeUsuario ? nomeUsuario : "Visitante"}</h1>
+                        <img src={perfil} alt="" />
                     </div>
 
                     <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
@@ -206,7 +196,7 @@ function Series() {
                 <section className='container-series'>
                     <div className='container-series-absolute'>
                         <div className='container-series-btn'>
-                            <a href="#desenhos">
+                            <a href="#series">
                                 <button id='btn-1'>Ver filmes</button>
                             </a>
                         </div>
@@ -215,14 +205,14 @@ function Series() {
                     <div className='container-series-img'>
                         {/* imagem normal (desktop) */}
                         <img
-                            src={imagensPrincipalFilmes[indicePrincipal]}
+                            src={imagensPrincipalSeries[indicePrincipal]}
                             alt='Slide principal'
                             className={`img-desktop ${animacao}`}
                         />
 
                         {/* imagem versão mobile */}
                         <img
-                            src={imagensPrincipalMobileFilmes[indicePrincipal]}
+                            src={imagensPrincipalMobileSeries[indicePrincipal]}
                             alt='Slide principal mobile'
                             className={`img-mobile ${animacao}`}
                         />
@@ -239,7 +229,7 @@ function Series() {
                         <p>Não perca tempo procurando o que assistir! No Cine10, selecionamos os melhores dos melhores para você.</p>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-duration="1300">
+                    <div>
                         <div className='btn-introducao-container'>
                             <button id="btn-sobre" onClick={sair}>Sair</button>
                             <Link to="/Login">

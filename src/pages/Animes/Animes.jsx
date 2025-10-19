@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { Link } from 'react-router-dom';
 
+import perfil from '../../assets/perfil.jpg'
+
 // ----------PLATAFORMAS---------------
 import oldflix from '../../assets/oldflix-removebg-preview.png';
 import primevideo from '../../assets/prime-video-logo-preta.jpg';
@@ -54,6 +56,14 @@ import upmobile from '../../assets/upmobile.jpg';
 import toystoremobile from '../../assets/toystoremobile.jpg';
 import avataraangmobile from '../../assets/avataraangmobile.jpg';
 
+// ----------------CARROSSEL-ANIMES-----------------------
+
+import narutoshippudenposter from '../../assets/narutoshippudenposter.jpg'
+import atackontitanposter from '../../assets/atackontitanposter.jpg'
+import deathnoteposter from '../../assets/deathnoteposter.jpg'
+import steinsgateposter from '../../assets/steinsgateposter.jpg'
+import demonslayerposter from '../../assets/demonslayerposter.jpg'
+
 function Animes() {
 
     const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
@@ -68,8 +78,8 @@ function Animes() {
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
 
-    const imagensPrincipalFilmes = [httyd, walle, up, toystore, avataraang]
-    const imagensPrincipalMobileFilmes = [httydmobile, wallemobile, upmobile, toystoremobile, avataraangmobile]
+    const imagensPrincipalAnime = [narutoshippudenposter, atackontitanposter, deathnoteposter, steinsgateposter, demonslayerposter]
+    const imagensPrincipalMobileAnime = [narutoshippuden, atackontitan, deathnote, steinsgate, demonslayer]
 
     const navigate = useNavigate(); // ✅ Inicializa navigate
     const [menuOpen, setMenuOpen] = useState(false);
@@ -88,18 +98,18 @@ function Animes() {
     }, []);
 
     useEffect(() => {
-        AOS.init({ once: true });
-
-        const intervalo = setInterval(() => {
-            setAnimacao('fade-out');
-            setTimeout(() => {
-                setIndicePrincipal((prev) => (prev + 1) % imagensPrincipalFilmes.length);
-                setAnimacao('fade-in');
-            }, 800);
-        }, 7000);
-
-        return () => clearInterval(intervalo);
-    }, [imagensPrincipalFilmes.length]);
+            AOS.init({ once: true });
+    
+            const intervalo = setInterval(() => {
+                setAnimacao('fade-out');
+                setTimeout(() => {
+                    setIndicePrincipal((prev) => (prev + 1) % imagensPrincipalAnime.length);
+                    setAnimacao('fade-in');
+                }, 800);
+            }, 7000);
+    
+            return () => clearInterval(intervalo);
+        }, [imagensPrincipalAnime.length]);
 
     // ---------------MELHORES-AVALIADOS-ANIMES--------------
 
@@ -145,17 +155,9 @@ function Animes() {
                         <a href="#desenhos" onClick={() => setMenuOpen(false)}>Desenhos</a>
                     </div>
 
-                    {/* <div className="perfil-container">
-                        <h1>{nomeUsuario ? nomeUsuario : "Visitante"}</h1>
-                    </div> */}
-
-                    <div className='barra-de-pesquisa'>
-                        <input
-                            type="text"
-                            placeholder="Pesquisar..."
-                            className={mostrarPesquisa ? 'ativa' : ''}
-                        />
-                        <i className="bi bi-search" onClick={togglePesquisa}></i>
+                    <div className="perfil-container">
+                        <h1 id='perfil-container-h1'>{nomeUsuario ? nomeUsuario : "Visitante"}</h1>
+                        <img src={perfil} alt="" />
                     </div>
 
                     <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
@@ -185,13 +187,13 @@ function Animes() {
                 </section>
 
 
-                {/* //------------------CONTAINER-FILMES------------------ */}
+                 {/* //------------------CONTAINER-ANIMES------------------ */}
 
                 <section className='container-series'>
                     <div className='container-series-absolute'>
                         <div className='container-series-btn'>
-                            <a href="#desenhos">
-                                <button id='btn-1'>Ver filmes</button>
+                            <a href="#animes">
+                                <button id='btn-1'>Ver animes</button>
                             </a>
                         </div>
                     </div>
@@ -199,14 +201,14 @@ function Animes() {
                     <div className='container-series-img'>
                         {/* imagem normal (desktop) */}
                         <img
-                            src={imagensPrincipalFilmes[indicePrincipal]}
+                            src={imagensPrincipalAnime[indicePrincipal]}
                             alt='Slide principal'
                             className={`img-desktop ${animacao}`}
                         />
 
                         {/* imagem versão mobile */}
                         <img
-                            src={imagensPrincipalMobileFilmes[indicePrincipal]}
+                            src={imagensPrincipalMobileAnime[indicePrincipal]}
                             alt='Slide principal mobile'
                             className={`img-mobile ${animacao}`}
                         />
@@ -223,7 +225,7 @@ function Animes() {
                         <p>Não perca tempo procurando o que assistir! No Cine10, selecionamos os melhores dos melhores para você.</p>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-duration="1300">
+                    <div>
                         <div className='btn-introducao-container'>
                             <button id="btn-sobre" onClick={sair}>Sair</button>
                             <Link to="/Login">

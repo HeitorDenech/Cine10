@@ -1016,6 +1016,19 @@ main {
 
 @media screen and (min-width: 1150px) and (max-width: 1250px) {
 
+    .barra-de-pesquisa i {
+        font-size: 20px;
+    }
+
+    #perfil-container-h1 {
+        font-size: 14px;
+        margin-top: 1vh;
+    }
+
+    .perfil-container {
+        gap: 15px;
+    }
+
     /* ------------NAVBAR-TEXT---------------- */
 
     .text-container a {
@@ -1108,6 +1121,22 @@ main {
 
 @media screen and (min-width:1001px) and (max-width: 1150px) {
 
+    #perfil-container-h1 {
+        font-size: 14px;
+        margin-top: 1vh;
+    }
+
+    .perfil-container {
+        gap: 15px;
+    }
+
+    .perfil-container img {
+        height: 5vh;
+        width: auto;
+        border-radius: 10px;
+    }
+
+
     .seta {
         top: 30%;
         padding: 3rem 1rem;
@@ -1174,6 +1203,21 @@ main {
 }
 
 @media screen and (min-width:800px) and (max-width: 1001px) {
+
+    .perfil-container {
+        gap: 20px;
+    }
+
+    .perfil-container img {
+        height: 5vh;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    #perfil-container-h1 {
+        font-size: 13px;
+        margin-top: 1vh;
+    }
 
     .title-introducao-container h1 {
         font-size: 45px;
@@ -1255,6 +1299,20 @@ main {
 
 @media screen and (max-width: 768px) {
 
+    #perfil-container-h1 {
+        font-size: 13px;
+        margin-top: 1vh;
+    }
+
+
+    .perfil-container {
+        display: flex;
+        margin-right: 2vh;
+    }
+
+    .perfil-container {
+        gap: 20px;
+    }
 
     #filmes,
     #animes,
@@ -1488,6 +1546,23 @@ main {
 /* ----------CELULAR---------------- */
 
 @media screen and (max-width: 430px) {
+
+    .perfil-container {
+        width: 30%;
+        background-color: black;
+        gap: 10px;
+    }
+
+    .perfil-container img {
+        height: 4vh;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    #perfil-container-h1 {
+        font-size: 13px;
+        margin-top: 1vh;
+    }
 
 
     #filmes,

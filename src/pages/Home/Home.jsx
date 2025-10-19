@@ -174,8 +174,8 @@ function Home() {
 
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
-    const imagensPrincipal = [ossopranos, got, twd, origem, modernfamily];
-    const imagensPrincipalMobile = [sopranosmobile, gotmobile, twdmobile, frommobile, modernfamilymobile];
+    const imagensPrincipal = [got, ossopranos, twd, origem, modernfamily];
+    const imagensPrincipalMobile = [gotmobile, sopranosmobile, twdmobile, frommobile, modernfamilymobile];
 
     const imagensPrincipalDesenho = [httyd, walle, up, toystore, avataraang]
     const imagensPrincipalMobileDesenho = [httydmobile, wallemobile, upmobile, toystoremobile, avataraangmobile]
@@ -299,7 +299,7 @@ function Home() {
             <header>
                 <nav>
                     <div className="logo-container">
-                        <h1>Cine10</h1>
+                            <h1>Cine10</h1>
                     </div>
 
                     <div className={`text-container ${menuOpen ? 'open' : ''}`}>
@@ -364,7 +364,7 @@ function Home() {
                     <div className='container-series-absolute'>
                         <div className='container-series-btn'>
                             <a href="#desenhos">
-                                <button id='btn-1'>Ver filmes</button>
+                                <button id='btn-1'>Ver desenhos</button>
                             </a>
                         </div>
                     </div>
@@ -396,7 +396,7 @@ function Home() {
                         <p>Não perca tempo procurando o que assistir! No Cine10, selecionamos os melhores dos melhores para você.</p>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-duration="1300">
+                    <div>
                         <div className='btn-introducao-container'>
                             <button id="btn-sobre" onClick={sair}>Sair</button>
                             <Link to="/Login">
