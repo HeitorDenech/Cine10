@@ -1490,6 +1490,7 @@ main {
     top: 7vh;
     left: 0;
     z-index: 10000;
+    background-color: black;
   }
 
   .barra-de-pesquisa {
@@ -1502,6 +1503,7 @@ main {
     cursor: pointer;
     font-size: 1.5rem;
     color: #fff;
+    margin-right: 2vh;
   }
 
   .barra-de-pesquisa input {
@@ -1515,15 +1517,17 @@ main {
     color: white;
     border: 1px solid #ccc;
     transition: width 0.4s ease, opacity 0.4s ease;
+    /* transition: all .55s ease-in-out; */
     font-size: 13px;
   }
 
   /* Quando a classe ativa é adicionada, a barra aparece */
   .barra-de-pesquisa input.ativa {
-    margin-right: -0.5vh;
+    /* margin-right: 2vh; */
     width: 200px;
     /* largura final da barra */
     opacity: 1;
+    margin-left: -2vh;
   }
 
   .text-container-2 {

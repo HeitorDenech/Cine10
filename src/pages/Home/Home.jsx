@@ -304,12 +304,14 @@ function Home() {
 
                     <div className={`text-container ${menuOpen ? 'open' : ''}`}>
                         <Link to="/Filmes">
-                            <a href="">Filmes</a>
+                            Filmes
                         </Link>
-                        <a href="#animes" onClick={() => setMenuOpen(false)}>Animes</a>
+                         <Link to="/Animes">
+                            Animes
+                        </Link>
+                        {/* <a href="#animes" onClick={() => setMenuOpen(false)}>Animes</a> */}
                         <a href="#series" onClick={() => setMenuOpen(false)}>Séries</a>
                         <a href="#desenhos" onClick={() => setMenuOpen(false)}>Desenhos</a>
-                        <a href="#outros" onClick={() => setMenuOpen(false)}>Outros</a>
                     </div>
 
                     {/* <div className="perfil-container">
@@ -337,13 +339,11 @@ function Home() {
                 <section className='nav-mobile'>
                     <div className='text-container-2'>
                         <Link to="/Filmes">
-                            <a href="#filmes">
                                 <button>Filmes</button>
-                            </a>
                         </Link>
-                        <a href="#animes">
-                            <button>Animes</button>
-                        </a>
+                        <Link to="/Animes">
+                                <button>Animes</button>
+                        </Link>
                         <a href="#series">
                             <button>Séries</button>
                         </a>

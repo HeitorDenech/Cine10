@@ -7,9 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { Link } from 'react-router-dom';
 
-import logo_branca_sem_fundo from '../../assets/logo_branca_sem_fundo.png';
-import perfil from '../../assets/perfil.jpg'
-
 // ----------PLATAFORMAS---------------
 import oldflix from '../../assets/oldflix-removebg-preview.png';
 import primevideo from '../../assets/prime-video-logo-preta.jpg';
@@ -90,7 +87,7 @@ import upmobile from '../../assets/upmobile.jpg';
 import toystoremobile from '../../assets/toystoremobile.jpg';
 import avataraangmobile from '../../assets/avataraangmobile.jpg';
 
-function Home() {
+function Filmes() {
 
     const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
 
@@ -180,21 +177,26 @@ function Home() {
         });
     };
 
-   
+
     return (
         <>
             <header>
                 <nav>
                     <div className="logo-container">
-                        <h1>Cine10</h1>
+                        <Link to="/Home">
+                            <h1>Cine10</h1>
+                        </Link>
                     </div>
 
                     <div className={`text-container ${menuOpen ? 'open' : ''}`}>
-                        <a href="#filmes" onClick={() => setMenuOpen(false)}>Filmes</a>
-                        <a href="#animes" onClick={() => setMenuOpen(false)}>Animes</a>
+                        <Link to="/Filmes" id='filmes-text'>
+                            Filmes
+                        </Link>
+                        <Link to="/Animes">
+                            Animes
+                        </Link>
                         <a href="#series" onClick={() => setMenuOpen(false)}>Séries</a>
                         <a href="#desenhos" onClick={() => setMenuOpen(false)}>Desenhos</a>
-                        <a href="#outros" onClick={() => setMenuOpen(false)}>Outros</a>
                     </div>
 
                     {/* <div className="perfil-container">
@@ -220,13 +222,13 @@ function Home() {
             <main>
 
                 <section className='nav-mobile'>
-                    <div className='text-container-2'>
-                        <a href="#filmes">
+                    <div className='text-container-filmes'>
+                        <Link to="/Filmes" id='filmes-text'>
                             <button>Filmes</button>
-                        </a>
-                        <a href="#animes">
+                        </Link>
+                        <Link to="/Animes">
                             <button>Animes</button>
-                        </a>
+                        </Link>
                         <a href="#series">
                             <button>Séries</button>
                         </a>
@@ -1269,4 +1271,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Filmes;
