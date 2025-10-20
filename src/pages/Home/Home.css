@@ -632,21 +632,21 @@ main {
   }
 
   .container-top-10-texto h1 {
-    /* font-size: 16px; */
+    font-size: 18px;
     height: 7vh;
     width: 80%;
   }
 
   span {
-    font-size: 21px;
+    font-size: 17px;
   }
 
   .container-top-10-texto p {
-    font-size: 21px;
+    font-size: 17px;
   }
 
   .img-assistir img {
-    height: 5.5vh;
+    height: 5vh;
     width: auto;
   }
 
