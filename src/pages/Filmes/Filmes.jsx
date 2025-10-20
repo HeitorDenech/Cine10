@@ -219,7 +219,7 @@ function Filmes() {
             <main>
 
                 <section className='nav-mobile'>
-                    <div className='text-container-filmes'>
+                    <div className='text-container-2'>
                         <Link to="/Filmes" id='filmes-text'>
                             <button>Filmes</button>
                         </Link>

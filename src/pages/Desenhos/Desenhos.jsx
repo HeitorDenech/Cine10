@@ -166,7 +166,7 @@ function Desenhos() {
             <main>
 
                 <section className='nav-mobile'>
-                    <div className='text-container-filmes'>
+                    <div className='text-container-2'>
                         <Link to="/Filmes">
                             <button>Filmes</button>
                         </Link>
