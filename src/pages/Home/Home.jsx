@@ -434,7 +434,7 @@ function Home() {
 
                 {/* //------------------CONTAINER-CINE10-HOME------------------ */}
 
-                <section className='container-series'>
+                <section className='container-series' id="container-1">
                     <div className='container-series-absolute'>
                         <div className='container-series-btn'>
                             <a href="#filmes">

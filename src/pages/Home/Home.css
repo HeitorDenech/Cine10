@@ -1695,6 +1695,10 @@ main {
     display: block;
   }
 
+  #container-1{
+    margin-top: 15vh;
+  }
+
   .container-series {
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -1729,10 +1733,11 @@ main {
   } */
 
   .introducao-container {
-    margin-top: 10vh;
+    margin-top: 12vh;
   }
 
   .title-introducao-container h1 {
+    margin-top: 5vh;
     font-size: 40px;
     width: 80%;
   }
