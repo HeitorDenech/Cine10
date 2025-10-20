@@ -642,17 +642,17 @@ main {
   }
 
   .container-top-10-texto h1 {
-    font-size: 22px;
+    font-size: 18px;
     height: 7vh;
     width: 80%;
   }
 
   span {
-    font-size: 21px;
+    font-size: 17px;
   }
 
   .container-top-10-texto p {
-    font-size: 21px;
+    font-size: 17px;
   }
 
   .img-assistir img {
@@ -746,17 +746,22 @@ main {
   }
 
   .container-top-10-texto h1 {
-    font-size: 18px;
+    font-size: 16px;
     height: 7vh;
     width: 80%;
   }
 
   span {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .container-top-10-texto p {
-    font-size: 17px;
+    font-size: 16px;
+  }
+
+  .img-assistir img {
+    height: 4.5vh;
+    margin-top: 0vh;
   }
 
   .seta {
@@ -791,11 +796,6 @@ main {
   /* .container-top-10 {
     flex: 0 0 22vw;
   } */
-
-  .img-assistir img {
-    height: 4.7vh;
-    margin-top: 0vh;
-  }
 
   .barra-de-pesquisa {
     gap: 15px;

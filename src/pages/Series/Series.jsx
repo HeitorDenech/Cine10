@@ -28,6 +28,7 @@ import got from '../../assets/got.jpg'
 import ossopranos from '../../assets/ossopranos.png'
 import origem from '../../assets/origem.jpg'
 import modernfamily from '../../assets/modernfamily.webp'
+import bandofbrothersposter from '../../assets/bandofbrothersposter.jpg'
 
 // -----------------CARROUSEL-VER-SERIES-MOBILE----------------------------
 
@@ -80,8 +81,8 @@ function Series() {
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
 
-    const imagensPrincipalSeries = [twd, got, ossopranos, origem, modernfamily];
-    const imagensPrincipalMobileSeries = [twdmobile, gotmobile, sopranosmobile, frommobile, modernfamilymobile];
+    const imagensPrincipalSeries = [twd, got, bandofbrothersposter, origem, modernfamily];
+    const imagensPrincipalMobileSeries = [twdmobile, gotmobile, bandofbrothers, frommobile, modernfamilymobile];
 
     const navigate = useNavigate(); // ✅ Inicializa navigate
     const [menuOpen, setMenuOpen] = useState(false);

@@ -117,6 +117,7 @@ import avataraangmobile from '../../assets/avataraangmobile.jpg'
 import twd from '../../assets/twd.jpg'
 import got from '../../assets/got.jpg'
 import ossopranos from '../../assets/ossopranos.png'
+import bandofbrothersposter from '../../assets/bandofbrothersposter.jpg'
 import origem from '../../assets/origem.jpg'
 import modernfamily from '../../assets/modernfamily.webp'
 
@@ -209,8 +210,8 @@ function Home() {
     const imagensPrincipalAnime = [narutoshippudenposter, atackontitanposter, deathnoteposter, steinsgateposter, demonslayerposter]
     const imagensPrincipalMobileAnime = [narutoshippuden, atackontitan, deathnote, steinsgate, demonslayer]
 
-    const imagensPrincipalSeries = [twd, got, ossopranos, origem, modernfamily];
-    const imagensPrincipalMobileSeries = [twdmobile, gotmobile, sopranosmobile, frommobile, modernfamilymobile];
+    const imagensPrincipalSeries = [twd, got, bandofbrothersposter, origem, modernfamily];
+    const imagensPrincipalMobileSeries = [twdmobile, gotmobile, bandofbrothers, frommobile, modernfamilymobile];
 
     const navigate = useNavigate(); // ✅ Inicializa navigate
     const [menuOpen, setMenuOpen] = useState(false);
