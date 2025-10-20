@@ -98,18 +98,18 @@ function Animes() {
     }, []);
 
     useEffect(() => {
-            AOS.init({ once: true });
-    
-            const intervalo = setInterval(() => {
-                setAnimacao('fade-out');
-                setTimeout(() => {
-                    setIndicePrincipal((prev) => (prev + 1) % imagensPrincipalAnime.length);
-                    setAnimacao('fade-in');
-                }, 800);
-            }, 7000);
-    
-            return () => clearInterval(intervalo);
-        }, [imagensPrincipalAnime.length]);
+        AOS.init({ once: true });
+
+        const intervalo = setInterval(() => {
+            setAnimacao('fade-out');
+            setTimeout(() => {
+                setIndicePrincipal((prev) => (prev + 1) % imagensPrincipalAnime.length);
+                setAnimacao('fade-in');
+            }, 800);
+        }, 7000);
+
+        return () => clearInterval(intervalo);
+    }, [imagensPrincipalAnime.length]);
 
     // ---------------MELHORES-AVALIADOS-ANIMES--------------
 
@@ -151,8 +151,11 @@ function Animes() {
                         <Link to="/Series">
                             Séries
                         </Link>
+                        <Link to="/Desenhos">
+                            Desenhos
+                        </Link>
                         {/* <a href="#animes" onClick={() => setMenuOpen(false)}>Animes</a> */}
-                        <a href="#desenhos" onClick={() => setMenuOpen(false)}>Desenhos</a>
+                        {/* <a href="#desenhos" onClick={() => setMenuOpen(false)}>Desenhos</a> */}
                     </div>
 
                     <div className="perfil-container">
@@ -180,20 +183,20 @@ function Animes() {
                         <Link to="/Series">
                             <button>Séries</button>
                         </Link>
-                        <a href="#desenhos">
+                        <Link to="/Desenhos">
                             <button>Desenhos</button>
-                        </a>
+                        </Link>
                     </div>
                 </section>
 
 
-                 {/* //------------------CONTAINER-ANIMES------------------ */}
+                {/* //------------------CONTAINER-ANIMES------------------ */}
 
                 <section className='container-series'>
                     <div className='container-series-absolute'>
                         <div className='container-series-btn'>
                             <a href="#animes">
-                                <button id='btn-1'>Ver animes</button>
+                                {/* <button id='btn-1'>Ver animes</button> */}
                             </a>
                         </div>
                     </div>

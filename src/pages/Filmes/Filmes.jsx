@@ -188,13 +188,15 @@ function Filmes() {
                         <Link to="/Filmes" id='filmes-text'>
                             Filmes
                         </Link>
-                        <Link to="/Animes"> 
+                        <Link to="/Animes">
                             Animes
                         </Link>
                         <Link to="/Series">
                             Séries
                         </Link>
-                        <a href="#desenhos" onClick={() => setMenuOpen(false)}>Desenhos</a>
+                        <Link to="/Desenhos">
+                            Desenhos
+                        </Link>
                     </div>
 
                     <div className="perfil-container">
@@ -223,9 +225,9 @@ function Filmes() {
                         <Link to="/Series">
                             <button>Séries</button>
                         </Link>
-                        <a href="#desenhos">
+                        <Link to="/Desenhos">
                             <button>Desenhos</button>
-                        </a>
+                        </Link>
                     </div>
                 </section>
 
@@ -236,7 +238,7 @@ function Filmes() {
                     <div className='container-series-absolute'>
                         <div className='container-series-btn'>
                             <a href="#filmes">
-                                <button id='btn-1'>Ver filmes</button>
+                                {/* <button id='btn-1'>Ver filmes</button> */}
                             </a>
                         </div>
                     </div>
