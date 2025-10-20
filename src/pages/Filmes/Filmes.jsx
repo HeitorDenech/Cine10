@@ -85,6 +85,10 @@ import jurassicworldposter from '../../assets/jurassicworldposter.jpg'
 
 function Filmes() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
 
     const togglePesquisa = () => {

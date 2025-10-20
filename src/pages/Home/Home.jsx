@@ -183,6 +183,10 @@ import batman from '../../assets/batman.webp'
 
 function Home() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
 
     const togglePesquisa = () => {

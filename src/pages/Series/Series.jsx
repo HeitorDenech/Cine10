@@ -69,6 +69,10 @@ import onlyfoolsandhorses from '../../assets/onlyfoolsandhorses.webp'
 
 function Series() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
 
     const togglePesquisa = () => {

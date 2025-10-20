@@ -66,6 +66,10 @@ import demonslayerposter from '../../assets/demonslayerposter.jpg'
 
 function Animes() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
 
     const togglePesquisa = () => {
