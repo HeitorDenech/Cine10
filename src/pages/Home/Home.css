@@ -1564,7 +1564,8 @@ main {
   } */
 
   .container-series {
-    margin-top: 15vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     height: 60vh;
     width: 95vw;
     margin-left: 2.5vw;
@@ -1695,7 +1696,8 @@ main {
   }
 
   .container-series {
-    margin-top: 15vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     height: 65vh;
     width: 95vw;
     border: 1px solid white;
