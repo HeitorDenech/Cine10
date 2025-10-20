@@ -752,17 +752,17 @@ main {
   }
 
   .container-top-10-texto h1 {
-    font-size: 16px;
+    font-size: 15px;
     height: 7vh;
     width: 80%;
   }
 
   span {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .container-top-10-texto p {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .img-assistir img {
@@ -874,11 +874,11 @@ main {
   }
 
   span {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .container-top-10-texto p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .seta {
@@ -916,7 +916,7 @@ main {
   }
 
   .img-assistir img {
-    height: 5vh;
+    height: 4.7vh;
     margin-top: 0.5vh;
   }
 
@@ -980,16 +980,16 @@ main {
   }
 
   .container-top-10-texto h1 {
-    font-size: 14px;
+    font-size: 13px;
     height: 8vh;
   }
 
   span {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .container-top-10-texto p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .seta {
@@ -1031,7 +1031,7 @@ main {
   }
 
   .img-assistir img {
-    height: 4.8vh;
+    height: 4.7vh;
     margin-top: 0vh;
   }
 

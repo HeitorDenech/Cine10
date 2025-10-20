@@ -192,6 +192,7 @@ import lotrposter from '../../assets/lotrposter.jpg'
 import starwarsposter from '../../assets/starwarsposter.jpg'
 import vingadoresultimatoposter from '../../assets/vingadoresultimatoposter.jpg'
 import jurassicworldposter from '../../assets/jurassicworldposter.jpg'
+import semvoltapracasaposter from '../../assets/semvoltapracasaposter.jpg'
 
 // --------------------------------------------------
 
@@ -222,8 +223,8 @@ function Home() {
     const [animacao, setAnimacao] = useState('fade-in');
     const imagensPrincipal = [got, ossopranos, twd, origem, modernfamily];
 
-    const imagensPrincipalFilmes = [lotrposter, avatarposter, starwarsposter, vingadoresultimatoposter, jurassicworldposter]
-    const imagensPrincipalMobileFilmes = [oretornodorei, avataragua, despertardaforca, ultimato, jurassicworld]
+    const imagensPrincipalFilmes = [avatarposter, lotrposter, semvoltapracasaposter, vingadoresultimatoposter, jurassicworldposter]
+    const imagensPrincipalMobileFilmes = [avataragua, oretornodorei, semvoltapracasa, ultimato, jurassicworld]
 
     const imagensPrincipalDesenhos = [httyd, walle, up, toystore, avataraang]
     const imagensPrincipalMobileDesenhos = [httydmobile, wallemobile, upmobile, toystory3, avataraangmobile]
@@ -1343,7 +1344,7 @@ function Home() {
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
                                 <a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo" target='_blank'>
-                                    <img src={senhordosaneis} alt="O Senhor dos Anéis: O Retorno do Rei" />
+                                    <img src={oretornodorei} alt="O Senhor dos Anéis: O Retorno do Rei" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>

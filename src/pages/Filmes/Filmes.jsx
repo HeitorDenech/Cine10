@@ -103,8 +103,8 @@ function Filmes() {
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
 
-    const imagensPrincipalFilmes = [lotrposter, avatarposter, starwarsposter, vingadoresultimatoposter, jurassicworldposter]
-    const imagensPrincipalMobileFilmes = [oretornodorei, avataragua, despertardaforca, ultimato, jurassicworld]
+    const imagensPrincipalFilmes = [avatarposter, lotrposter, starwarsposter, vingadoresultimatoposter, jurassicworldposter]
+    const imagensPrincipalMobileFilmes = [avataragua, oretornodorei, despertardaforca, ultimato, jurassicworld]
 
     const navigate = useNavigate(); // ✅ Inicializa navigate
     const [menuOpen, setMenuOpen] = useState(false);
@@ -1147,7 +1147,7 @@ function Filmes() {
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
                                 <a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo" target='_blank'>
-                                    <img src={senhordosaneis} alt="O Senhor dos Anéis: O Retorno do Rei" />
+                                    <img src={oretornodorei} alt="O Senhor dos Anéis: O Retorno do Rei" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
