@@ -245,7 +245,7 @@ function Animes() {
                 {/* --------------------CONTAINER DOS ANIMES MAIS AVALIADOS---------------------- */}
 
                 <div id="animes">
-                    <h1 id='top-10-h1'>Os 10 melhores animes (IMDb)</h1>
+                    <h1 id='top-10-h1'>Os 10 melhores animes ( IMDb )</h1>
                 </div>
 
                 <section className="container-top-10-principal">

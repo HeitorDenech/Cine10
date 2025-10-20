@@ -104,7 +104,7 @@ function Filmes() {
     const [animacao, setAnimacao] = useState('fade-in');
 
     const imagensPrincipalFilmes = [lotrposter, avatarposter, starwarsposter, vingadoresultimatoposter, jurassicworldposter]
-    const imagensPrincipalMobileFilmes = [oretornodorei, avatar, despertardaforca, ultimato, jurassicworld]
+    const imagensPrincipalMobileFilmes = [oretornodorei, avataragua, despertardaforca, ultimato, jurassicworld]
 
     const navigate = useNavigate(); // ✅ Inicializa navigate
     const [menuOpen, setMenuOpen] = useState(false);
@@ -1015,7 +1015,7 @@ function Filmes() {
                 {/* --------------------CONTAINER DOS MELHORES AVALIADOS---------------------- */}
 
                 <div>
-                    <h1 id='top-10-h1'>Os 10 melhores filmes (IMDb)</h1>
+                    <h1 id='top-10-h1'>Os 10 melhores filmes ( IMDb )</h1>
                 </div>
 
                 <section className="container-top-10-principal">

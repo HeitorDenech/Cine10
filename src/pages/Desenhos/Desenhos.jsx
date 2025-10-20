@@ -53,6 +53,13 @@ import princessmononoke from '../../assets/princessmononoke.webp'
 import avataroultimomestredoar from '../../assets/avataroultimomestredoar.webp'
 import rickandmorty from '../../assets/rickandmorty.webp'
 import batman from '../../assets/batman.webp'
+import arcane from '../../assets/arcane.jpg'
+import gravityfalls from '../../assets/gravityfalls.webp'
+import overgarden from '../../assets/overgarden.jpg'
+import bojack from '../../assets/bojack.jpg'
+import youngjustice from '../../assets/youngjustice.jpg'
+import samuraijack from '../../assets/samuraijack.webp'
+import simpsons from '../../assets/simpsons.webp'
 
 function Desenhos() {
 
@@ -545,7 +552,7 @@ function Desenhos() {
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
                                 <a href="https://www.youtube.com/watch?v=lUWttg8aA9I" target='_blank'>
-                                    <img src={batman} alt="Rick and Morty" />
+                                    <img src={batman} alt="Batman: The Animated Series" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
@@ -566,22 +573,94 @@ function Desenhos() {
                             </div>
                         </div>
 
-                        {/* CARD 3 */}
+                        {/* CARD 4 */}
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=lUWttg8aA9I" target='_blank'>
-                                    <img src={batman} alt="Rick and Morty" />
+                                <a href="https://www.youtube.com/watch?v=fXmAurh012s" target='_blank'>
+                                    <img src={arcane} alt="Arcane" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
-                                <h1>3 - Batman: The Animated Series (1992)</h1>
+                                <h1>4 - Arcane (2021)</h1>
                                 <span>⭐ 9,0</span>
                                 <p>Onde assistir</p>
                                 <div className='img-assistir'>
-                                    <a href="https://www.netflix.com/title/70177020" target='_blank'>
+                                    <a href="https://www.netflix.com/title/81435684" target='_blank'>
                                         <img src={netflix} alt="Netflix" />
                                     </a>
-                                    <a href="https://tv.apple.com/br/show/batman---a-serie-animada/umc.cmc.5qpswnlscrdyx4c0skqn21qr2" target='_blank'>
+                                    <a href="https://tv.apple.com/br/show/arcane/umc.cmc.7kcsd1f20wzzisdvehyth23l" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Arcane-League-Of-Legends/0Q7IWK21F2RWHFGF6585Z10AZP" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 5 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=yfUDIPUETUg" target='_blank'>
+                                    <img src={gravityfalls} alt="Gravity Falls" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>5 - Gravity Falls (2012)</h1>
+                                <span>⭐ 8,9</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.disneyplus.com/pt-br/browse/entity-9995dda1-d70a-4d15-98ba-72f1d10fa406?msockid=072cab61222b6f0d04a4bd3223aa6e72" target='_blank'>
+                                        <img src={disney} alt="Disney" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/gravity-falls-um-verao-de-misterios/umc.cmc.5v88dhyt9l9tinygyheo3vbco" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Gravity-Falls/0TISNNJDI636AP8FB2I1TJ98JZ" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 6 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=i1eJMig5Ik4" target='_blank'>
+                                    <img src={bojack} alt="BoJack Horseman" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>6 - BoJack Horseman (2014)</h1>
+                                <span>⭐ 8,8</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.netflix.com/title/70300800" target='_blank'>
+                                        <img src={netflix} alt="Netflix" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/bojack-horseman/umc.cmc.56tqn5n418wvqeolgp83kvv21" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 7 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=36mAsVSH_-s" target='_blank'>
+                                    <img src={overgarden} alt="Over the Garden Wall" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>7 - Over the Garden Wall (2014)</h1>
+                                <span>⭐ 8,7</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Over-the-Garden-Wall/0O2PTZWJHSSPIJQ56OAD40D8AH" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/show/over-the-garden-wall/umc.cmc.410w5085kvgoshzsilbm3gyu6?l=en" target='_blank'>
                                         <img src={appletv} alt="AppleTV" />
                                     </a>
                                     <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
@@ -591,151 +670,77 @@ function Desenhos() {
                             </div>
                         </div>
 
-                        {/* CARD 3 */}
+
+                        {/* CARD 8 */}
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=lUWttg8aA9I" target='_blank'>
-                                    <img src={batman} alt="Rick and Morty" />
+                                <a href="https://www.youtube.com/watch?v=SqBTQtwWMDE" target='_blank'>
+                                    <img src={youngjustice} alt="Young Justice" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
-                                <h1>3 - Batman: The Animated Series (1992)</h1>
-                                <span>⭐ 9,0</span>
+                                <h1>8 - Young Justice (2010)</h1>
+                                <span>⭐ 8,6</span>
                                 <p>Onde assistir</p>
                                 <div className='img-assistir'>
-                                    <a href="https://www.netflix.com/title/70177020" target='_blank'>
+                                    <a href="https://www2.stage.netflix.com/title/70185194" target='_blank'>
                                         <img src={netflix} alt="Netflix" />
                                     </a>
-                                    <a href="https://tv.apple.com/br/show/batman---a-serie-animada/umc.cmc.5qpswnlscrdyx4c0skqn21qr2" target='_blank'>
+                                    <a href="https://tv.apple.com/br/show/justica-jovem/umc.cmc.40rz24v9jtyfs5v0kw3temv3l" target='_blank'>
                                         <img src={appletv} alt="AppleTV" />
                                     </a>
-                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
+                                    <a href="https://play.hbomax.com/show/272b461c-49d4-4df3-9eb6-28bee0ebec47" target='_blank'>
                                         <img src={hbomax} alt="Hbomax" />
                                     </a>
                                 </div>
                             </div>
                         </div>
 
-                        {/* CARD 3 */}
+                        {/* CARD 9 */}
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=lUWttg8aA9I" target='_blank'>
-                                    <img src={batman} alt="Rick and Morty" />
+                                <a href="https://www.youtube.com/watch?v=_jgYEYERYFQ" target='_blank'>
+                                    <img src={simpsons} alt="Simpsons" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
-                                <h1>3 - Batman: The Animated Series (1992)</h1>
-                                <span>⭐ 9,0</span>
+                                <h1>9 - The Simpsons (1989)</h1>
+                                <span>⭐ 8,6</span>
                                 <p>Onde assistir</p>
                                 <div className='img-assistir'>
-                                    <a href="https://www.netflix.com/title/70177020" target='_blank'>
-                                        <img src={netflix} alt="Netflix" />
+                                    <a href="https://www.disneyplus.com/pt-br/browse/entity-cac75c8f-a9e2-4d95-ac73-1cf1cc7b9568?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={disney} alt="Disney+" />
                                     </a>
-                                    <a href="https://tv.apple.com/br/show/batman---a-serie-animada/umc.cmc.5qpswnlscrdyx4c0skqn21qr2" target='_blank'>
+                                    <a href="https://tv.apple.com/br/show/os-simpsons/umc.cmc.1kfo3z1jtaj8ff6wsh9cvxbwu" target='_blank'>
                                         <img src={appletv} alt="AppleTV" />
                                     </a>
-                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
-                                        <img src={hbomax} alt="Hbomax" />
+                                    <a href="https://www.primevideo.com/-/pt/detail/The-Simpsons/0M9BZWC5OK1HO62ULKJO7VE1ZV?utm_source=chatgpt.com" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
                                     </a>
                                 </div>
                             </div>
                         </div>
 
-                        {/* CARD 3 */}
+                        {/* CARD 10 */}
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=lUWttg8aA9I" target='_blank'>
-                                    <img src={batman} alt="Rick and Morty" />
+                                <a href="https://www.youtube.com/watch?v=sBlh6g0X5wA" target='_blank'>
+                                    <img src={samuraijack} alt="Samurai Jack" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
-                                <h1>3 - Batman: The Animated Series (1992)</h1>
-                                <span>⭐ 9,0</span>
+                                <h1>10 - Samurai Jack (2001)</h1>
+                                <span>⭐ 8,5</span>
                                 <p>Onde assistir</p>
                                 <div className='img-assistir'>
-                                    <a href="https://www.netflix.com/title/70177020" target='_blank'>
-                                        <img src={netflix} alt="Netflix" />
-                                    </a>
-                                    <a href="https://tv.apple.com/br/show/batman---a-serie-animada/umc.cmc.5qpswnlscrdyx4c0skqn21qr2" target='_blank'>
-                                        <img src={appletv} alt="AppleTV" />
-                                    </a>
                                     <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
                                         <img src={hbomax} alt="Hbomax" />
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* CARD 3 */}
-                        <div className='container-top-10'>
-                            <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=lUWttg8aA9I" target='_blank'>
-                                    <img src={batman} alt="Rick and Morty" />
-                                </a>
-                            </div>
-                            <div className='container-top-10-texto'>
-                                <h1>3 - Batman: The Animated Series (1992)</h1>
-                                <span>⭐ 9,0</span>
-                                <p>Onde assistir</p>
-                                <div className='img-assistir'>
-                                    <a href="https://www.netflix.com/title/70177020" target='_blank'>
-                                        <img src={netflix} alt="Netflix" />
+                                    <a href="https://www.primevideo.com/-/pt/detail/Samurai-Jack/0FTIJ3S9HHTR4CFWKD75WWS7ZK" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
                                     </a>
-                                    <a href="https://tv.apple.com/br/show/batman---a-serie-animada/umc.cmc.5qpswnlscrdyx4c0skqn21qr2" target='_blank'>
+                                    <a href="https://tv.apple.com/br/show/samurai-jack/umc.cmc.3672mfstbnm9m2w4vd1ub6v6l" target='_blank'>
                                         <img src={appletv} alt="AppleTV" />
-                                    </a>
-                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
-                                        <img src={hbomax} alt="Hbomax" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* CARD 3 */}
-                        <div className='container-top-10'>
-                            <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=lUWttg8aA9I" target='_blank'>
-                                    <img src={batman} alt="Rick and Morty" />
-                                </a>
-                            </div>
-                            <div className='container-top-10-texto'>
-                                <h1>3 - Batman: The Animated Series (1992)</h1>
-                                <span>⭐ 9,0</span>
-                                <p>Onde assistir</p>
-                                <div className='img-assistir'>
-                                    <a href="https://www.netflix.com/title/70177020" target='_blank'>
-                                        <img src={netflix} alt="Netflix" />
-                                    </a>
-                                    <a href="https://tv.apple.com/br/show/batman---a-serie-animada/umc.cmc.5qpswnlscrdyx4c0skqn21qr2" target='_blank'>
-                                        <img src={appletv} alt="AppleTV" />
-                                    </a>
-                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
-                                        <img src={hbomax} alt="Hbomax" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* CARD 3 */}
-                        <div className='container-top-10'>
-                            <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=lUWttg8aA9I" target='_blank'>
-                                    <img src={batman} alt="Rick and Morty" />
-                                </a>
-                            </div>
-                            <div className='container-top-10-texto'>
-                                <h1>3 - Batman: The Animated Series (1992)</h1>
-                                <span>⭐ 9,0</span>
-                                <p>Onde assistir</p>
-                                <div className='img-assistir'>
-                                    <a href="https://www.netflix.com/title/70177020" target='_blank'>
-                                        <img src={netflix} alt="Netflix" />
-                                    </a>
-                                    <a href="https://tv.apple.com/br/show/batman---a-serie-animada/umc.cmc.5qpswnlscrdyx4c0skqn21qr2" target='_blank'>
-                                        <img src={appletv} alt="AppleTV" />
-                                    </a>
-                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
-                                        <img src={hbomax} alt="Hbomax" />
                                     </a>
                                 </div>
                             </div>

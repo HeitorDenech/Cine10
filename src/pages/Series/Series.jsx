@@ -247,7 +247,7 @@ function Series() {
                 {/* --------------------CONTAINER DAS SERIES MAIS PREMIADAS---------------------- */}
 
                 <div id="series">
-                    <h1 id='top-10-h1'>As 10 séries mais premiadas (Emmy)</h1>
+                    <h1 id='top-10-h1'>As 10 séries mais premiadas ( Emmy )</h1>
                 </div>
 
                 <section className="container-top-10-principal">
@@ -502,7 +502,7 @@ function Series() {
                 {/* --------------------CONTAINER DAS MELHORES SERIES---------------------- */}
 
                 <div id="series">
-                    <h1 id='top-10-h1'>As 10 melhores séries (Imdb)</h1>
+                    <h1 id='top-10-h1'>As 10 melhores séries ( Imdb )</h1>
                 </div>
 
                 <section className="container-top-10-principal">
