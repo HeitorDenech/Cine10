@@ -4,14 +4,18 @@ import fs from "fs";
 import path from "path";
 import bcrypt from "bcrypt";
 
-// Se o JSON vai ficar dentro de dist
-const caminhoUsuarios = path.join(__dirname, 'usuarios.json');
-const usuarios = JSON.parse(fs.readFileSync(caminhoUsuarios, 'utf-8'));
-const app = express(); // <-- criar o app primeiro
+const app = express();
 
-app.use(cors());
+// --- CORS configurado para seu front no Vercel ---
+app.use(cors({
+    origin: 'https://cine10.vercel.app', // URL do front
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+}));
+
 app.use(express.json());
 
+// --- Caminho do JSON dentro de dist (Render) ---
 const usuariosPath = path.join(__dirname, "usuarios.json");
 
 function lerUsuarios() {
@@ -23,7 +27,9 @@ function salvarUsuarios(usuarios: any) {
     fs.writeFileSync(usuariosPath, JSON.stringify(usuarios, null, 2));
 }
 
-// Rota de cadastro
+// --- Rotas ---
+
+// Cadastro
 app.post("/cadastro", async (req, res) => {
     const { nome, email, senha } = req.body;
     const usuarios = lerUsuarios();
@@ -39,7 +45,7 @@ app.post("/cadastro", async (req, res) => {
     res.status(201).json({ message: "Cadastro realizado com sucesso!" });
 });
 
-// Rota de login
+// Login
 app.post("/login", async (req, res) => {
     const { email, senha } = req.body;
     const usuarios = lerUsuarios();
@@ -53,10 +59,12 @@ app.post("/login", async (req, res) => {
     res.status(200).json({ message: "Login realizado com sucesso!", nome: usuario.nome });
 });
 
+// Teste de servidor
 app.get("/", (req, res) => {
     res.send("🚀 Servidor do Cine10 rodando!");
 });
 
+// --- Porta ---
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
