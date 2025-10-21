@@ -27,7 +27,6 @@ import crunchyroll from '../../assets/crunchyroll.jpg'
 import cine10poster from '../../assets/cine10.png'
 import cine10postermobile from '../../assets/cine10mobile.png'
 
-
 // ----------CLASSICOS---------------
 import cidadaokane from '../../assets/cidadao-kane.jpg';
 import casablanca from '../../assets/casablanca.webp';

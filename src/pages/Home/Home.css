@@ -652,7 +652,7 @@ main {
 
   .seta {
     top: 30%;
-    padding: 4rem 1.5rem;
+    padding: 4.5rem 1.5rem;
     font-size: 3.5rem;
   }
 
@@ -994,7 +994,7 @@ main {
 
   .seta {
     top: 30%;
-    padding: 3rem 1rem;
+    padding: 3.5rem 1rem;
   }
 
   /* #bilheterias h1 {
@@ -1361,15 +1361,15 @@ main {
   /* -----------BTN-INTRODUCAO-CONTAINER--------- */
 
   .btn-introducao-container #btn-sobre {
-    height: 5.5vh;
-    width: 22vw;
+    height: 4.5vh;
+    width: 18vw;
     font-size: 14px;
     font-size: 16px;
   }
 
   .btn-introducao-container #btn-login {
-    height: 5.5vh;
-    width: 22vw;
+    height: 4.5vh;
+    width: 18vw;
     font-size: 14px;
     font-size: 16px;
   }
@@ -1443,7 +1443,7 @@ main {
     justify-content: center;
     margin-left: 1vh;
     margin-top: 1vh;
-    gap: 20px;
+    gap: 40px;
     height: 8vh;
     width: 100vw;
     background-color: black;
@@ -1587,6 +1587,20 @@ main {
     height: 32vh;
     width: 24vw;
   }
+
+  .title-introducao-container h1{
+    margin-top: 5vh;
+    width: 100%;
+    font-size: 45px;
+  }
+
+  .text-introducao-container p{
+    width: 80%;
+  }
+
+  #container-1{
+    margin-top: 15vh;
+  }
 }
 
 /* ----------CELULAR---------------- */
@@ -1609,7 +1623,6 @@ main {
     font-size: 13px;
     margin-top: 1vh;
   }
-
 
   #filmes,
   #animes,
