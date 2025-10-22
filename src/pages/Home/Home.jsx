@@ -3073,7 +3073,11 @@ function Home() {
             </main>
 
             <footer>
-
+                <section className='icons-footer'>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </section>
             </footer>
         </>
     );

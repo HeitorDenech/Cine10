@@ -27,7 +27,6 @@ import crunchyroll from '../../assets/crunchyroll.jpg'
 import cine10poster from '../../assets/cine10.png'
 import cine10postermobile from '../../assets/cine10mobile.png'
 
-
 // ----------CLASSICOS---------------
 import cidadaokane from '../../assets/cidadao-kane.jpg';
 import casablanca from '../../assets/casablanca.webp';
@@ -185,6 +184,15 @@ import bojack from '../../assets/bojack.jpg'
 import youngjustice from '../../assets/youngjustice.jpg'
 import samuraijack from '../../assets/samuraijack.webp'
 
+// ------------CONTAINER-CINE10-HOME--------------
+
+import avatarposter from '../../assets/avatarposter.jpg'
+import lotrposter from '../../assets/lotrposter.jpg'
+import starwarsposter from '../../assets/starwarsposter.jpg'
+import vingadoresultimatoposter from '../../assets/vingadoresultimatoposter.jpg'
+import jurassicworldposter from '../../assets/jurassicworldposter.jpg'
+import semvoltapracasaposter from '../../assets/semvoltapracasaposter.jpg'
+
 // --------------------------------------------------
 
 function Home() {
@@ -213,6 +221,9 @@ function Home() {
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
     const imagensPrincipal = [got, ossopranos, twd, origem, modernfamily];
+
+    const imagensPrincipalFilmes = [avatarposter, lotrposter, semvoltapracasaposter, vingadoresultimatoposter, jurassicworldposter]
+    const imagensPrincipalMobileFilmes = [avataragua, oretornodorei, semvoltapracasa, ultimato, jurassicworld]
 
     const imagensPrincipalDesenhos = [httyd, walle, up, toystore, avataraang]
     const imagensPrincipalMobileDesenhos = [httydmobile, wallemobile, upmobile, toystory3, avataraangmobile]
@@ -421,13 +432,13 @@ function Home() {
                 </section>
 
 
-                {/* //------------------CONTAINER-DESENHOS------------------ */}
+                {/* //------------------CONTAINER-CINE10-HOME------------------ */}
 
-                <section className='container-series'>
+                <section className='container-series' id="container-1">
                     <div className='container-series-absolute'>
                         <div className='container-series-btn'>
-                            <a href="#desenhos">
-                                {/* <button id='btn-1'>Ver desenhos</button> */}
+                            <a href="#filmes">
+                                {/* <button id='btn-1'>Ver filmes</button> */}
                             </a>
                         </div>
                     </div>
@@ -435,14 +446,14 @@ function Home() {
                     <div className='container-series-img'>
                         {/* imagem normal (desktop) */}
                         <img
-                            src={imagensPrincipalDesenhos[indicePrincipal]}
+                            src={imagensPrincipalFilmes[indicePrincipal]}
                             alt='Slide principal'
                             className={`img-desktop ${animacao}`}
                         />
 
                         {/* imagem versão mobile */}
                         <img
-                            src={imagensPrincipalMobileDesenhos[indicePrincipal]}
+                            src={imagensPrincipalMobileFilmes[indicePrincipal]}
                             alt='Slide principal mobile'
                             className={`img-mobile ${animacao}`}
                         />
@@ -1332,7 +1343,7 @@ function Home() {
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
                                 <a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo" target='_blank'>
-                                    <img src={senhordosaneis} alt="O Senhor dos Anéis: O Retorno do Rei" />
+                                    <img src={oretornodorei} alt="O Senhor dos Anéis: O Retorno do Rei" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
