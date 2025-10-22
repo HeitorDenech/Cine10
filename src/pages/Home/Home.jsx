@@ -3074,10 +3074,10 @@ function Home() {
 
             <footer>
                 <section className='icons-footer'>
-                    <a href="https://github.com/HeitorDenech?tab=repositories" target='_blank'>
+                    <a href="https://www.linkedin.com/in/heitor-de-albuquerque-denech-5a4669239/" target='_blank'>
                         <i class="bi bi-linkedin"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/heitor-de-albuquerque-denech-5a4669239/" target='_blank'>
+                    <a href="https://github.com/HeitorDenech?tab=repositories" target='_blank'>
                         <i class="bi bi-github"></i>
                     </a>
                     <a href="">

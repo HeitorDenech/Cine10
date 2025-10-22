@@ -225,7 +225,7 @@ function Series() {
                 </section>
 
 
-                <section className="introducao-container">
+                {/* <section className="introducao-container">
                     <div className="title-introducao-container" >
                         <h1>Explore, aproveite e inspire-se.</h1>
                     </div>
@@ -242,7 +242,7 @@ function Series() {
                             </Link>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* --------------------CONTAINER DAS SERIES MAIS PREMIADAS---------------------- */}
 
@@ -747,7 +747,17 @@ function Series() {
             </main>
 
             <footer>
-
+                <section className='icons-footer'>
+                    <a href="https://www.linkedin.com/in/heitor-de-albuquerque-denech-5a4669239/" target='_blank'>
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/HeitorDenech?tab=repositories" target='_blank'>
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </section>
             </footer>
         </>
     );

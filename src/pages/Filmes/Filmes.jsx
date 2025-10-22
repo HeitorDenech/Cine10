@@ -265,7 +265,7 @@ function Filmes() {
                 </section>
 
 
-                <section className="introducao-container">
+                {/* <section className="introducao-container">
                     <div className="title-introducao-container">
                         <h1>Explore, aproveite e inspire-se.</h1>
                     </div>
@@ -282,7 +282,7 @@ function Filmes() {
                             </Link>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* --------------------CONTAINER DOS CLÁSSICOS---------------------- */}
                 <div id="filmes">
