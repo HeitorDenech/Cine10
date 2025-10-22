@@ -3074,9 +3074,15 @@ function Home() {
 
             <footer>
                 <section className='icons-footer'>
-                    <i class="bi bi-linkedin"></i>
-                    <i class="bi bi-github"></i>
-                    <i class="bi bi-whatsapp"></i>
+                    <a href="https://github.com/HeitorDenech?tab=repositories" target='_blank'>
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/heitor-de-albuquerque-denech-5a4669239/" target='_blank'>
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
                 </section>
             </footer>
         </>

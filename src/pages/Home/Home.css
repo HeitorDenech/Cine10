@@ -611,14 +611,14 @@ footer {
   width: 10%;
 }
 
-.icons-footer i {
+.icons-footer a {
   color: rgb(143, 136, 136);
   font-size: 17px;
   transition: all .45s ease-in-out;
   transform: scale(1);
 }
 
-.icons-footer i:hover {
+.icons-footer a:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
