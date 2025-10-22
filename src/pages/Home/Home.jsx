@@ -365,12 +365,24 @@ function Home() {
         });
     };
 
+    const rolarSuaveParaTopo = (e) => {
+        e.preventDefault();
+        // Faz a rolagem suave até o topo
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
+
     return (
         <>
             <header>
-                <nav>
+                <nav id='topo'>
                     <div className="logo-container">
-                        <h1>Cine10</h1>
+                        <Link to="/#topo" onClick={rolarSuaveParaTopo}>
+                            <h1 className="logo-texto">Cine10</h1>
+                        </Link>
                     </div>
 
                     <div className={`text-container ${menuOpen ? 'open' : ''}`}>
