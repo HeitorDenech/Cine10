@@ -53,18 +53,20 @@ nav {
   z-index: 1001;
   gap: 50px;
 
-  /* 🔥 Gradiente translúcido com efeito de vidro */
-  background: linear-gradient(160deg,
-      rgba(15, 15, 16, 0.9) 0%,
-      rgba(0, 0, 0, 0.9) 60%,
-      rgba(10, 10, 26, 0.9) 100%);
+  /* 🖤 Fundo preto bem leve e translúcido */
+  background: rgba(0, 0, 0, 0.70);
 
   /* ✨ Efeito vidro fosco */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  /* Linha sutil na base */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Bordas e sombra sutis */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+  /* Transição suave */
+  transition: all 0.3s ease;
 }
 
 /* -----------LOGO-CONTAINER----------- */
@@ -1905,20 +1907,38 @@ footer {
     z-index: 10000;
   }
 
+  nav {
+    background: rgba(0, 0, 0, 0.80);
+  }
+
   .text-container-2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1vh;
+    margin-left: 0vh;
     margin-top: 1vh;
     gap: 40px;
     height: 8vh;
     width: 100vw;
-    /* background-color: black; */
-    background: linear-gradient(160deg, #141416 0%, #0a0a0a 70%, #0f0f12 100%);
+
+    /* 🖤 Fundo preto bem leve e translúcido */
+    background: rgba(0, 0, 0, 0.85);
+
+    /* ✨ Efeito vidro fosco */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Bordas e sombra sutis */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+    /* Transição suave */
+    transition: all 0.3s ease;
   }
 
   .text-container-2 button {
+    margin-top: 1vh;
     height: 3.5vh;
     width: 12vw;
     border: 1px solid white;
@@ -2128,7 +2148,7 @@ footer {
 
   .perfil-container {
     width: 30%;
-    background-color: black;
+    /* background-color: black; */
     gap: 10px;
   }
 
@@ -2157,7 +2177,6 @@ footer {
     top: 7vh;
     left: 0;
     z-index: 10000;
-    background-color: black;
   }
 
   .barra-de-pesquisa {
@@ -2197,18 +2216,34 @@ footer {
     margin-left: -2vh;
   }
 
+  nav {
+    background: rgba(0, 0, 0, 0.80);
+  }
+
   .text-container-2 {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 0vh;
-    margin-top: 1.5vh;
+    margin-top: 1vh;
     gap: 20px;
     height: 8vh;
     width: 100vw;
-    /* background-color: black;
-     */
-    background: linear-gradient(160deg, #141416 0%, #0a0a0a 70%, #0f0f12 100%);
+
+    /* 🖤 Fundo preto bem leve e translúcido */
+    background: rgba(0, 0, 0, 0.90);
+
+    /* ✨ Efeito vidro fosco */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Bordas e sombra sutis */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+    /* Transição suave */
+    transition: all 0.3s ease;
   }
 
   .text-container-2 button {
