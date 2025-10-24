@@ -713,12 +713,12 @@ footer {
   }
 
   .title-introducao-container h1 {
-    font-size: 60px;
+    font-size: 50px;
     width: 100%;
   }
 
   .text-introducao-container p {
-    font-size: 24px;
+    font-size: 20px;
     width: 80%;
   }
 
@@ -732,13 +732,13 @@ footer {
 
   .btn-introducao-container #btn-sobre {
     height: 5.5vh;
-    width: 10vw;
+    width: 9vw;
     font-size: 20px;
   }
 
   .btn-introducao-container #btn-login {
     height: 5.5vh;
-    width: 10vw;
+    width: 9vw;
     font-size: 20px;
   }
 
