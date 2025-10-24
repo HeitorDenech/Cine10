@@ -178,7 +178,7 @@ nav {
 main {
   margin-top: 5vh;
   /* background-color: rgb(12, 12, 12); */
-  background: linear-gradient(160deg, #0f0f10 0%, #000000 60%, #0a0a1a 100%); 
+  background: linear-gradient(160deg, #0d0d0e 0%, #000000 60%, #080814 100%); 
   /* height: 200vh; */
   width: 100vw;
   position: relative;
@@ -657,7 +657,7 @@ footer {
     margin-left: 7vh;
     margin-top: 5vh;
     height: 6vh;
-    width: 12vw;
+    width: 10vw;
     border: 1px solid white;
     background-color: transparent;
     border-radius: 10px;
@@ -723,7 +723,7 @@ footer {
   }
 
   .text-container a {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .btn-introducao-container #btn-sobre {
@@ -739,21 +739,21 @@ footer {
   }
 
   .container-top-10-texto h1 {
-    font-size: 18px;
+    font-size: 16px;
     height: 7vh;
     width: 80%;
   }
 
   span {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .container-top-10-texto p {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .img-assistir img {
-    height: 5vh;
+    height: 4.8vh;
     width: auto;
   }
 
@@ -821,7 +821,7 @@ footer {
   }
 
   #perfil-container-h1 {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 1vh;
   }
 
