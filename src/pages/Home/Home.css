@@ -704,8 +704,12 @@ footer {
     transform: scale(1.1);
   }
 
+  nav{
+    height: 8vh;
+  }
+
   .logo-container h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .title-introducao-container h1 {
@@ -830,7 +834,7 @@ footer {
   }
 
   .perfil-container img {
-    height: 6vh;
+    height: 5vh;
     width: auto;
     border-radius: 10px;
   }
