@@ -710,12 +710,12 @@ footer {
 
   .title-introducao-container h1 {
     font-size: 60px;
-    width: 60%;
+    width: 100%;
   }
 
   .text-introducao-container p {
     font-size: 24px;
-    width: 40%;
+    width: 80%;
   }
 
   #top-10-h1 {
@@ -753,7 +753,7 @@ footer {
   }
 
   .img-assistir img {
-    height: 4.8vh;
+    height: 4.3vh;
     width: auto;
   }
 
@@ -788,18 +788,18 @@ footer {
   }
 
   .container-top-10-imagem {
-    height: 38vh;
-    width: 14vw;
+    height: 36vh;
+    width: 12vw;
   }
 
   /* .container-top-10 {
     flex: 0 0 22vw;
   } */
 
-  .img-assistir img {
+  /* .img-assistir img {
     height: 5.3vh;
     margin-top: 1vh;
-  }
+  } */
 
   .barra-de-pesquisa {
     gap: 15px;
