@@ -1899,6 +1899,10 @@ footer {
     display: none;
   }
 
+  nav{
+    background-color: black;
+  }
+
   .nav-mobile {
     display: flex;
     position: fixed;
@@ -1906,21 +1910,7 @@ footer {
     top: 7vh;
     left: 0;
     z-index: 10000;
-    /* 🖤 Fundo preto sólido com leve transparência */
-    background: linear-gradient(160deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 1) 100%);
-
-    /* ✨ Efeito vidro fosco */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    /* Bordas e sombra bem sutis */
-    border: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-
-    /* Transição suave */
-    transition: all 0.3s ease;
+    background-color: black;
   }
 
   /* nav {
@@ -2178,22 +2168,7 @@ footer {
     top: 7vh;
     left: 0;
     z-index: 10000;
-
-    /* 🖤 Fundo preto sólido com leve transparência */
-    background: linear-gradient(160deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 1) 100%);
-
-    /* ✨ Efeito vidro fosco */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    /* Bordas e sombra bem sutis */
-    border: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-
-    /* Transição suave */
-    transition: all 0.3s ease;
+    background-color: black;
   }
 
   .barra-de-pesquisa {
@@ -2235,6 +2210,10 @@ footer {
 
   nav {
     background: rgba(0, 0, 0, 0.80);
+  }
+
+  nav{
+    background-color: black;
   }
 
   .text-container-2 {
