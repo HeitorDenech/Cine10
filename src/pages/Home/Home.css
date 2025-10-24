@@ -52,7 +52,19 @@ nav {
   position: relative;
   z-index: 1001;
   gap: 50px;
-  background-color: black;
+
+  /* 🔥 Gradiente translúcido com efeito de vidro */
+  background: linear-gradient(160deg,
+      rgba(15, 15, 16, 0.9) 0%,
+      rgba(0, 0, 0, 0.9) 60%,
+      rgba(10, 10, 26, 0.9) 100%);
+
+  /* ✨ Efeito vidro fosco */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* Linha sutil na base */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* -----------LOGO-CONTAINER----------- */
@@ -178,7 +190,7 @@ nav {
 main {
   margin-top: 5vh;
   /* background-color: rgb(12, 12, 12); */
-   background: linear-gradient(160deg, #0f0f10 0%, #000000 60%, #0a0a1a 100%);
+  background: linear-gradient(160deg, #0f0f10 0%, #000000 60%, #0a0a1a 100%);
   /* height: 200vh; */
   width: 100vw;
   position: relative;
@@ -624,9 +636,53 @@ footer {
   transform: scale(1.1);
 }
 
+/* ------------------CONTAINER-VER-MAIS-BOTAO-------------- */
+
+.container-ver-mais-botao button {
+  margin-left: 10vh;
+  margin-top: 5vh;
+  height: 6vh;
+  width: 15vw;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  transition: all .55s ease-in-out;
+  transform: scale(1);
+}
+
+.container-ver-mais-botao button:hover {
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+  transform: scale(1.01);
+}
+
+#ultimo-botao {
+  margin-bottom: 5vh;
+}
+
 /* ------------------------------RESPONSIVO--------------------------------- */
 
 @media screen and (min-width: 1899px) and (max-width: 2560px) {
+
+  .container-ver-mais-botao button {
+    margin-left: 7vh;
+    margin-top: 5vh;
+    height: 6vh;
+    width: 12vw;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    transition: all .55s ease-in-out;
+    transform: scale(1);
+  }
+
+  .container-ver-mais-botao button:hover {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+    transform: scale(1.01);
+  }
 
   /* --------------FOOTER--------------- */
 
@@ -796,6 +852,25 @@ footer {
 
 @media screen and (min-width: 1439px) and (max-width: 1899px) {
 
+  .container-ver-mais-botao button {
+    margin-left: 7vh;
+    margin-top: 5vh;
+    height: 6vh;
+    width: 15vw;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    transition: all .55s ease-in-out;
+    transform: scale(1);
+  }
+
+  .container-ver-mais-botao button:hover {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+    transform: scale(1.01);
+  }
+
   /* --------------FOOTER--------------- */
 
   footer {
@@ -928,6 +1003,25 @@ footer {
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1439px) {
+
+  .container-ver-mais-botao button {
+    margin-left: 7vh;
+    margin-top: 5vh;
+    height: 6vh;
+    width: 12vw;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    transition: all .55s ease-in-out;
+    transform: scale(1);
+  }
+
+  .container-ver-mais-botao button:hover {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+    transform: scale(1.01);
+  }
 
   /* --------------FOOTER--------------- */
 
@@ -1078,6 +1172,25 @@ footer {
 
 @media screen and (min-width: 1250px) and (max-width: 1300px) {
 
+  .container-ver-mais-botao button {
+    margin-left: 8vh;
+    margin-top: 5vh;
+    height: 6vh;
+    width: 12vw;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    transition: all .55s ease-in-out;
+    transform: scale(1);
+  }
+
+  .container-ver-mais-botao button:hover {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+    transform: scale(1.01);
+  }
+
   /* --------------FOOTER--------------- */
 
   footer {
@@ -1223,6 +1336,25 @@ footer {
 
 @media screen and (min-width: 1150px) and (max-width: 1250px) {
 
+  .container-ver-mais-botao button {
+    margin-left: 9vh;
+    margin-top: 5vh;
+    height: 6vh;
+    width: 15vw;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    transition: all .55s ease-in-out;
+    transform: scale(1);
+  }
+
+  .container-ver-mais-botao button:hover {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+    transform: scale(1.01);
+  }
+
   /* --------------FOOTER--------------- */
 
   footer {
@@ -1360,6 +1492,25 @@ footer {
 
 @media screen and (min-width:1001px) and (max-width: 1150px) {
 
+  .container-ver-mais-botao button {
+    margin-left: 7vh;
+    margin-top: 5vh;
+    height: 5vh;
+    width: 18vw;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+    transition: all .55s ease-in-out;
+    transform: scale(1);
+  }
+
+  .container-ver-mais-botao button:hover {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+    transform: scale(1.01);
+  }
+
   /* --------------FOOTER--------------- */
 
   footer {
@@ -1472,6 +1623,25 @@ footer {
 }
 
 @media screen and (min-width:800px) and (max-width: 1001px) {
+
+  .container-ver-mais-botao button {
+    margin-left: 7vh;
+    margin-top: 5vh;
+    height: 5vh;
+    width: 20vw;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    transition: all .55s ease-in-out;
+    transform: scale(1);
+  }
+
+  .container-ver-mais-botao button:hover {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+    transform: scale(1.01);
+  }
 
   /* --------------FOOTER--------------- */
 
@@ -1599,6 +1769,25 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+  .container-ver-mais-botao button {
+    margin-left: 5vh;
+    margin-top: 5vh;
+    height: 5vh;
+    width: 20vw;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    transition: all .55s ease-in-out;
+    transform: scale(1);
+  }
+
+  .container-ver-mais-botao button:hover {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+    transform: scale(1.01);
+  }
+
   /* --------------FOOTER--------------- */
 
   footer {
@@ -1725,7 +1914,8 @@ footer {
     gap: 40px;
     height: 8vh;
     width: 100vw;
-    background-color: black;
+    /* background-color: black; */
+    background: linear-gradient(160deg, #141416 0%, #0a0a0a 70%, #0f0f12 100%);
   }
 
   .text-container-2 button {
@@ -1886,6 +2076,25 @@ footer {
 
 @media screen and (max-width: 430px) {
 
+  .container-ver-mais-botao button {
+    margin-left: 4vh;
+    margin-top: 5vh;
+    height: 5vh;
+    width: 30vw;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 10px;
+    transition: all .55s ease-in-out;
+    transform: scale(1);
+  }
+
+  .container-ver-mais-botao button:hover {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+    transform: scale(1.01);
+  }
+
   /* --------------FOOTER--------------- */
 
   footer {
@@ -1997,7 +2206,9 @@ footer {
     gap: 20px;
     height: 8vh;
     width: 100vw;
-    background-color: black;
+    /* background-color: black;
+     */
+    background: linear-gradient(160deg, #141416 0%, #0a0a0a 70%, #0f0f12 100%);
   }
 
   .text-container-2 button {

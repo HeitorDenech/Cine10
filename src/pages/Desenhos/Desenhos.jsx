@@ -755,7 +755,7 @@ function Desenhos() {
 
             </main>
 
-            <footer>
+            {/* <footer>
                 <section className='icons-footer'>
                     <a href="https://www.linkedin.com/in/heitor-de-albuquerque-denech-5a4669239/" target='_blank'>
                         <i class="bi bi-linkedin"></i>
@@ -767,7 +767,7 @@ function Desenhos() {
                         <i class="bi bi-whatsapp"></i>
                     </a>
                 </section>
-            </footer>
+            </footer> */}
         </>
     );
 }

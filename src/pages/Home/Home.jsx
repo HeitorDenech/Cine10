@@ -1467,6 +1467,15 @@ function Home() {
                     </button>
                 </section>
 
+                {/* -------------------BOTAO-FILMES---------------------- */}
+
+                <div className='container-ver-mais-botao'>
+                    <Link to="/Filmes">
+                        <button>Ver mais filmes</button>
+                    </Link>
+
+                </div>
+
                 {/* //------------------CONTAINER-ANIMES------------------ */}
 
                 <section className='container-series'>
@@ -2010,6 +2019,15 @@ function Home() {
                     </button>
                 </section>
 
+                {/* -------------------BOTAO-ANIMES---------------------- */}
+
+                <div className='container-ver-mais-botao'>
+                    <Link to="/Animes">
+                        <button>Ver mais animes</button>
+                    </Link>
+
+                </div>
+
                 {/* //------------------CONTAINER-SERIES------------------ */}
 
                 <section className='container-series'>
@@ -2538,6 +2556,14 @@ function Home() {
                     </button>
                 </section>
 
+                {/* -------------------BOTAO-SERIES---------------------- */}
+
+                <div className='container-ver-mais-botao'>
+                    <Link to="/Series">
+                        <button>Ver mais séries</button>
+                    </Link>
+
+                </div>
 
                 {/* //------------------CONTAINER-DESENHOS------------------ */}
 
@@ -3081,6 +3107,15 @@ function Home() {
                         ❯
                     </button>
                 </section>
+
+                {/* -------------------BOTAO-DESENHOS---------------------- */}
+
+                <div className='container-ver-mais-botao'>
+                    <Link to="/Desenhos">
+                        <button id="ultimo-botao">Ver mais desenhos</button>
+                    </Link>
+
+                </div>
 
             </main>
 
