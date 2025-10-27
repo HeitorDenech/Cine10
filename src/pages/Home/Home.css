@@ -38,10 +38,13 @@ header {
   width: 100%;
   background-color: transparent;
   z-index: 1000;
+  transition: background-color 0.4s ease;
+  /* transição suave */
 }
 
 
 /* ------------NAVBAR------------------ */
+
 nav {
   height: 100%;
   width: 100%;
@@ -49,10 +52,18 @@ nav {
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  position: relative;
-  z-index: 1001;
   gap: 50px;
-  background-color: black;
+  background-color: transparent;
+  /* totalmente transparente no topo */
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+}
+
+/* Ao rolar, a navbar ganha leve tom escuro e efeito fosco */
+nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* preto translúcido */
+  backdrop-filter: blur(6px);
+  /* leve vidro fosco */
 }
 
 /* -----------LOGO-CONTAINER----------- */
@@ -89,6 +100,8 @@ nav {
   color: rgb(255, 255, 255);
   opacity: 50%;
   transition: all 0.35s ease-in-out;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .text-container a:hover {
@@ -107,10 +120,11 @@ nav {
 }
 
 .perfil-container h1 {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .perfil-container button {
@@ -176,9 +190,9 @@ nav {
 
 
 main {
-  margin-top: 5vh;
+  margin-top: 0vh;
   /* background-color: rgb(12, 12, 12); */
-  background: linear-gradient(160deg, #0d0d0e 0%, #000000 60%, #080814 100%); 
+  background: linear-gradient(160deg, #0d0d0e 0%, #000000 60%, #080814 100%);
   /* height: 200vh; */
   width: 100vw;
   position: relative;
@@ -704,7 +718,7 @@ footer {
     transform: scale(1.1);
   }
 
-  nav{
+  nav {
     height: 8vh;
   }
 
@@ -1270,10 +1284,12 @@ footer {
 
   .container-series {
     height: 100vh;
-    width: 95vw;
-    margin-left: 2vw;
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
     /* border: 1px solid white; */
     /* border: 1px solid white; */
+    border-radius: 0px;
   }
 
   .container-series-absolute {
@@ -1311,7 +1327,7 @@ footer {
   }
 
   #perfil-container-h1 {
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 1vh;
   }
 
@@ -1323,6 +1339,12 @@ footer {
     height: 5vh;
     width: auto;
     border-radius: 10px;
+  }
+
+  /* ---------------MAIN--------------- */
+
+  main {
+    margin-top: 0vh;
   }
 
 }
@@ -1889,7 +1911,7 @@ footer {
     display: none;
   }
 
-  nav{
+  nav {
     background-color: black;
   }
 
@@ -2071,6 +2093,10 @@ footer {
   #container-1 {
     margin-top: 15vh;
   }
+
+  main{
+    margin-top: 4vh;
+  }
 }
 
 /* ----------CELULAR---------------- */
@@ -2202,7 +2228,7 @@ footer {
     background: rgba(0, 0, 0, 0.80);
   }
 
-  nav{
+  nav {
     background-color: black;
   }
 

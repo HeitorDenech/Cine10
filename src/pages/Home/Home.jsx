@@ -238,6 +238,15 @@ function Home() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [nomeUsuario, setNomeUsuario] = useState('');
 
+    window.addEventListener('scroll', function () {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) { // se o usuário rolar mais de 50px
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+
     function sair() {
         localStorage.removeItem('usuario'); // limpa usuário
         navigate('/login'); // redireciona para login
