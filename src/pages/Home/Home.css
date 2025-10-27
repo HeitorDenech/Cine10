@@ -788,11 +788,13 @@ footer {
   } */
 
   .container-series {
-    height: 110vh;
-    width: 95vw;
-    margin-left: 2.5vw;
+    height: 100vh;
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
     /* border: 1px solid white; */
     /* border: 1px solid white; */
+    border-radius: 0px;
   }
 
   .container-series-absolute {
@@ -953,10 +955,12 @@ footer {
 
   .container-series {
     height: 100vh;
-    width: 95vw;
-    margin-left: 2.5vw;
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
     /* border: 1px solid white; */
     /* border: 1px solid white; */
+    border-radius: 0px;
   }
 
   .container-series-absolute {
@@ -1118,10 +1122,12 @@ footer {
 
   .container-series {
     height: 100vh;
-    width: 95vw;
-    margin-left: 2.5vw;
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
     /* border: 1px solid white; */
     /* border: 1px solid white; */
+    border-radius: 0px;
   }
 
 
@@ -1447,11 +1453,13 @@ footer {
   } */
 
   .container-series {
-    height: 75vh;
-    width: 95vw;
-    margin-left: 2.5vw;
+    height: 100vh;
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
     /* border: 1px solid white; */
     /* border: 1px solid white; */
+    border-radius: 0px;
   }
 
   .container-series-absolute {
@@ -1588,11 +1596,13 @@ footer {
 
 
   .container-series {
-    height: 70vh;
-    width: 95vw;
-    margin-left: 2.5vw;
+    height: 90vh;
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
     /* border: 1px solid white; */
     /* border: 1px solid white; */
+    border-radius: 0px;
   }
 
   .container-series-absolute {
@@ -1741,11 +1751,13 @@ footer {
   } */
 
   .container-series {
-    height: 60vh;
-    width: 95vw;
-    margin-left: 2.5vw;
+    height: 90vh;
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
     /* border: 1px solid white; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    border-radius: 0px;
   }
 
   .container-series-absolute {
@@ -1779,6 +1791,10 @@ footer {
 
   .barra-de-pesquisa i {
     font-size: 20px;
+  }
+
+  .text-container a {
+    font-size: 13px;
   }
 }
 
@@ -1857,7 +1873,6 @@ footer {
     font-size: 16px;
   }
 
-
   /* --------------------CARROSSEL------------------ */
 
   .container-top-10 {
@@ -1877,10 +1892,10 @@ footer {
     height: 15vh;
   }
 
-  nav {
+  /* nav {
     display: flex;
     justify-content: space-between;
-  }
+  } */
 
   .logo-container {
     margin-left: 3vh;
@@ -1912,18 +1927,59 @@ footer {
   }
 
   nav {
-    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px;
+    background-color: transparent;
+    /* totalmente transparente no topo */
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+  }
+
+  /* Ao rolar, a navbar ganha leve tom escuro e efeito fosco */
+  nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* preto translúcido */
+    backdrop-filter: blur(6px);
+    /* leve vidro fosco */
   }
 
   .nav-mobile {
     display: flex;
     position: fixed;
-    /* mantém o header fixo no topo */
     top: 7vh;
     left: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
     z-index: 10000;
-    background-color: black;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    /* opcional: melhora legibilidade no topo */
   }
+
+  /* estado oculto (suave) */
+  .nav-mobile.oculta {
+    opacity: 0;
+    transform: translateY(-10px);
+    /* sobe e some */
+    pointer-events: none;
+    /* não pode clicar */
+    /* visibility usado se quiser evitar foco/tab quando invisível */
+    visibility: hidden;
+  }
+
+
+  /* .nav-mobile.scrolled {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  } */
 
   /* nav {
     background: rgba(0, 0, 0, 0.80);
@@ -1938,17 +1994,18 @@ footer {
     gap: 40px;
     height: 8vh;
     width: 100vw;
+    margin-top: 0vh;
   }
 
   .text-container-2 button {
     margin-top: 1vh;
-    height: 3.5vh;
-    width: 12vw;
+    height: 4vh;
+    width: 14vw;
     border: 1px solid white;
     border-radius: 20px;
     background-color: transparent;
-    color: gray;
-    font-size: 14px;
+    color: white;
+    font-size: 16px;
   }
 
   .barra-de-pesquisa {
@@ -2055,19 +2112,22 @@ footer {
     display: block;
   } */
 
+
+
   .container-series {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    height: 60vh;
-    width: 95vw;
-    margin-left: 2.5vw;
+    /* margin-top: 20vh; */
+    height: 80vh;
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
     /* border: 1px solid white; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    border-radius: 0px;
   }
 
-  .container-series-absolute {
-    top: 90%;
-  }
+  /* .container-series-absolute {
+    top: 20%;
+  } */
 
   #btn-1,
   #btn-2 {
@@ -2091,12 +2151,12 @@ footer {
   }
 
   #container-1 {
-    margin-top: 15vh;
+    margin-top: 0vh;
   }
 
-  main{
-    margin-top: 4vh;
-  }
+  /* main {
+    margin-top: -15vh;
+  } */
 }
 
 /* ----------CELULAR---------------- */
@@ -2177,14 +2237,52 @@ footer {
     /* altura do header */
   }
 
+  nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px;
+    background-color: transparent;
+    /* totalmente transparente no topo */
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+  }
+
+  /* Ao rolar, a navbar ganha leve tom escuro e efeito fosco */
+  nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* preto translúcido */
+    backdrop-filter: blur(6px);
+    /* leve vidro fosco */
+  }
+
   .nav-mobile {
     display: flex;
     position: fixed;
-    /* mantém o header fixo no topo */
     top: 7vh;
     left: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
     z-index: 10000;
-    background-color: black;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    /* opcional: melhora legibilidade no topo */
+  }
+
+  /* estado oculto (suave) */
+  .nav-mobile.oculta {
+    opacity: 0;
+    transform: translateY(-10px);
+    /* sobe e some */
+    pointer-events: none;
+    /* não pode clicar */
+    /* visibility usado se quiser evitar foco/tab quando invisível */
+    visibility: hidden;
   }
 
   .barra-de-pesquisa {
@@ -2224,14 +2322,6 @@ footer {
     margin-left: -2vh;
   }
 
-  nav {
-    background: rgba(0, 0, 0, 0.80);
-  }
-
-  nav {
-    background-color: black;
-  }
-
   .text-container-2 {
     display: flex;
     align-items: center;
@@ -2245,12 +2335,12 @@ footer {
 
   .text-container-2 button {
     height: 4vh;
-    width: 17vw;
-    border: 1px solid rgb(105, 105, 105);
+    width: 19vw;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     background-color: transparent;
-    color: gray;
-    font-size: 11px;
+    color: white;
+    font-size: 13px;
   }
 
   .img-desktop {
@@ -2262,15 +2352,18 @@ footer {
   }
 
   #container-1 {
-    margin-top: 15vh;
+    margin-top: 0vh;
   }
 
   .container-series {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    height: 65vh;
-    width: 95vw;
-    border: 1px solid white;
+    /* margin-top: 20vh; */
+    height: 90vh;
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
+    /* border: 1px solid white; */
+    /* border: 1px solid white; */
+    border-radius: 0px;
   }
 
   .container-series-absolute {
