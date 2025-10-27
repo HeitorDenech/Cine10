@@ -89,6 +89,29 @@ function Filmes() {
         window.scrollTo(0, 0);
     }, []);
 
+    // 🟢 AQUI entra o efeito da navbar transparente ao scrollar
+    useEffect(() => {
+        const handleScroll = () => {
+            const nav = document.querySelector("nav");
+            const navMobile = document.querySelector(".nav-mobile");
+
+            if (window.scrollY > 50) {
+                // Navbar principal ganha fundo escuro
+                nav?.classList.add("scrolled");
+                // Navbar mobile desaparece
+                navMobile?.classList.add("oculta");
+            } else {
+                // Navbar principal volta a ficar transparente
+                nav?.classList.remove("scrolled");
+                // Navbar mobile reaparece
+                navMobile?.classList.remove("oculta");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
 
     const togglePesquisa = () => {
@@ -214,13 +237,10 @@ function Filmes() {
                     </div>
 
                 </nav>
-            </header>
-
-            <main>
 
                 <section className='nav-mobile'>
                     <div className='text-container-2'>
-                        <Link to="/Filmes" id='filmes-text'>
+                        <Link to="/Filmes" id="filmes-text-2">
                             <button>Filmes</button>
                         </Link>
                         <Link to="/Animes">
@@ -229,12 +249,14 @@ function Filmes() {
                         <Link to="/Series">
                             <button>Séries</button>
                         </Link>
-                        <Link to="/Desenhos">
+                        <a href="/Desenhos">
                             <button>Desenhos</button>
-                        </Link>
+                        </a>
                     </div>
                 </section>
+            </header>
 
+            <main>
 
                 {/* //------------------CONTAINER-FILMES------------------ */}
 

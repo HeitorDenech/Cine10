@@ -73,6 +73,29 @@ function Series() {
         window.scrollTo(0, 0);
     }, []);
 
+    // 🟢 AQUI entra o efeito da navbar transparente ao scrollar
+    useEffect(() => {
+        const handleScroll = () => {
+            const nav = document.querySelector("nav");
+            const navMobile = document.querySelector(".nav-mobile");
+
+            if (window.scrollY > 50) {
+                // Navbar principal ganha fundo escuro
+                nav?.classList.add("scrolled");
+                // Navbar mobile desaparece
+                navMobile?.classList.add("oculta");
+            } else {
+                // Navbar principal volta a ficar transparente
+                nav?.classList.remove("scrolled");
+                // Navbar mobile reaparece
+                navMobile?.classList.remove("oculta");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
 
     const togglePesquisa = () => {
@@ -174,9 +197,6 @@ function Series() {
                     </div>
 
                 </nav>
-            </header>
-
-            <main>
 
                 <section className='nav-mobile'>
                     <div className='text-container-2'>
@@ -186,7 +206,7 @@ function Series() {
                         <Link to="/Animes">
                             <button>Animes</button>
                         </Link>
-                        <Link to="/Series" id="series-text">
+                        <Link to="/Series" id="series-text-2">
                             <button>Séries</button>
                         </Link>
                         <Link to="/Desenhos">
@@ -194,6 +214,9 @@ function Series() {
                         </Link>
                     </div>
                 </section>
+            </header>
+
+            <main>
 
 
                 {/* //------------------CONTAINER-SERIES------------------ */}

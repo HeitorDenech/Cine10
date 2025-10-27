@@ -201,10 +201,6 @@ function Home() {
         window.scrollTo(0, 0);
     }, []);
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     // 🟢 AQUI entra o efeito da navbar transparente ao scrollar
     useEffect(() => {
         const handleScroll = () => {
@@ -227,8 +223,6 @@ function Home() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
-
 
     const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
 

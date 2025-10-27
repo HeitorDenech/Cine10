@@ -70,6 +70,28 @@ function Animes() {
         window.scrollTo(0, 0);
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const nav = document.querySelector("nav");
+            const navMobile = document.querySelector(".nav-mobile");
+
+            if (window.scrollY > 50) {
+                // Navbar principal ganha fundo escuro
+                nav?.classList.add("scrolled");
+                // Navbar mobile desaparece
+                navMobile?.classList.add("oculta");
+            } else {
+                // Navbar principal volta a ficar transparente
+                nav?.classList.remove("scrolled");
+                // Navbar mobile reaparece
+                navMobile?.classList.remove("oculta");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
 
     const togglePesquisa = () => {
@@ -172,16 +194,13 @@ function Animes() {
                     </div>
 
                 </nav>
-            </header>
-
-            <main>
 
                 <section className='nav-mobile'>
                     <div className='text-container-2'>
                         <Link to="/Filmes">
                             <button>Filmes</button>
                         </Link>
-                        <Link to="/Animes" id='animes-text'>
+                        <Link to="/Animes" id='animes-text-2'>
                             <button>Animes</button>
                         </Link>
                         <Link to="/Series">
@@ -192,6 +211,11 @@ function Animes() {
                         </Link>
                     </div>
                 </section>
+            </header>
+
+            <main>
+
+
 
 
                 {/* //------------------CONTAINER-ANIMES------------------ */}

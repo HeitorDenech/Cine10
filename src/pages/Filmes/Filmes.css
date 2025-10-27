@@ -4,10 +4,23 @@
   /* text-decoration: underline; */
 }
 
+@media screen and (min-width:769px) and (max-width:2560px) {
+  #filmes-text {
+    padding: 8px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+  }
+}
 
 @media screen and (max-width: 768px) {
   #filmes-text button {
     color: white;
+  }
+
+  #filmes-text-2 button {
+    background-color: white;
+    color: black;
   }
 }
 
@@ -18,9 +31,14 @@
     z-index: 11111;
     color: white;
   }
-  
+
+  #filmes-text-2 button {
+    background-color: white;
+    color: black;
+  }
+
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }

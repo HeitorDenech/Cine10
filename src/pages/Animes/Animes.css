@@ -4,11 +4,24 @@
   /* text-decoration: underline; */
 }
 
+@media screen and (min-width:769px) and (max-width:2560px) {
+  #animes-text{
+    padding: 8px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+  }
+}
 
 @media screen and (max-width: 768px) {
 
   #animes-text button {
     color: white;
+  }
+
+  #animes-text-2 button{
+    background-color: white;
+    color: black;
   }
 }
 
@@ -19,6 +32,11 @@
   #animes-text button {
     z-index: 11111;
     color: white;
+  }
+
+  #animes-text-2 button{
+    background-color: white;
+    color: black;
   }
 }
 

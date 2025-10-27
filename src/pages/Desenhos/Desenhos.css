@@ -4,11 +4,24 @@
   /* text-decoration: underline; */
 }
 
+@media screen and (min-width:769px) and (max-width:2560px) {
+  #desenhos-text {
+    padding: 8px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+  }
+}
 
 @media screen and (max-width: 768px) {
 
   #desenhos-text button {
     color: white;
+  }
+
+  #desenhos-text-2 button {
+    background-color: white;
+    color: black;
   }
 }
 
@@ -21,9 +34,13 @@
     color: white;
   }
 
-  
+  #desenhos-text-2 button {
+    background-color: white;
+    color: black;
+  }
+
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }

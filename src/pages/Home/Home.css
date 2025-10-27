@@ -98,14 +98,16 @@ nav.scrolled {
   font-size: 16px;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  opacity: 50%;
+  opacity: 100%;
   transition: all 0.35s ease-in-out;
   font-weight: bold;
   letter-spacing: 1px;
+  transform: scale(1);
 }
 
 .text-container a:hover {
   opacity: 100%;
+  transform: scale(1.06);
 }
 
 /* -------PERFIL-CONTAINER-------------- */
@@ -643,6 +645,7 @@ footer {
 .container-ver-mais-botao button {
   margin-left: 10vh;
   margin-top: 5vh;
+  margin-bottom: 5vh;
   height: 6vh;
   width: 15vw;
   border: 1px solid white;
@@ -914,7 +917,7 @@ footer {
   /* ------------NAVBAR-TEXT---------------- */
 
   .text-container a {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .btn-introducao-container #btn-sobre {
@@ -1072,7 +1075,7 @@ footer {
   /* ------------NAVBAR-TEXT---------------- */
 
   .text-container a {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .btn-introducao-container #btn-sobre {
@@ -1238,7 +1241,7 @@ footer {
   /* ------------NAVBAR-TEXT---------------- */
 
   .text-container a {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .title-introducao-container h1 {

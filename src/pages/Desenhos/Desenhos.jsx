@@ -67,6 +67,28 @@ function Desenhos() {
         window.scrollTo(0, 0);
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const nav = document.querySelector("nav");
+            const navMobile = document.querySelector(".nav-mobile");
+
+            if (window.scrollY > 50) {
+                // Navbar principal ganha fundo escuro
+                nav?.classList.add("scrolled");
+                // Navbar mobile desaparece
+                navMobile?.classList.add("oculta");
+            } else {
+                // Navbar principal volta a ficar transparente
+                nav?.classList.remove("scrolled");
+                // Navbar mobile reaparece
+                navMobile?.classList.remove("oculta");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
 
     const togglePesquisa = () => {
@@ -168,9 +190,6 @@ function Desenhos() {
                     </div>
 
                 </nav>
-            </header>
-
-            <main>
 
                 <section className='nav-mobile'>
                     <div className='text-container-2'>
@@ -183,11 +202,16 @@ function Desenhos() {
                         <Link to="/Series">
                             <button>Séries</button>
                         </Link>
-                        <Link to="/Desenhos" id='desenhos-text'>
+                        <Link to="/Desenhos" id='desenhos-text-2'>
                             <button>Desenhos</button>
                         </Link>
                     </div>
                 </section>
+
+            </header>
+
+            <main>
+
 
 
                 {/* //------------------CONTAINER-DESENHOS------------------ */}
