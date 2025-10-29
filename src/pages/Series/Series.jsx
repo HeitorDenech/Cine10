@@ -675,7 +675,7 @@ function Series() {
                         {/* CARD 7 */}
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=bjqEWgDVPe0" target='_blank'>
+                                <a href="https://www.youtube.com/watch?v=xK7S9mrFWL4" target='_blank'>
                                     <img src={sherlock} alt="Saturday Night Live" />
                                 </a>
                             </div>

@@ -188,6 +188,8 @@ import samuraijack from '../../assets/samuraijack.webp'
 
 import avatarposter from '../../assets/avatarposter.jpg'
 import lotrposter from '../../assets/lotrposter.jpg'
+import batmanposter from '../../assets/batmanposter.png'
+import batmanpostermobile from '../../assets/batmanpostermobile.jpg'
 import starwarsposter from '../../assets/starwarsposter.jpg'
 import vingadoresultimatoposter from '../../assets/vingadoresultimatoposter.jpg'
 import jurassicworldposter from '../../assets/jurassicworldposter.jpg'
@@ -245,8 +247,8 @@ function Home() {
     const [animacao, setAnimacao] = useState('fade-in');
     const imagensPrincipal = [got, ossopranos, twd, origem, modernfamily];
 
-    const imagensPrincipalFilmes = [avatarposter, lotrposter, semvoltapracasaposter, vingadoresultimatoposter, jurassicworldposter]
-    const imagensPrincipalMobileFilmes = [avataragua, oretornodorei, semvoltapracasa, ultimato, jurassicworld]
+    const imagensPrincipalFilmes = [batmanposter, avatarposter, semvoltapracasaposter, vingadoresultimatoposter, jurassicworldposter]
+    const imagensPrincipalMobileFilmes = [batmanpostermobile ,avataragua, semvoltapracasa, ultimato, jurassicworld]
 
     const imagensPrincipalDesenhos = [httyd, walle, up, toystore, avataraang]
     const imagensPrincipalMobileDesenhos = [httydmobile, wallemobile, upmobile, toystory3, avataraangmobile]
@@ -2489,7 +2491,7 @@ function Home() {
                         {/* CARD 7 */}
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=bjqEWgDVPe0" target='_blank'>
+                                <a href="https://www.youtube.com/watch?v=xK7S9mrFWL4" target='_blank'>
                                     <img src={sherlock} alt="Saturday Night Live" />
                                 </a>
                             </div>
