@@ -194,6 +194,8 @@ import starwarsposter from '../../assets/starwarsposter.jpg'
 import vingadoresultimatoposter from '../../assets/vingadoresultimatoposter.jpg'
 import jurassicworldposter from '../../assets/jurassicworldposter.jpg'
 import semvoltapracasaposter from '../../assets/semvoltapracasaposter.jpg'
+import hobbitposter from '../../assets/hobbitposter.jpg'
+import hobbitpostermobile from '../../assets/hobbitpostermobile.jpg'
 
 // --------------------------------------------------
 
@@ -247,8 +249,8 @@ function Home() {
     const [animacao, setAnimacao] = useState('fade-in');
     const imagensPrincipal = [got, ossopranos, twd, origem, modernfamily];
 
-    const imagensPrincipalFilmes = [batmanposter, avatarposter, semvoltapracasaposter, vingadoresultimatoposter, jurassicworldposter]
-    const imagensPrincipalMobileFilmes = [batmanpostermobile ,avataragua, semvoltapracasa, ultimato, jurassicworld]
+    const imagensPrincipalFilmes = [batmanposter, avatarposter, semvoltapracasaposter, hobbitposter, jurassicworldposter]
+    const imagensPrincipalMobileFilmes = [batmanpostermobile ,avataragua, semvoltapracasa, hobbitpostermobile, jurassicworld]
 
     const imagensPrincipalDesenhos = [httyd, walle, up, toystore, avataraang]
     const imagensPrincipalMobileDesenhos = [httydmobile, wallemobile, upmobile, toystory3, avataraangmobile]

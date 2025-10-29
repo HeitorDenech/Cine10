@@ -99,7 +99,7 @@ nav.scrolled {
   text-decoration: none;
   color: rgb(255, 255, 255);
   opacity: 100%;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.25s ease-in-out;
   font-weight: bold;
   letter-spacing: 1px;
   transform: scale(1);
@@ -108,6 +108,10 @@ nav.scrolled {
 .text-container a:hover {
   opacity: 100%;
   transform: scale(1.06);
+  padding: 7px;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
 }
 
 /* -------PERFIL-CONTAINER-------------- */

@@ -85,6 +85,8 @@ import starwarsposter from '../../assets/starwarsposter.jpg'
 import vingadoresultimatoposter from '../../assets/vingadoresultimatoposter.jpg'
 import jurassicworldposter from '../../assets/jurassicworldposter.jpg'
 import semvoltapracasaposter from '../../assets/semvoltapracasaposter.jpg'
+import hobbitposter from '../../assets/hobbitposter.jpg'
+import hobbitpostermobile from '../../assets/hobbitpostermobile.jpg'
 
 function Filmes() {
 
@@ -129,8 +131,8 @@ function Filmes() {
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
 
-    const imagensPrincipalFilmes = [batmanposter, avatarposter, semvoltapracasaposter, vingadoresultimatoposter, jurassicworldposter]
-        const imagensPrincipalMobileFilmes = [batmanpostermobile ,avataragua, semvoltapracasa, ultimato, jurassicworld]
+    const imagensPrincipalFilmes = [batmanposter, avatarposter, semvoltapracasaposter, hobbitposter, jurassicworldposter]
+    const imagensPrincipalMobileFilmes = [batmanpostermobile, avataragua, semvoltapracasa, hobbitpostermobile, jurassicworld]
 
     const navigate = useNavigate(); // ✅ Inicializa navigate
     const [menuOpen, setMenuOpen] = useState(false);
