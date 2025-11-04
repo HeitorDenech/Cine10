@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import './Cadastro.css';
-import logo_branca_sem_fundo from '../../assets/logo_branca_sem_fundo.png';
 import series from '../../assets/series.jpg';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 function Cadastro() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     AOS.init({ once: true });
@@ -23,18 +23,18 @@ function Cadastro() {
     }
 
     try {
-      const res = await fetch('http://localhost:3001/cadastro', {
+      const res = await fetch('https://cine10-2.onrender.com/cadastro', { // 👈 rota correta
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, email, senha })
+        body: JSON.stringify({ nome, email, senha }),
       });
 
       const data = await res.json();
 
       if (res.ok) {
-        Swal.fire('Sucesso', data.message, 'success');
-        // Redirecionar para login após cadastro
-        window.location.href = "/login";
+        Swal.fire('Sucesso', data.message, 'success').then(() => {
+          navigate('/login');
+        });
       } else {
         Swal.fire('Erro', data.message, 'error');
       }
@@ -46,36 +46,33 @@ function Cadastro() {
 
   return (
     <section
-      className='pagina-cadastro'
+      className="pagina-cadastro"
       style={{ backgroundImage: `url(${series})` }}
     >
-      <div className='cadastro-container' data-aos="fade-left" data-aos-duration="500">
-        {/* <img src={logo_branca_sem_fundo} alt="Logo Cine10" /> */}
+      <div className="cadastro-container" data-aos="fade-left" data-aos-duration="500">
         <h1>Sign up</h1>
         <input
           type="text"
-          placeholder='Nome'
+          placeholder="Nome"
           value={nome}
           onChange={(e) => setNome(e.target.value)}
         />
         <input
           type="email"
-          placeholder='Email'
+          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="password"
-          placeholder='Crie uma senha'
+          placeholder="Crie uma senha"
           value={senha}
           onChange={(e) => setSenha(e.target.value)}
         />
         <button onClick={cadastrarUsuario}>Cadastrar</button>
-        <div className='cadastro-text'>
+        <div className="cadastro-text">
           <p>Já tem uma conta?</p>
-          <Link to="/login">
-            <a>Entrar</a>
-          </Link>
+          <Link to="/login">Entrar</Link>
         </div>
       </div>
     </section>
