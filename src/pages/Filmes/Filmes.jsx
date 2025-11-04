@@ -20,6 +20,7 @@ import disney from '../../assets/disney.webp';
 import uol from '../../assets/uol.jpg'
 import paramount from '../../assets/paramount.avif'
 import crunchyroll from '../../assets/crunchyroll.jpg'
+import youtube from '../../assets/youtube.webp'
 
 // -----------------CARROSSEL-FILMES------------------
 
@@ -91,6 +92,13 @@ import hobbitpostermobile from '../../assets/hobbitpostermobile.jpg'
 import todomundoquasemorto from '../../assets/todomundoquasemorto.jpg'
 import anoitedosmortosvivos from '../../assets/anoitedosmortosvivos.jpg'
 import despertardosmortos from '../../assets/despertardosmortos.webp'
+import exterminio from '../../assets/exterminio.jpg'
+import invasaozumbi from '../../assets/invasaozumbi.webp'
+import zumbilandia from '../../assets/zumbilandia.webp'
+import fomeanimal from '../../assets/fomeanimal.jpg'
+import rec from '../../assets/rec.webp'
+import oretornodosmortosvivos from '../../assets/oretornodosmortosvivos.jpg'
+import diadosmortos from '../../assets/diadosmortos.webp'
 
 function Filmes() {
 
@@ -1326,7 +1334,7 @@ function Filmes() {
                             </div>
                             <div className='container-top-10-texto'>
                                 <h1>1 - Todo Mundo Quase Morto (2004)</h1>
-                                <span>⭐ 7,9</span>
+                                <span>⭐ 7,8</span>
                                 <p>Onde assistir</p>
                                 <div className='img-assistir'>
                                     <a href="https://tv.apple.com/br/movie/todo-mundo-quase-morto/umc.cmc.2zrq753s5mz97rym6p7i3zhdm" target='_blank'>
@@ -1375,154 +1383,152 @@ function Filmes() {
                             </div>
                         </div>
 
-                        {/* CARD 2 */}
+
+                        {/* CARD 4 */}
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=LIfcaZ4pC-4" target='_blank'>
-                                    <img src={todomundoquasemorto} alt="Todo Mundo Quase Morto" />
+                                <a href="https://www.youtube.com/watch?v=Ekp-Cz41Pvw" target='_blank'>
+                                    <img src={invasaozumbi} alt="Invasão Zumbi" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
-                                <h1>2 - A Noite dos Mortos-Vivos (1968)</h1>
-                                <span>⭐ 7,8</span>
+                                <h1>4 - Invasão Zumbi (2016)</h1>
+                                <span>⭐ 7,6</span>
                                 <p>Onde assistir</p>
                                 <div className='img-assistir'>
-                                    <a href="https://tv.apple.com/br/movie/todo-mundo-quase-morto/umc.cmc.2zrq753s5mz97rym6p7i3zhdm" target='_blank'>
+                                    <a href="https://www.netflix.com/title/80117824" target='_blank'>
+                                        <img src={netflix} alt="Netflix" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/movie/invasao-zumbi/umc.cmc.74kcjars4r3m6bliewisxh4dr?at=1000l3V2&ct=microsoft_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1187366497" target='_blank'>
                                         <img src={appletv} alt="AppleTV" />
                                     </a>
-                                    <a href="https://www.primevideo.com/-/pt/detail/Todo-Mundo-Quase-Morto/0KZW2A6QJ0P825KU4CAYDX81K6?utm_source=chatgpt.com" target='_blank'>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 5 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=at4JIc_vyUY" target='_blank'>
+                                    <img src={exterminio} alt="Extermínio" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>5 - Extermínio (2002)</h1>
+                                <span>⭐ 7,5</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://tv.apple.com/br/movie/exterminio/umc.cmc.6o1742rqdwxl2dxav5trdajut" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Exterm%C3%ADnio/0G9HQF853FTECDET8PEK5HM57O" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                    <a href="https://www.hbomax.com/br/pt/lapsed" target='_blank'>
+                                        <img src={hbomax} alt="HBOmax" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 6 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=8m9EVP8X7N8" target='_blank'>
+                                    <img src={zumbilandia} alt="Zumbilândia" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>6 - Zumbilândia (2009)</h1>
+                                <span>⭐ 7,5</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.netflix.com/title/70123542" target='_blank'>
+                                        <img src={netflix} alt="Netflix" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Zumbil%C3%A2ndia/0H7HKU62GVQJCAS7EYSHBCUXKR" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/movie/zumbilandia/umc.cmc.6wwa6bx0gi4b53riq7a3wipeb" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 7 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=f-IGleR1AtA" target='_blank'>
+                                    <img src={fomeanimal} alt="Fome Animal" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>7 - Fome Animal (1992)</h1>
+                                <span>⭐ 7,5</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.youtube.com/watch?v=Bg_XZFRjxdQ" target='_blank'>
+                                        <img src={youtube} alt="Youtube" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 8 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=KLizS5GFBQI" target='_blank'>
+                                    <img src={rec} alt="[REC]" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>8 - [REC] (2007)</h1>
+                                <span>⭐ 7,4</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://tv.apple.com/br/movie/rec/umc.cmc.5ya2d6l700k0gv7sm98swc3f9" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/-/pt/detail/REC/0HOLFGXXYN018A5R9MR12CSBU1" target='_blank'>
                                         <img src={primevideo} alt="PrimeVideo" />
                                     </a>
                                 </div>
                             </div>
                         </div>
 
-                        {/* CARD 2 */}
+                        {/* CARD 9 */}
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=LIfcaZ4pC-4" target='_blank'>
-                                    <img src={todomundoquasemorto} alt="Todo Mundo Quase Morto" />
+                                <a href="https://www.youtube.com/watch?v=KeSAFGWzft8" target='_blank'>
+                                    <img src={oretornodosmortosvivos} alt="O Retorno dos Mortos-Vivos" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
-                                <h1>2 - A Noite dos Mortos-Vivos (1968)</h1>
-                                <span>⭐ 7,8</span>
+                                <h1>9 - O Retorno dos Mortos-Vivos (1985)</h1>
+                                <span>⭐ 7,3</span>
                                 <p>Onde assistir</p>
                                 <div className='img-assistir'>
-                                    <a href="https://tv.apple.com/br/movie/todo-mundo-quase-morto/umc.cmc.2zrq753s5mz97rym6p7i3zhdm" target='_blank'>
-                                        <img src={appletv} alt="AppleTV" />
-                                    </a>
-                                    <a href="https://www.primevideo.com/-/pt/detail/Todo-Mundo-Quase-Morto/0KZW2A6QJ0P825KU4CAYDX81K6?utm_source=chatgpt.com" target='_blank'>
+                                    <a href="https://www.primevideo.com/-/pt/detail/O-Retorno-dos-Mortos-Vivos/0T60AR5AHD10672F0KWU02CP4G" target='_blank'>
                                         <img src={primevideo} alt="PrimeVideo" />
                                     </a>
                                 </div>
                             </div>
                         </div>
 
-                        {/* CARD 2 */}
+                        {/* CARD 10 */}
                         <div className='container-top-10'>
                             <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=LIfcaZ4pC-4" target='_blank'>
-                                    <img src={todomundoquasemorto} alt="Todo Mundo Quase Morto" />
+                                <a href="https://www.youtube.com/watch?v=COj7ro8AjT8" target='_blank'>
+                                    <img src={diadosmortos} alt="Dia dos Mortos" />
                                 </a>
                             </div>
                             <div className='container-top-10-texto'>
-                                <h1>2 - A Noite dos Mortos-Vivos (1968)</h1>
-                                <span>⭐ 7,8</span>
+                                <h1>10 - Dia dos Mortos (1985)</h1>
+                                <span>⭐ 7,1</span>
                                 <p>Onde assistir</p>
                                 <div className='img-assistir'>
-                                    <a href="https://tv.apple.com/br/movie/todo-mundo-quase-morto/umc.cmc.2zrq753s5mz97rym6p7i3zhdm" target='_blank'>
-                                        <img src={appletv} alt="AppleTV" />
-                                    </a>
-                                    <a href="https://www.primevideo.com/-/pt/detail/Todo-Mundo-Quase-Morto/0KZW2A6QJ0P825KU4CAYDX81K6?utm_source=chatgpt.com" target='_blank'>
-                                        <img src={primevideo} alt="PrimeVideo" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* CARD 2 */}
-                        <div className='container-top-10'>
-                            <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=LIfcaZ4pC-4" target='_blank'>
-                                    <img src={todomundoquasemorto} alt="Todo Mundo Quase Morto" />
-                                </a>
-                            </div>
-                            <div className='container-top-10-texto'>
-                                <h1>2 - A Noite dos Mortos-Vivos (1968)</h1>
-                                <span>⭐ 7,8</span>
-                                <p>Onde assistir</p>
-                                <div className='img-assistir'>
-                                    <a href="https://tv.apple.com/br/movie/todo-mundo-quase-morto/umc.cmc.2zrq753s5mz97rym6p7i3zhdm" target='_blank'>
-                                        <img src={appletv} alt="AppleTV" />
-                                    </a>
-                                    <a href="https://www.primevideo.com/-/pt/detail/Todo-Mundo-Quase-Morto/0KZW2A6QJ0P825KU4CAYDX81K6?utm_source=chatgpt.com" target='_blank'>
-                                        <img src={primevideo} alt="PrimeVideo" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* CARD 2 */}
-                        <div className='container-top-10'>
-                            <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=LIfcaZ4pC-4" target='_blank'>
-                                    <img src={todomundoquasemorto} alt="Todo Mundo Quase Morto" />
-                                </a>
-                            </div>
-                            <div className='container-top-10-texto'>
-                                <h1>2 - A Noite dos Mortos-Vivos (1968)</h1>
-                                <span>⭐ 7,8</span>
-                                <p>Onde assistir</p>
-                                <div className='img-assistir'>
-                                    <a href="https://tv.apple.com/br/movie/todo-mundo-quase-morto/umc.cmc.2zrq753s5mz97rym6p7i3zhdm" target='_blank'>
-                                        <img src={appletv} alt="AppleTV" />
-                                    </a>
-                                    <a href="https://www.primevideo.com/-/pt/detail/Todo-Mundo-Quase-Morto/0KZW2A6QJ0P825KU4CAYDX81K6?utm_source=chatgpt.com" target='_blank'>
-                                        <img src={primevideo} alt="PrimeVideo" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* CARD 2 */}
-                        <div className='container-top-10'>
-                            <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=LIfcaZ4pC-4" target='_blank'>
-                                    <img src={todomundoquasemorto} alt="Todo Mundo Quase Morto" />
-                                </a>
-                            </div>
-                            <div className='container-top-10-texto'>
-                                <h1>2 - A Noite dos Mortos-Vivos (1968)</h1>
-                                <span>⭐ 7,8</span>
-                                <p>Onde assistir</p>
-                                <div className='img-assistir'>
-                                    <a href="https://tv.apple.com/br/movie/todo-mundo-quase-morto/umc.cmc.2zrq753s5mz97rym6p7i3zhdm" target='_blank'>
-                                        <img src={appletv} alt="AppleTV" />
-                                    </a>
-                                    <a href="https://www.primevideo.com/-/pt/detail/Todo-Mundo-Quase-Morto/0KZW2A6QJ0P825KU4CAYDX81K6?utm_source=chatgpt.com" target='_blank'>
-                                        <img src={primevideo} alt="PrimeVideo" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* CARD 2 */}
-                        <div className='container-top-10'>
-                            <div className='container-top-10-imagem'>
-                                <a href="https://www.youtube.com/watch?v=LIfcaZ4pC-4" target='_blank'>
-                                    <img src={todomundoquasemorto} alt="Todo Mundo Quase Morto" />
-                                </a>
-                            </div>
-                            <div className='container-top-10-texto'>
-                                <h1>2 - A Noite dos Mortos-Vivos (1968)</h1>
-                                <span>⭐ 7,8</span>
-                                <p>Onde assistir</p>
-                                <div className='img-assistir'>
-                                    <a href="https://tv.apple.com/br/movie/todo-mundo-quase-morto/umc.cmc.2zrq753s5mz97rym6p7i3zhdm" target='_blank'>
-                                        <img src={appletv} alt="AppleTV" />
-                                    </a>
-                                    <a href="https://www.primevideo.com/-/pt/detail/Todo-Mundo-Quase-Morto/0KZW2A6QJ0P825KU4CAYDX81K6?utm_source=chatgpt.com" target='_blank'>
+                                    <a href="https://www.primevideo.com/detail/amzn1.dv.gti.86b4ff38-700e-83da-fe02-2fb5551783f8" target='_blank'>
                                         <img src={primevideo} alt="PrimeVideo" />
                                     </a>
                                 </div>
