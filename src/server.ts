@@ -8,19 +8,9 @@ const app = express();
 
 // --- CORS configurado para seu front no Vercel ---
 app.use(cors({
-  origin: (origin, callback) => {
-    if (!origin) return callback(null, true); // Permite requisições internas (como Postman)
-    if (
-      origin.includes('vercel.app') ||  // Permite qualquer domínio da Vercel
-      origin === 'https://cine10.vercel.app' // Seu domínio principal
-    ) {
-      callback(null, true);
-    } else {
-      callback(new Error('CORS bloqueado para esta origem: ' + origin));
-    }
-  },
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+    origin: 'https://cine10.vercel.app', // URL do front
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
 }));
 
 app.use(express.json());
