@@ -100,6 +100,15 @@ import rec from '../../assets/rec.webp'
 import oretornodosmortosvivos from '../../assets/oretornodosmortosvivos.jpg'
 import diadosmortos from '../../assets/diadosmortos.webp'
 
+// ---------------GUERRA-IMDB---------------------
+
+import resgatedosoldadoryan from '../../assets/resgatedosoldadoryan.webp'
+import avidaebela from '../../assets/avidaebela.webp'
+import bastardosinglorios from '../../assets/bastardosinglorios.webp'
+import apocalypsenow from '../../assets/apocalypsenow.jpg'
+import coracaovalente from '../../assets/coracaovalente.webp'
+import nascidoparamatar from '../../assets/nascidoparamatar.jpg'
+
 function Filmes() {
 
     useEffect(() => {
@@ -140,6 +149,7 @@ function Filmes() {
     const carrosselOscarsRef = useRef(null);
     const carrosselMelhoresAvaliadosRef = useRef(null);
     const carrosselMelhoresAvaliadosZumbisRef = useRef(null);
+    const carrosselMelhoresAvaliadosGuerraRef = useRef(null);
 
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
@@ -218,7 +228,7 @@ function Filmes() {
         });
     };
 
-    // ---------------MELHORES-AVALIADOS-FILMES--------------
+    // ---------------MELHORES-AVALIADOS-ZUMBIS--------------
 
 
     const rolarMelhoresAvaliadosZumbis = (direcao) => {
@@ -229,6 +239,16 @@ function Filmes() {
         });
     };
 
+    // ---------------MELHORES-AVALIADOS-GUERRA--------------
+
+
+    const rolarMelhoresAvaliadosGuerra = (direcao) => {
+        const largura = carrosselMelhoresAvaliadosGuerraRef.current.clientWidth;
+        carrosselMelhoresAvaliadosGuerraRef.current.scrollBy({
+            left: direcao === 'esquerda' ? -largura : largura,
+            behavior: 'smooth',
+        });
+    };
 
     return (
         <>
@@ -1313,7 +1333,7 @@ function Filmes() {
                 {/* --------------------CONTAINER DOS MELHORES AVALIADOS---------------------- */}
 
                 <div>
-                    <h1 id='top-10-h1'>Os 10 melhores filmes de zumbis ( IMDb )</h1>
+                    <h1 id='top-10-h1'>Os 10 melhores filmes de Zumbis ( IMDb )</h1>
                 </div>
 
                 <section className="container-top-10-principal">
@@ -1538,6 +1558,179 @@ function Filmes() {
                     </div>
                     {/* Botão seta direita */}
                     <button className="seta seta-direita" onClick={() => rolarMelhoresAvaliadosZumbis('direita')}>
+                        ❯
+                    </button>
+                </section>
+
+                {/* --------------------CONTAINER DOS MELHORES AVALIADOS---------------------- */}
+
+                <div>
+                    <h1 id='top-10-h1'>Os 10 melhores filmes de Guerra ( IMDb )</h1>
+                </div>
+
+                <section className="container-top-10-principal">
+                    {/* Botão seta esquerda */}
+                    <button className="seta seta-esquerda" onClick={() => rolarMelhoresAvaliadosGuerra('esquerda')}>
+                        ❮
+                    </button>
+
+                    {/* Carrossel com TODOS os cards dentro */}
+                    <div className="carrossel-top-10" ref={carrosselMelhoresAvaliadosGuerraRef}>
+
+                        {/* CARD 1 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=GAf0nGq_FXQ" target='_blank'>
+                                    <img src={listadechindler} alt="A lista de Schindler" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>1 -  A lista de Schindler (1993)</h1>
+                                <span>⭐ 9,0</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://tv.apple.com/us/movie/schindlers-list/umc.cmc.53hzoo3z0ufjb6wsxgspp2jlf" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 2 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=WdHJ_nLRjIA" target='_blank'>
+                                    <img src={resgatedosoldadoryan} alt="O Resgate do Soldado Ryan" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>2 - O Resgate do Soldado Ryan (1998)</h1>
+                                <span>⭐ 8,6</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://tv.apple.com/br/movie/o-resgate-do-soldado-ryan/umc.cmc.42f75umn5z16fkpofphe4re85" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.primevideo.com/detail/amzn1.dv.gti.44b16ca2-d03a-4ab0-af29-f5d6a48e5d41" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                    <a href="https://www.paramountplus.com/br/movies/video/cA6RHYSln7H018wfcs_dtX0iOKatacNr/?msockid=072cab61222b6f0d04a4bd3223aa6e72" target='_blank'>
+                                        <img src={paramount} alt="Paramount" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 3 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=pAYEQP8gx3w" target='_blank'>
+                                    <img src={avidaebela} alt="A Vida é Bela" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>3 - A Vida é Bela (1997)</h1>
+                                <span>⭐ 8,6</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.primevideo.com/-/pt/detail/A-Vida-%C3%89-Bela/0TISNNI0GKIMGMNULCV8HHE9C6" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 4 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=w1O5LThfp7w" target='_blank'>
+                                    <img src={bastardosinglorios} alt="Bastardos Inglórios" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>4 - Bastardos Inglórios (2009)</h1>
+                                <span>⭐ 8,4</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Bastardos-Ingl%C3%B3rios/0MPXAZJDBOV95KR3JF89PDAWPW" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/movie/bastardos-inglorios/umc.cmc.3r1vekw1q5380qojcz9t1ie6a" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 5 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=9l-ViOOFH-s" target='_blank'>
+                                    <img src={apocalypsenow} alt="Apocalypse Now" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>5 - Apocalypse Now (1979)</h1>
+                                <span>⭐ 8,4</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.primevideo.com/-/pt_PT/detail/Apocalypse-Now/0OO47KGE3QA6UQ70SCAA0QOQPJ" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 6 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=1NJO0jxBtMo" target='_blank'>
+                                    <img src={coracaovalente} alt="Coração Valente" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>6 - Coração Valente (1995)</h1>
+                                <span>⭐ 8,4</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Cora%C3%A7%C3%A3o-Valente/0P0U2LVG1N6LD3GL0F9BCRC898" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/movie/coracao-valente/umc.cmc.6lkfj9wyv04km68kr34nv7t0k" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                    <a href="https://www.disneyplus.com/pt-br/browse/entity-cc282e22-c01d-4c58-b4a3-bcaf59249345?msockid=072cab61222b6f0d04a4bd3223aa6e72" target='_blank'>
+                                        <img src={disney} alt="Disney+" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 7 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=7Nf8KqCpVpU" target='_blank'>
+                                    <img src={nascidoparamatar} alt="Nascido para Matar" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>7 - Nascido para Matar (1987)</h1>
+                                <span>⭐ 8,2</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Nascido-Para-Matar/0U8DDEF7J2E3URQ99Z4M2282NZ" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/movie/nascido-para-matar/umc.cmc.5id4m2j0hxd2fu0k5dcbxpxb5" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    {/* Botão seta direita */}
+                    <button className="seta seta-direita" onClick={() => rolarMelhoresAvaliadosGuerra('direita')}>
                         ❯
                     </button>
                 </section>
