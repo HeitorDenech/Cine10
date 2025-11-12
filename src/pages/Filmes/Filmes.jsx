@@ -108,6 +108,9 @@ import bastardosinglorios from '../../assets/bastardosinglorios.webp'
 import apocalypsenow from '../../assets/apocalypsenow.jpg'
 import coracaovalente from '../../assets/coracaovalente.webp'
 import nascidoparamatar from '../../assets/nascidoparamatar.jpg'
+import ateoultimohomem from '../../assets/ateoultimohomem.jpg'
+import platoon from '../../assets/platoon.avif'
+import nadadenovonofront from '../../assets/nadadenovonofront.jpg'
 
 function Filmes() {
 
@@ -1722,6 +1725,72 @@ function Filmes() {
                                         <img src={primevideo} alt="PrimeVideo" />
                                     </a>
                                     <a href="https://tv.apple.com/br/movie/nascido-para-matar/umc.cmc.5id4m2j0hxd2fu0k5dcbxpxb5" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 8 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=4s4UCxCv_OE" target='_blank'>
+                                    <img src={ateoultimohomem} alt="Até o último Homem" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>8 - Até o Último Homem (2016)</h1>
+                                <span>⭐ 8,1</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.primevideo.com/detail/amzn1.dv.gti.032afe8c-4f7e-448a-9a5b-3d24b9bc9388" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/movie/ate-o-ultimo-homem/umc.cmc.62aqgczvqwoqyzv1vwv8er5wr" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 9 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=R8weLPF4qBQ" target='_blank'>
+                                    <img src={platoon} alt="Platoon" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>9 - Platoon (1986)</h1>
+                                <span>⭐ 8,1</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.primevideo.com/-/pt/detail/Platoon/0OO13HMPQ8E1HOKIO3HPZK513O" target='_blank'>
+                                        <img src={primevideo} alt="PrimeVideo" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/movie/platoon/umc.cmc.5ecv7yrex9ocne1t2dzpygy8n" target='_blank'>
+                                        <img src={appletv} alt="AppleTV" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CARD 10 */}
+                        <div className='container-top-10'>
+                            <div className='container-top-10-imagem'>
+                                <a href="https://www.youtube.com/watch?v=vwbySrsD7RU" target='_blank'>
+                                    <img src={nadadenovonofront} alt="Nada de Novo no Front" />
+                                </a>
+                            </div>
+                            <div className='container-top-10-texto'>
+                                <h1>10 - Nada de Novo no Front (2022)</h1>
+                                <span>⭐ 7,8</span>
+                                <p>Onde assistir</p>
+                                <div className='img-assistir'>
+                                    <a href="https://www.netflix.com/br/title/81260280" target='_blank'>
+                                        <img src={netflix} alt="Netflix" />
+                                    </a>
+                                    <a href="https://tv.apple.com/br/movie/nada-de-novo-no-front/umc.cmc.6dhlhfswpjp8cfx45cscx7jto" target='_blank'>
                                         <img src={appletv} alt="AppleTV" />
                                     </a>
                                 </div>
