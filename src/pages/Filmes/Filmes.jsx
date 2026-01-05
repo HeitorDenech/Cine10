@@ -157,8 +157,8 @@ function Filmes() {
     const [indicePrincipal, setIndicePrincipal] = useState(0);
     const [animacao, setAnimacao] = useState('fade-in');
 
-    const imagensPrincipalFilmes = [batmanposter, avatarposter, semvoltapracasaposter, hobbitposter, jurassicworldposter]
-    const imagensPrincipalMobileFilmes = [batmanpostermobile, avataragua, semvoltapracasa, hobbitpostermobile, jurassicworld]
+    const imagensPrincipalFilmes = [avatarposter, batmanposter, semvoltapracasaposter, hobbitposter, jurassicworldposter]
+    const imagensPrincipalMobileFilmes = [avataragua, batmanpostermobile, semvoltapracasa, hobbitpostermobile, jurassicworld]
 
     const navigate = useNavigate(); // ✅ Inicializa navigate
     const [menuOpen, setMenuOpen] = useState(false);
