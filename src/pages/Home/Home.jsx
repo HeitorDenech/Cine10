@@ -249,8 +249,8 @@ function Home() {
     const [animacao, setAnimacao] = useState('fade-in');
     const imagensPrincipal = [got, ossopranos, twd, origem, modernfamily];
 
-    const imagensPrincipalFilmes = [batmanposter, avatarposter, semvoltapracasaposter, hobbitposter, jurassicworldposter]
-    const imagensPrincipalMobileFilmes = [batmanpostermobile ,avataragua, semvoltapracasa, hobbitpostermobile, jurassicworld]
+    const imagensPrincipalFilmes = [avatarposter, batmanposter, semvoltapracasaposter, hobbitposter, jurassicworldposter]
+    const imagensPrincipalMobileFilmes = [avataragua, batmanpostermobile, semvoltapracasa, hobbitpostermobile, jurassicworld]
 
     const imagensPrincipalDesenhos = [httyd, walle, up, toystore, avataraang]
     const imagensPrincipalMobileDesenhos = [httydmobile, wallemobile, upmobile, toystory3, avataraangmobile]
