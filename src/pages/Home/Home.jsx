@@ -504,7 +504,7 @@ function Home() {
 
                 <section className="introducao-container">
                     <div className="title-introducao-container">
-                        <h1>Explore e aproveite.</h1>
+                        <h1>Explore, aproveite e inspire-se.</h1>
                     </div>
 
                     <div className="text-introducao-container">
